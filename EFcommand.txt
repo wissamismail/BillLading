@@ -1,0 +1,4 @@
+
+enable-migrations
+add-migration CreateLading
+Update-Database
