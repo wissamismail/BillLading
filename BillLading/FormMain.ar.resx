@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="annexedDocments14Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="annexedDocments14Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 10</value>
+  </data>
+  <data name="cachonDelivery29Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cachonDelivery29Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 36</value>
+  </data>
+  <data name="carriageForward26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carriageForward26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 62</value>
+  </data>
+  <data name="carriageInstructions26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carriageInstructions26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 88</value>
+  </data>
+  <data name="carriagePaid26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carriagePaid26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 114</value>
+  </data>
+  <data name="carrier6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carrier6Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>972, 313</value>
+  </data>
+  <data name="carrierAddress6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carrierAddress6Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>930, 343</value>
+  </data>
+  <data name="carrierPhone6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="carrierPhone6Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>939, 369</value>
+  </data>
+  <data name="customsDeclarationNo13Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="customsDeclarationNo13Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 218</value>
+  </data>
+  <data name="dangerousGoodsClass22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dangerousGoodsClass22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 244</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 270</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 296</value>
+  </data>
+  <data name="dateOfIssue3Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dateOfIssue3Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>938, 98</value>
+  </data>
+  <data name="deliveryGoodsDate9Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="deliveryGoodsDate9Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 224</value>
+  </data>
+  <data name="deliveryGoodsPlace9Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="deliveryGoodsPlace9Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 249</value>
+  </data>
+  <data name="demurrageDischarge25Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="demurrageDischarge25Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 404</value>
+  </data>
+  <data name="demurrageLoading24Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="demurrageLoading24Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 430</value>
+  </data>
+  <data name="forwarder7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="forwarder7Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 75</value>
+  </data>
+  <data name="forwarderAddress7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="forwarderAddress7Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 101</value>
+  </data>
+  <data name="forwarderObservation11Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="forwarderObservation11Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 483</value>
+  </data>
+  <data name="forwarderPhone7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="forwarderPhone7Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 128</value>
+  </data>
+  <data name="grossWeight20_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="grossWeight20_1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 456</value>
+  </data>
+  <data name="ladingIDLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ladingIDLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>966, 23</value>
+  </data>
+  <data name="marksNos15Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="marksNos15Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 508</value>
+  </data>
+  <data name="methodOfPacking17Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="methodOfPacking17Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 534</value>
+  </data>
+  <data name="natureOfGoods18Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="natureOfGoods18Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 560</value>
+  </data>
+  <data name="noOfPackages16Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="noOfPackages16Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 586</value>
+  </data>
+  <data name="placeOfIssue2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="placeOfIssue2Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>936, 71</value>
+  </data>
+  <data name="receiver5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="receiver5Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>963, 224</value>
+  </data>
+  <data name="receiverAddress5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="receiverAddress5Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>921, 249</value>
+  </data>
+  <data name="receiverPhone5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="receiverPhone5Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>930, 275</value>
+  </data>
+  <data name="routeFinalDestination12Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="routeFinalDestination12Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 427</value>
+  </data>
+  <data name="sender4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sender4Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>971, 135</value>
+  </data>
+  <data name="senderAddress4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="senderAddress4Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>929, 161</value>
+  </data>
+  <data name="senderPhone4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="senderPhone4Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>938, 187</value>
+  </data>
+  <data name="sendersInstructions23Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sendersInstructions23Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 453</value>
+  </data>
+  <data name="specialAgreements28Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="specialAgreements28Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 479</value>
+  </data>
+  <data name="takingOverGoodsDate8Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="takingOverGoodsDate8Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 159</value>
+  </data>
+  <data name="takingOverGoodsPlace8Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="takingOverGoodsPlace8Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 184</value>
+  </data>
+  <data name="tariffCode19_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tariffCode19_1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 511</value>
+  </data>
+  <data name="vehicleClass10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="vehicleClass10Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 293</value>
+  </data>
+  <data name="vehicleDriver10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="vehicleDriver10Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 319</value>
+  </data>
+  <data name="vehicleNumber10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="vehicleNumber10Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 345</value>
+  </data>
+  <data name="vehicleType10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="vehicleType10Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 371</value>
+  </data>
+  <data name="volume21_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="volume21_1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 538</value>
+  </data>
+  <data name="btnNew.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="annexedDocments14TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 3</value>
+  </data>
+  <data name="cachonDelivery29TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 55</value>
+  </data>
+  <data name="carriageInstructions26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 81</value>
+  </data>
+  <data name="carriagePaid26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 107</value>
+  </data>
+  <data name="carrier6TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 313</value>
+  </data>
+  <data name="carrierAddress6TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 343</value>
+  </data>
+  <data name="carrierPhone6TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 369</value>
+  </data>
+  <data name="customsDeclarationNo13TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 215</value>
+  </data>
+  <data name="dangerousGoodsClass22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 241</value>
+  </data>
+  <data name="dangerousGoodsCode22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 267</value>
+  </data>
+  <data name="dangerousGoodsInstructions22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 293</value>
+  </data>
+  <data name="dateOfIssue3DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 97</value>
+  </data>
+  <data name="deliveryGoodsDate9DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 223</value>
+  </data>
+  <data name="deliveryGoodsPlace9TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 249</value>
+  </data>
+  <data name="demurrageDischarge25TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 401</value>
+  </data>
+  <data name="demurrageLoading24TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 427</value>
+  </data>
+  <data name="forwarder7TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 72</value>
+  </data>
+  <data name="forwarderAddress7TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 98</value>
+  </data>
+  <data name="forwarderObservation11TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 480</value>
+  </data>
+  <data name="forwarderPhone7TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 125</value>
+  </data>
+  <data name="grossWeight20_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 453</value>
+  </data>
+  <data name="ladingIDTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 23</value>
+  </data>
+  <data name="marksNos15TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 505</value>
+  </data>
+  <data name="methodOfPacking17TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 531</value>
+  </data>
+  <data name="natureOfGoods18TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 557</value>
+  </data>
+  <data name="noOfPackages16TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 583</value>
+  </data>
+  <data name="placeOfIssue2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 71</value>
+  </data>
+  <data name="receiver5TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 224</value>
+  </data>
+  <data name="receiverAddress5TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 249</value>
+  </data>
+  <data name="receiverPhone5TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 275</value>
+  </data>
+  <data name="routeFinalDestination12TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 424</value>
+  </data>
+  <data name="sender4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 135</value>
+  </data>
+  <data name="senderAddress4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 161</value>
+  </data>
+  <data name="senderPhone4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 187</value>
+  </data>
+  <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 450</value>
+  </data>
+  <data name="specialAgreements28TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 476</value>
+  </data>
+  <data name="takingOverGoodsDate8DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 158</value>
+  </data>
+  <data name="takingOverGoodsPlace8TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 184</value>
+  </data>
+  <data name="tariffCode19_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 508</value>
+  </data>
+  <data name="vehicleClass10TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 289</value>
+  </data>
+  <data name="vehicleDriver10TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 315</value>
+  </data>
+  <data name="vehicleNumber10TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 341</value>
+  </data>
+  <data name="vehicleType10TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 367</value>
+  </data>
+  <data name="volume21_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 535</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 21</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1045, 645</value>
+  </data>
+  <data name="btnReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1245, 708</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>WindowsDefaultLocation</value>
+  </data>
+</root>

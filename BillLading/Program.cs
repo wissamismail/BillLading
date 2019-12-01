@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +18,7 @@ namespace BillLading
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar-AR");
             Application.Run(new Form1());
         }
     }

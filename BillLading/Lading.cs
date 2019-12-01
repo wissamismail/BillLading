@@ -13,66 +13,115 @@ namespace BillLading
         public int LadingID { get; set; }
 
         [StringLength(255)]
-        public string PlaceOfIssue { get; set; }
+        public string PlaceOfIssue2 { get; set; }
 
-        public DateTime DateOfIssue { get; set; }
-
-        [StringLength(255)]
-        public string Sender { get; set; }
+        public DateTime DateOfIssue3 { get; set; }
 
         [StringLength(255)]
-        public string SenderAddress { get; set; }
+        public string Sender4 { get; set; }
 
         [StringLength(255)]
-        public string SenderPhone { get; set; }
+        public string SenderAddress4 { get; set; }
 
         [StringLength(255)]
-        public string Receiver { get; set; }
+        public string SenderPhone4 { get; set; }
 
         [StringLength(255)]
-        public string ReceiverAddress { get; set; }
+        public string Receiver5 { get; set; }
 
         [StringLength(255)]
-        public string ReceiverPhone { get; set; }
+        public string ReceiverAddress5 { get; set; }
 
         [StringLength(255)]
-        public string Carrier { get; set; }
-        [StringLength(255)]
-        public string CarrierAddress { get; set; }
-        [StringLength(255)]
-        public string CarrierPhone { get; set; }
+        public string ReceiverPhone5 { get; set; }
 
         [StringLength(255)]
-        public string Forwarder { get; set; }
+        public string Carrier6 { get; set; }
         [StringLength(255)]
-        public string ForwarderAddress { get; set; }
+        public string CarrierAddress6 { get; set; }
         [StringLength(255)]
-        public string ForwarderPhone { get; set; }
+        public string CarrierPhone6 { get; set; }
 
         [StringLength(255)]
-        public string TakingOverGoodsPlace { get; set; }
-        public DateTime TakingOverGoodsDate { get; set; }
+        public string Forwarder7 { get; set; }
+        [StringLength(255)]
+        public string ForwarderAddress7 { get; set; }
+        [StringLength(255)]
+        public string ForwarderPhone7 { get; set; }
 
         [StringLength(255)]
-        public string DeliveryGoodsPlace { get; set; }
-        public DateTime DeliveryGoodsDate { get; set; }
+        public string TakingOverGoodsPlace8 { get; set; }
+        public DateTime TakingOverGoodsDate8 { get; set; }
 
         [StringLength(255)]
-        public string VehicleType { get; set; }
-        [StringLength(255)]
-        public string VehicleClass { get; set; }
-        [StringLength(255)]
-        public string VehicleNumber { get; set; }
-        [StringLength(255)]
-        public string VehicleDriver { get; set; }
+        public string DeliveryGoodsPlace9 { get; set; }
+        public DateTime DeliveryGoodsDate9 { get; set; }
 
         [StringLength(255)]
-        public string ForwarderObservation { get; set; }
+        public string VehicleType10 { get; set; }
         [StringLength(255)]
-        public string RouteFinalDestination { get; set; }
+        public string VehicleClass10 { get; set; }
         [StringLength(255)]
-        public string CustomsDeclarationNo { get; set; }
+        public string VehicleNumber10 { get; set; }
         [StringLength(255)]
-        public string AnnexedDocments { get; set; }
+        public string VehicleDriver10 { get; set; }
+
+        [StringLength(255)]
+        public string ForwarderObservation11 { get; set; }
+        [StringLength(255)]
+        public string RouteFinalDestination12 { get; set; }
+        [StringLength(255)]
+        public string CustomsDeclarationNo13 { get; set; }
+        [StringLength(255)]
+        public string AnnexedDocments14 { get; set; }
+
+        [StringLength(255)]
+        public string MarksNos15 { get; set; }
+        [StringLength(255)]
+        public string NoOfPackages16 { get; set; }
+        [StringLength(255)]
+        public string MethodOfPacking17 { get; set; }
+        [StringLength(255)]
+        public string NatureOfGoods18 { get; set; }
+        [StringLength(255)]
+        public string TariffCode19_1 { get; set; }
+        [StringLength(255)]
+        public string GrossWeight20_1 { get; set; }
+        [StringLength(255)]
+        public string Volume21_1 { get; set; }
+
+        [StringLength(255)]
+        public string DangerousGoodsInstructions22 { get; set; }
+        [StringLength(255)]
+        public string DangerousGoodsClass22 { get; set; }
+        [StringLength(255)]
+        public string DangerousGoodsCode22 { get; set; }
+
+        [StringLength(255)]
+        public string SendersInstructions23 { get; set; }
+        [StringLength(255)]
+        public string DemurrageLoading24 { get; set; }
+        [StringLength(255)]
+        public string DemurrageDischarge25 { get; set; }
+
+        [StringLength(255)]
+        public string CarriageInstructions26 { get; set; }
+        [StringLength(1)]
+        public string CarriagePaid26 { get; set; }
+        [StringLength(1)]
+        public string CarriageForward26 { get; set; }
+        [StringLength(255)]
+        public string SpecialAgreements28 { get; set; }
+        [StringLength(255)]
+        public string CachonDelivery29 { get; set; }
+
+
+
+
+
+
+
+
+
     }
 }

@@ -29,604 +29,785 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label annexedDocmentsLabel;
-            System.Windows.Forms.Label carrierLabel;
-            System.Windows.Forms.Label carrierAddressLabel;
-            System.Windows.Forms.Label carrierPhoneLabel;
-            System.Windows.Forms.Label customsDeclarationNoLabel;
-            System.Windows.Forms.Label dateOfIssueLabel;
-            System.Windows.Forms.Label deliveryGoodsDateLabel;
-            System.Windows.Forms.Label deliveryGoodsPlaceLabel;
-            System.Windows.Forms.Label forwarderLabel;
-            System.Windows.Forms.Label forwarderAddressLabel;
-            System.Windows.Forms.Label forwarderObservationLabel;
-            System.Windows.Forms.Label forwarderPhoneLabel;
+            System.Windows.Forms.Label annexedDocments14Label;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label cachonDelivery29Label;
+            System.Windows.Forms.Label carriageForward26Label;
+            System.Windows.Forms.Label carriageInstructions26Label;
+            System.Windows.Forms.Label carriagePaid26Label;
+            System.Windows.Forms.Label carrier6Label;
+            System.Windows.Forms.Label carrierAddress6Label;
+            System.Windows.Forms.Label carrierPhone6Label;
+            System.Windows.Forms.Label customsDeclarationNo13Label;
+            System.Windows.Forms.Label dangerousGoodsClass22Label;
+            System.Windows.Forms.Label dangerousGoodsCode22Label;
+            System.Windows.Forms.Label dangerousGoodsInstructions22Label;
+            System.Windows.Forms.Label dateOfIssue3Label;
+            System.Windows.Forms.Label deliveryGoodsDate9Label;
+            System.Windows.Forms.Label deliveryGoodsPlace9Label;
+            System.Windows.Forms.Label demurrageDischarge25Label;
+            System.Windows.Forms.Label demurrageLoading24Label;
+            System.Windows.Forms.Label forwarder7Label;
+            System.Windows.Forms.Label forwarderAddress7Label;
+            System.Windows.Forms.Label forwarderObservation11Label;
+            System.Windows.Forms.Label forwarderPhone7Label;
+            System.Windows.Forms.Label grossWeight20_1Label;
             System.Windows.Forms.Label ladingIDLabel;
-            System.Windows.Forms.Label placeOfIssueLabel;
-            System.Windows.Forms.Label receiverLabel;
-            System.Windows.Forms.Label receiverAddressLabel;
-            System.Windows.Forms.Label receiverPhoneLabel;
-            System.Windows.Forms.Label routeFinalDestinationLabel;
-            System.Windows.Forms.Label senderLabel;
-            System.Windows.Forms.Label senderAddressLabel;
-            System.Windows.Forms.Label senderPhoneLabel;
-            System.Windows.Forms.Label takingOverGoodsDateLabel;
-            System.Windows.Forms.Label takingOverGoodsPlaceLabel;
-            System.Windows.Forms.Label vehicleClassLabel;
-            System.Windows.Forms.Label vehicleDriverLabel;
-            System.Windows.Forms.Label vehicleNumberLabel;
-            System.Windows.Forms.Label vehicleTypeLabel;
-            this.annexedDocmentsTextBox = new System.Windows.Forms.TextBox();
-            this.carrierTextBox = new System.Windows.Forms.TextBox();
-            this.carrierAddressTextBox = new System.Windows.Forms.TextBox();
-            this.carrierPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.customsDeclarationNoTextBox = new System.Windows.Forms.TextBox();
-            this.dateOfIssueDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.deliveryGoodsDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.deliveryGoodsPlaceTextBox = new System.Windows.Forms.TextBox();
-            this.forwarderTextBox = new System.Windows.Forms.TextBox();
-            this.forwarderAddressTextBox = new System.Windows.Forms.TextBox();
-            this.forwarderObservationTextBox = new System.Windows.Forms.TextBox();
-            this.forwarderPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.ladingIDTextBox = new System.Windows.Forms.TextBox();
-            this.placeOfIssueTextBox = new System.Windows.Forms.TextBox();
-            this.receiverTextBox = new System.Windows.Forms.TextBox();
-            this.receiverAddressTextBox = new System.Windows.Forms.TextBox();
-            this.receiverPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.routeFinalDestinationTextBox = new System.Windows.Forms.TextBox();
-            this.senderTextBox = new System.Windows.Forms.TextBox();
-            this.senderAddressTextBox = new System.Windows.Forms.TextBox();
-            this.senderPhoneTextBox = new System.Windows.Forms.TextBox();
-            this.takingOverGoodsDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.takingOverGoodsPlaceTextBox = new System.Windows.Forms.TextBox();
-            this.vehicleClassTextBox = new System.Windows.Forms.TextBox();
-            this.vehicleDriverTextBox = new System.Windows.Forms.TextBox();
-            this.vehicleNumberTextBox = new System.Windows.Forms.TextBox();
-            this.vehicleTypeTextBox = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.Label marksNos15Label;
+            System.Windows.Forms.Label methodOfPacking17Label;
+            System.Windows.Forms.Label natureOfGoods18Label;
+            System.Windows.Forms.Label noOfPackages16Label;
+            System.Windows.Forms.Label placeOfIssue2Label;
+            System.Windows.Forms.Label receiver5Label;
+            System.Windows.Forms.Label receiverAddress5Label;
+            System.Windows.Forms.Label receiverPhone5Label;
+            System.Windows.Forms.Label routeFinalDestination12Label;
+            System.Windows.Forms.Label sender4Label;
+            System.Windows.Forms.Label senderAddress4Label;
+            System.Windows.Forms.Label senderPhone4Label;
+            System.Windows.Forms.Label sendersInstructions23Label;
+            System.Windows.Forms.Label specialAgreements28Label;
+            System.Windows.Forms.Label takingOverGoodsDate8Label;
+            System.Windows.Forms.Label takingOverGoodsPlace8Label;
+            System.Windows.Forms.Label tariffCode19_1Label;
+            System.Windows.Forms.Label vehicleClass10Label;
+            System.Windows.Forms.Label vehicleDriver10Label;
+            System.Windows.Forms.Label vehicleNumber10Label;
+            System.Windows.Forms.Label vehicleType10Label;
+            System.Windows.Forms.Label volume21_1Label;
             this.btnNew = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.annexedDocments14TextBox = new System.Windows.Forms.TextBox();
+            this.cachonDelivery29TextBox = new System.Windows.Forms.TextBox();
+            this.carriageForward26TextBox = new System.Windows.Forms.TextBox();
+            this.carriageInstructions26TextBox = new System.Windows.Forms.TextBox();
+            this.carriagePaid26TextBox = new System.Windows.Forms.TextBox();
+            this.carrier6TextBox = new System.Windows.Forms.TextBox();
+            this.carrierAddress6TextBox = new System.Windows.Forms.TextBox();
+            this.carrierPhone6TextBox = new System.Windows.Forms.TextBox();
+            this.customsDeclarationNo13TextBox = new System.Windows.Forms.TextBox();
+            this.dangerousGoodsClass22TextBox = new System.Windows.Forms.TextBox();
+            this.dangerousGoodsCode22TextBox = new System.Windows.Forms.TextBox();
+            this.dangerousGoodsInstructions22TextBox = new System.Windows.Forms.TextBox();
+            this.dateOfIssue3DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.deliveryGoodsDate9DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.deliveryGoodsPlace9TextBox = new System.Windows.Forms.TextBox();
+            this.demurrageDischarge25TextBox = new System.Windows.Forms.TextBox();
+            this.demurrageLoading24TextBox = new System.Windows.Forms.TextBox();
+            this.forwarder7TextBox = new System.Windows.Forms.TextBox();
+            this.forwarderAddress7TextBox = new System.Windows.Forms.TextBox();
+            this.forwarderObservation11TextBox = new System.Windows.Forms.TextBox();
+            this.forwarderPhone7TextBox = new System.Windows.Forms.TextBox();
+            this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
+            this.ladingIDTextBox = new System.Windows.Forms.TextBox();
+            this.marksNos15TextBox = new System.Windows.Forms.TextBox();
+            this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
+            this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
+            this.noOfPackages16TextBox = new System.Windows.Forms.TextBox();
+            this.placeOfIssue2TextBox = new System.Windows.Forms.TextBox();
+            this.receiver5TextBox = new System.Windows.Forms.TextBox();
+            this.receiverAddress5TextBox = new System.Windows.Forms.TextBox();
+            this.receiverPhone5TextBox = new System.Windows.Forms.TextBox();
+            this.routeFinalDestination12TextBox = new System.Windows.Forms.TextBox();
+            this.sender4TextBox = new System.Windows.Forms.TextBox();
+            this.senderAddress4TextBox = new System.Windows.Forms.TextBox();
+            this.senderPhone4TextBox = new System.Windows.Forms.TextBox();
+            this.sendersInstructions23TextBox = new System.Windows.Forms.TextBox();
+            this.specialAgreements28TextBox = new System.Windows.Forms.TextBox();
+            this.takingOverGoodsDate8DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.takingOverGoodsPlace8TextBox = new System.Windows.Forms.TextBox();
+            this.tariffCode19_1TextBox = new System.Windows.Forms.TextBox();
+            this.vehicleClass10TextBox = new System.Windows.Forms.TextBox();
+            this.vehicleDriver10TextBox = new System.Windows.Forms.TextBox();
+            this.vehicleNumber10TextBox = new System.Windows.Forms.TextBox();
+            this.vehicleType10TextBox = new System.Windows.Forms.TextBox();
+            this.volume21_1TextBox = new System.Windows.Forms.TextBox();
+            this.btnReport = new System.Windows.Forms.Button();
             this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
-            annexedDocmentsLabel = new System.Windows.Forms.Label();
-            carrierLabel = new System.Windows.Forms.Label();
-            carrierAddressLabel = new System.Windows.Forms.Label();
-            carrierPhoneLabel = new System.Windows.Forms.Label();
-            customsDeclarationNoLabel = new System.Windows.Forms.Label();
-            dateOfIssueLabel = new System.Windows.Forms.Label();
-            deliveryGoodsDateLabel = new System.Windows.Forms.Label();
-            deliveryGoodsPlaceLabel = new System.Windows.Forms.Label();
-            forwarderLabel = new System.Windows.Forms.Label();
-            forwarderAddressLabel = new System.Windows.Forms.Label();
-            forwarderObservationLabel = new System.Windows.Forms.Label();
-            forwarderPhoneLabel = new System.Windows.Forms.Label();
+            annexedDocments14Label = new System.Windows.Forms.Label();
+            cachonDelivery29Label = new System.Windows.Forms.Label();
+            carriageForward26Label = new System.Windows.Forms.Label();
+            carriageInstructions26Label = new System.Windows.Forms.Label();
+            carriagePaid26Label = new System.Windows.Forms.Label();
+            carrier6Label = new System.Windows.Forms.Label();
+            carrierAddress6Label = new System.Windows.Forms.Label();
+            carrierPhone6Label = new System.Windows.Forms.Label();
+            customsDeclarationNo13Label = new System.Windows.Forms.Label();
+            dangerousGoodsClass22Label = new System.Windows.Forms.Label();
+            dangerousGoodsCode22Label = new System.Windows.Forms.Label();
+            dangerousGoodsInstructions22Label = new System.Windows.Forms.Label();
+            dateOfIssue3Label = new System.Windows.Forms.Label();
+            deliveryGoodsDate9Label = new System.Windows.Forms.Label();
+            deliveryGoodsPlace9Label = new System.Windows.Forms.Label();
+            demurrageDischarge25Label = new System.Windows.Forms.Label();
+            demurrageLoading24Label = new System.Windows.Forms.Label();
+            forwarder7Label = new System.Windows.Forms.Label();
+            forwarderAddress7Label = new System.Windows.Forms.Label();
+            forwarderObservation11Label = new System.Windows.Forms.Label();
+            forwarderPhone7Label = new System.Windows.Forms.Label();
+            grossWeight20_1Label = new System.Windows.Forms.Label();
             ladingIDLabel = new System.Windows.Forms.Label();
-            placeOfIssueLabel = new System.Windows.Forms.Label();
-            receiverLabel = new System.Windows.Forms.Label();
-            receiverAddressLabel = new System.Windows.Forms.Label();
-            receiverPhoneLabel = new System.Windows.Forms.Label();
-            routeFinalDestinationLabel = new System.Windows.Forms.Label();
-            senderLabel = new System.Windows.Forms.Label();
-            senderAddressLabel = new System.Windows.Forms.Label();
-            senderPhoneLabel = new System.Windows.Forms.Label();
-            takingOverGoodsDateLabel = new System.Windows.Forms.Label();
-            takingOverGoodsPlaceLabel = new System.Windows.Forms.Label();
-            vehicleClassLabel = new System.Windows.Forms.Label();
-            vehicleDriverLabel = new System.Windows.Forms.Label();
-            vehicleNumberLabel = new System.Windows.Forms.Label();
-            vehicleTypeLabel = new System.Windows.Forms.Label();
+            marksNos15Label = new System.Windows.Forms.Label();
+            methodOfPacking17Label = new System.Windows.Forms.Label();
+            natureOfGoods18Label = new System.Windows.Forms.Label();
+            noOfPackages16Label = new System.Windows.Forms.Label();
+            placeOfIssue2Label = new System.Windows.Forms.Label();
+            receiver5Label = new System.Windows.Forms.Label();
+            receiverAddress5Label = new System.Windows.Forms.Label();
+            receiverPhone5Label = new System.Windows.Forms.Label();
+            routeFinalDestination12Label = new System.Windows.Forms.Label();
+            sender4Label = new System.Windows.Forms.Label();
+            senderAddress4Label = new System.Windows.Forms.Label();
+            senderPhone4Label = new System.Windows.Forms.Label();
+            sendersInstructions23Label = new System.Windows.Forms.Label();
+            specialAgreements28Label = new System.Windows.Forms.Label();
+            takingOverGoodsDate8Label = new System.Windows.Forms.Label();
+            takingOverGoodsPlace8Label = new System.Windows.Forms.Label();
+            tariffCode19_1Label = new System.Windows.Forms.Label();
+            vehicleClass10Label = new System.Windows.Forms.Label();
+            vehicleDriver10Label = new System.Windows.Forms.Label();
+            vehicleNumber10Label = new System.Windows.Forms.Label();
+            vehicleType10Label = new System.Windows.Forms.Label();
+            volume21_1Label = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
             this.SuspendLayout();
             // 
-            // annexedDocmentsLabel
+            // annexedDocments14Label
             // 
-            annexedDocmentsLabel.AutoSize = true;
-            annexedDocmentsLabel.Location = new System.Drawing.Point(611, 46);
-            annexedDocmentsLabel.Name = "annexedDocmentsLabel";
-            annexedDocmentsLabel.Size = new System.Drawing.Size(104, 13);
-            annexedDocmentsLabel.TabIndex = 0;
-            annexedDocmentsLabel.Text = "Annexed Docments:";
+            resources.ApplyResources(annexedDocments14Label, "annexedDocments14Label");
+            annexedDocments14Label.Name = "annexedDocments14Label";
             // 
-            // annexedDocmentsTextBox
+            // cachonDelivery29Label
             // 
-            this.annexedDocmentsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "AnnexedDocments", true));
-            this.annexedDocmentsTextBox.Location = new System.Drawing.Point(747, 43);
-            this.annexedDocmentsTextBox.Name = "annexedDocmentsTextBox";
-            this.annexedDocmentsTextBox.Size = new System.Drawing.Size(200, 20);
-            this.annexedDocmentsTextBox.TabIndex = 1;
+            resources.ApplyResources(cachonDelivery29Label, "cachonDelivery29Label");
+            cachonDelivery29Label.Name = "cachonDelivery29Label";
             // 
-            // carrierLabel
+            // carriageForward26Label
             // 
-            carrierLabel.AutoSize = true;
-            carrierLabel.Location = new System.Drawing.Point(611, 72);
-            carrierLabel.Name = "carrierLabel";
-            carrierLabel.Size = new System.Drawing.Size(44, 13);
-            carrierLabel.TabIndex = 2;
-            carrierLabel.Text = "Carrier:";
+            resources.ApplyResources(carriageForward26Label, "carriageForward26Label");
+            carriageForward26Label.Name = "carriageForward26Label";
             // 
-            // carrierTextBox
+            // carriageInstructions26Label
             // 
-            this.carrierTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Carrier", true));
-            this.carrierTextBox.Location = new System.Drawing.Point(747, 69);
-            this.carrierTextBox.Name = "carrierTextBox";
-            this.carrierTextBox.Size = new System.Drawing.Size(200, 20);
-            this.carrierTextBox.TabIndex = 3;
+            resources.ApplyResources(carriageInstructions26Label, "carriageInstructions26Label");
+            carriageInstructions26Label.Name = "carriageInstructions26Label";
             // 
-            // carrierAddressLabel
+            // carriagePaid26Label
             // 
-            carrierAddressLabel.AutoSize = true;
-            carrierAddressLabel.Location = new System.Drawing.Point(611, 98);
-            carrierAddressLabel.Name = "carrierAddressLabel";
-            carrierAddressLabel.Size = new System.Drawing.Size(86, 13);
-            carrierAddressLabel.TabIndex = 4;
-            carrierAddressLabel.Text = "Carrier Address:";
+            resources.ApplyResources(carriagePaid26Label, "carriagePaid26Label");
+            carriagePaid26Label.Name = "carriagePaid26Label";
             // 
-            // carrierAddressTextBox
+            // carrier6Label
             // 
-            this.carrierAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierAddress", true));
-            this.carrierAddressTextBox.Location = new System.Drawing.Point(747, 95);
-            this.carrierAddressTextBox.Name = "carrierAddressTextBox";
-            this.carrierAddressTextBox.Size = new System.Drawing.Size(200, 20);
-            this.carrierAddressTextBox.TabIndex = 5;
+            resources.ApplyResources(carrier6Label, "carrier6Label");
+            carrier6Label.Name = "carrier6Label";
             // 
-            // carrierPhoneLabel
+            // carrierAddress6Label
             // 
-            carrierPhoneLabel.AutoSize = true;
-            carrierPhoneLabel.Location = new System.Drawing.Point(611, 124);
-            carrierPhoneLabel.Name = "carrierPhoneLabel";
-            carrierPhoneLabel.Size = new System.Drawing.Size(77, 13);
-            carrierPhoneLabel.TabIndex = 6;
-            carrierPhoneLabel.Text = "Carrier Phone:";
+            resources.ApplyResources(carrierAddress6Label, "carrierAddress6Label");
+            carrierAddress6Label.Name = "carrierAddress6Label";
             // 
-            // carrierPhoneTextBox
+            // carrierPhone6Label
             // 
-            this.carrierPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierPhone", true));
-            this.carrierPhoneTextBox.Location = new System.Drawing.Point(747, 121);
-            this.carrierPhoneTextBox.Name = "carrierPhoneTextBox";
-            this.carrierPhoneTextBox.Size = new System.Drawing.Size(200, 20);
-            this.carrierPhoneTextBox.TabIndex = 7;
+            resources.ApplyResources(carrierPhone6Label, "carrierPhone6Label");
+            carrierPhone6Label.Name = "carrierPhone6Label";
             // 
-            // customsDeclarationNoLabel
+            // customsDeclarationNo13Label
             // 
-            customsDeclarationNoLabel.AutoSize = true;
-            customsDeclarationNoLabel.Location = new System.Drawing.Point(611, 150);
-            customsDeclarationNoLabel.Name = "customsDeclarationNoLabel";
-            customsDeclarationNoLabel.Size = new System.Drawing.Size(125, 13);
-            customsDeclarationNoLabel.TabIndex = 8;
-            customsDeclarationNoLabel.Text = "Customs Declaration No:";
+            resources.ApplyResources(customsDeclarationNo13Label, "customsDeclarationNo13Label");
+            customsDeclarationNo13Label.Name = "customsDeclarationNo13Label";
             // 
-            // customsDeclarationNoTextBox
+            // dangerousGoodsClass22Label
             // 
-            this.customsDeclarationNoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CustomsDeclarationNo", true));
-            this.customsDeclarationNoTextBox.Location = new System.Drawing.Point(747, 147);
-            this.customsDeclarationNoTextBox.Name = "customsDeclarationNoTextBox";
-            this.customsDeclarationNoTextBox.Size = new System.Drawing.Size(200, 20);
-            this.customsDeclarationNoTextBox.TabIndex = 9;
+            resources.ApplyResources(dangerousGoodsClass22Label, "dangerousGoodsClass22Label");
+            dangerousGoodsClass22Label.Name = "dangerousGoodsClass22Label";
             // 
-            // dateOfIssueLabel
+            // dangerousGoodsCode22Label
             // 
-            dateOfIssueLabel.AutoSize = true;
-            dateOfIssueLabel.Location = new System.Drawing.Point(611, 177);
-            dateOfIssueLabel.Name = "dateOfIssueLabel";
-            dateOfIssueLabel.Size = new System.Drawing.Size(78, 13);
-            dateOfIssueLabel.TabIndex = 10;
-            dateOfIssueLabel.Text = "Date Of Issue:";
+            resources.ApplyResources(dangerousGoodsCode22Label, "dangerousGoodsCode22Label");
+            dangerousGoodsCode22Label.Name = "dangerousGoodsCode22Label";
             // 
-            // dateOfIssueDateTimePicker
+            // dangerousGoodsInstructions22Label
             // 
-            this.dateOfIssueDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DateOfIssue", true));
-            this.dateOfIssueDateTimePicker.Location = new System.Drawing.Point(747, 173);
-            this.dateOfIssueDateTimePicker.Name = "dateOfIssueDateTimePicker";
-            this.dateOfIssueDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.dateOfIssueDateTimePicker.TabIndex = 11;
+            resources.ApplyResources(dangerousGoodsInstructions22Label, "dangerousGoodsInstructions22Label");
+            dangerousGoodsInstructions22Label.Name = "dangerousGoodsInstructions22Label";
             // 
-            // deliveryGoodsDateLabel
+            // dateOfIssue3Label
             // 
-            deliveryGoodsDateLabel.AutoSize = true;
-            deliveryGoodsDateLabel.Location = new System.Drawing.Point(611, 203);
-            deliveryGoodsDateLabel.Name = "deliveryGoodsDateLabel";
-            deliveryGoodsDateLabel.Size = new System.Drawing.Size(109, 13);
-            deliveryGoodsDateLabel.TabIndex = 12;
-            deliveryGoodsDateLabel.Text = "Delivery Goods Date:";
+            resources.ApplyResources(dateOfIssue3Label, "dateOfIssue3Label");
+            dateOfIssue3Label.Name = "dateOfIssue3Label";
             // 
-            // deliveryGoodsDateDateTimePicker
+            // deliveryGoodsDate9Label
             // 
-            this.deliveryGoodsDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DeliveryGoodsDate", true));
-            this.deliveryGoodsDateDateTimePicker.Location = new System.Drawing.Point(747, 199);
-            this.deliveryGoodsDateDateTimePicker.Name = "deliveryGoodsDateDateTimePicker";
-            this.deliveryGoodsDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.deliveryGoodsDateDateTimePicker.TabIndex = 13;
+            resources.ApplyResources(deliveryGoodsDate9Label, "deliveryGoodsDate9Label");
+            deliveryGoodsDate9Label.Name = "deliveryGoodsDate9Label";
             // 
-            // deliveryGoodsPlaceLabel
+            // deliveryGoodsPlace9Label
             // 
-            deliveryGoodsPlaceLabel.AutoSize = true;
-            deliveryGoodsPlaceLabel.Location = new System.Drawing.Point(611, 228);
-            deliveryGoodsPlaceLabel.Name = "deliveryGoodsPlaceLabel";
-            deliveryGoodsPlaceLabel.Size = new System.Drawing.Size(111, 13);
-            deliveryGoodsPlaceLabel.TabIndex = 14;
-            deliveryGoodsPlaceLabel.Text = "Delivery Goods Place:";
+            resources.ApplyResources(deliveryGoodsPlace9Label, "deliveryGoodsPlace9Label");
+            deliveryGoodsPlace9Label.Name = "deliveryGoodsPlace9Label";
             // 
-            // deliveryGoodsPlaceTextBox
+            // demurrageDischarge25Label
             // 
-            this.deliveryGoodsPlaceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeliveryGoodsPlace", true));
-            this.deliveryGoodsPlaceTextBox.Location = new System.Drawing.Point(747, 225);
-            this.deliveryGoodsPlaceTextBox.Name = "deliveryGoodsPlaceTextBox";
-            this.deliveryGoodsPlaceTextBox.Size = new System.Drawing.Size(200, 20);
-            this.deliveryGoodsPlaceTextBox.TabIndex = 15;
+            resources.ApplyResources(demurrageDischarge25Label, "demurrageDischarge25Label");
+            demurrageDischarge25Label.Name = "demurrageDischarge25Label";
             // 
-            // forwarderLabel
+            // demurrageLoading24Label
             // 
-            forwarderLabel.AutoSize = true;
-            forwarderLabel.Location = new System.Drawing.Point(611, 254);
-            forwarderLabel.Name = "forwarderLabel";
-            forwarderLabel.Size = new System.Drawing.Size(61, 13);
-            forwarderLabel.TabIndex = 16;
-            forwarderLabel.Text = "Forwarder:";
+            resources.ApplyResources(demurrageLoading24Label, "demurrageLoading24Label");
+            demurrageLoading24Label.Name = "demurrageLoading24Label";
             // 
-            // forwarderTextBox
+            // forwarder7Label
             // 
-            this.forwarderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Forwarder", true));
-            this.forwarderTextBox.Location = new System.Drawing.Point(747, 251);
-            this.forwarderTextBox.Name = "forwarderTextBox";
-            this.forwarderTextBox.Size = new System.Drawing.Size(200, 20);
-            this.forwarderTextBox.TabIndex = 17;
+            resources.ApplyResources(forwarder7Label, "forwarder7Label");
+            forwarder7Label.Name = "forwarder7Label";
             // 
-            // forwarderAddressLabel
+            // forwarderAddress7Label
             // 
-            forwarderAddressLabel.AutoSize = true;
-            forwarderAddressLabel.Location = new System.Drawing.Point(611, 280);
-            forwarderAddressLabel.Name = "forwarderAddressLabel";
-            forwarderAddressLabel.Size = new System.Drawing.Size(103, 13);
-            forwarderAddressLabel.TabIndex = 18;
-            forwarderAddressLabel.Text = "Forwarder Address:";
+            resources.ApplyResources(forwarderAddress7Label, "forwarderAddress7Label");
+            forwarderAddress7Label.Name = "forwarderAddress7Label";
             // 
-            // forwarderAddressTextBox
+            // forwarderObservation11Label
             // 
-            this.forwarderAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderAddress", true));
-            this.forwarderAddressTextBox.Location = new System.Drawing.Point(747, 277);
-            this.forwarderAddressTextBox.Name = "forwarderAddressTextBox";
-            this.forwarderAddressTextBox.Size = new System.Drawing.Size(200, 20);
-            this.forwarderAddressTextBox.TabIndex = 19;
+            resources.ApplyResources(forwarderObservation11Label, "forwarderObservation11Label");
+            forwarderObservation11Label.Name = "forwarderObservation11Label";
             // 
-            // forwarderObservationLabel
+            // forwarderPhone7Label
             // 
-            forwarderObservationLabel.AutoSize = true;
-            forwarderObservationLabel.Location = new System.Drawing.Point(611, 306);
-            forwarderObservationLabel.Name = "forwarderObservationLabel";
-            forwarderObservationLabel.Size = new System.Drawing.Size(123, 13);
-            forwarderObservationLabel.TabIndex = 20;
-            forwarderObservationLabel.Text = "Forwarder Observation:";
+            resources.ApplyResources(forwarderPhone7Label, "forwarderPhone7Label");
+            forwarderPhone7Label.Name = "forwarderPhone7Label";
             // 
-            // forwarderObservationTextBox
+            // grossWeight20_1Label
             // 
-            this.forwarderObservationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderObservation", true));
-            this.forwarderObservationTextBox.Location = new System.Drawing.Point(747, 303);
-            this.forwarderObservationTextBox.Name = "forwarderObservationTextBox";
-            this.forwarderObservationTextBox.Size = new System.Drawing.Size(200, 20);
-            this.forwarderObservationTextBox.TabIndex = 21;
-            // 
-            // forwarderPhoneLabel
-            // 
-            forwarderPhoneLabel.AutoSize = true;
-            forwarderPhoneLabel.Location = new System.Drawing.Point(611, 332);
-            forwarderPhoneLabel.Name = "forwarderPhoneLabel";
-            forwarderPhoneLabel.Size = new System.Drawing.Size(94, 13);
-            forwarderPhoneLabel.TabIndex = 22;
-            forwarderPhoneLabel.Text = "Forwarder Phone:";
-            // 
-            // forwarderPhoneTextBox
-            // 
-            this.forwarderPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderPhone", true));
-            this.forwarderPhoneTextBox.Location = new System.Drawing.Point(747, 329);
-            this.forwarderPhoneTextBox.Name = "forwarderPhoneTextBox";
-            this.forwarderPhoneTextBox.Size = new System.Drawing.Size(200, 20);
-            this.forwarderPhoneTextBox.TabIndex = 23;
+            resources.ApplyResources(grossWeight20_1Label, "grossWeight20_1Label");
+            grossWeight20_1Label.Name = "grossWeight20_1Label";
             // 
             // ladingIDLabel
             // 
-            ladingIDLabel.AutoSize = true;
-            ladingIDLabel.Location = new System.Drawing.Point(611, 358);
+            resources.ApplyResources(ladingIDLabel, "ladingIDLabel");
             ladingIDLabel.Name = "ladingIDLabel";
-            ladingIDLabel.Size = new System.Drawing.Size(56, 13);
-            ladingIDLabel.TabIndex = 24;
-            ladingIDLabel.Text = "Lading ID:";
             // 
-            // ladingIDTextBox
+            // marksNos15Label
             // 
-            this.ladingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingID", true));
-            this.ladingIDTextBox.Location = new System.Drawing.Point(747, 355);
-            this.ladingIDTextBox.Name = "ladingIDTextBox";
-            this.ladingIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.ladingIDTextBox.TabIndex = 25;
+            resources.ApplyResources(marksNos15Label, "marksNos15Label");
+            marksNos15Label.Name = "marksNos15Label";
             // 
-            // placeOfIssueLabel
+            // methodOfPacking17Label
             // 
-            placeOfIssueLabel.AutoSize = true;
-            placeOfIssueLabel.Location = new System.Drawing.Point(611, 384);
-            placeOfIssueLabel.Name = "placeOfIssueLabel";
-            placeOfIssueLabel.Size = new System.Drawing.Size(80, 13);
-            placeOfIssueLabel.TabIndex = 26;
-            placeOfIssueLabel.Text = "Place Of Issue:";
+            resources.ApplyResources(methodOfPacking17Label, "methodOfPacking17Label");
+            methodOfPacking17Label.Name = "methodOfPacking17Label";
             // 
-            // placeOfIssueTextBox
+            // natureOfGoods18Label
             // 
-            this.placeOfIssueTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "PlaceOfIssue", true));
-            this.placeOfIssueTextBox.Location = new System.Drawing.Point(747, 381);
-            this.placeOfIssueTextBox.Name = "placeOfIssueTextBox";
-            this.placeOfIssueTextBox.Size = new System.Drawing.Size(200, 20);
-            this.placeOfIssueTextBox.TabIndex = 27;
+            resources.ApplyResources(natureOfGoods18Label, "natureOfGoods18Label");
+            natureOfGoods18Label.Name = "natureOfGoods18Label";
             // 
-            // receiverLabel
+            // noOfPackages16Label
             // 
-            receiverLabel.AutoSize = true;
-            receiverLabel.Location = new System.Drawing.Point(611, 410);
-            receiverLabel.Name = "receiverLabel";
-            receiverLabel.Size = new System.Drawing.Size(53, 13);
-            receiverLabel.TabIndex = 28;
-            receiverLabel.Text = "Receiver:";
+            resources.ApplyResources(noOfPackages16Label, "noOfPackages16Label");
+            noOfPackages16Label.Name = "noOfPackages16Label";
             // 
-            // receiverTextBox
+            // placeOfIssue2Label
             // 
-            this.receiverTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Receiver", true));
-            this.receiverTextBox.Location = new System.Drawing.Point(747, 407);
-            this.receiverTextBox.Name = "receiverTextBox";
-            this.receiverTextBox.Size = new System.Drawing.Size(200, 20);
-            this.receiverTextBox.TabIndex = 29;
+            resources.ApplyResources(placeOfIssue2Label, "placeOfIssue2Label");
+            placeOfIssue2Label.Name = "placeOfIssue2Label";
             // 
-            // receiverAddressLabel
+            // receiver5Label
             // 
-            receiverAddressLabel.AutoSize = true;
-            receiverAddressLabel.Location = new System.Drawing.Point(611, 436);
-            receiverAddressLabel.Name = "receiverAddressLabel";
-            receiverAddressLabel.Size = new System.Drawing.Size(95, 13);
-            receiverAddressLabel.TabIndex = 30;
-            receiverAddressLabel.Text = "Receiver Address:";
+            resources.ApplyResources(receiver5Label, "receiver5Label");
+            receiver5Label.Name = "receiver5Label";
             // 
-            // receiverAddressTextBox
+            // receiverAddress5Label
             // 
-            this.receiverAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverAddress", true));
-            this.receiverAddressTextBox.Location = new System.Drawing.Point(747, 433);
-            this.receiverAddressTextBox.Name = "receiverAddressTextBox";
-            this.receiverAddressTextBox.Size = new System.Drawing.Size(200, 20);
-            this.receiverAddressTextBox.TabIndex = 31;
+            resources.ApplyResources(receiverAddress5Label, "receiverAddress5Label");
+            receiverAddress5Label.Name = "receiverAddress5Label";
             // 
-            // receiverPhoneLabel
+            // receiverPhone5Label
             // 
-            receiverPhoneLabel.AutoSize = true;
-            receiverPhoneLabel.Location = new System.Drawing.Point(611, 462);
-            receiverPhoneLabel.Name = "receiverPhoneLabel";
-            receiverPhoneLabel.Size = new System.Drawing.Size(86, 13);
-            receiverPhoneLabel.TabIndex = 32;
-            receiverPhoneLabel.Text = "Receiver Phone:";
+            resources.ApplyResources(receiverPhone5Label, "receiverPhone5Label");
+            receiverPhone5Label.Name = "receiverPhone5Label";
             // 
-            // receiverPhoneTextBox
+            // routeFinalDestination12Label
             // 
-            this.receiverPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverPhone", true));
-            this.receiverPhoneTextBox.Location = new System.Drawing.Point(747, 459);
-            this.receiverPhoneTextBox.Name = "receiverPhoneTextBox";
-            this.receiverPhoneTextBox.Size = new System.Drawing.Size(200, 20);
-            this.receiverPhoneTextBox.TabIndex = 33;
+            resources.ApplyResources(routeFinalDestination12Label, "routeFinalDestination12Label");
+            routeFinalDestination12Label.Name = "routeFinalDestination12Label";
             // 
-            // routeFinalDestinationLabel
+            // sender4Label
             // 
-            routeFinalDestinationLabel.AutoSize = true;
-            routeFinalDestinationLabel.Location = new System.Drawing.Point(611, 488);
-            routeFinalDestinationLabel.Name = "routeFinalDestinationLabel";
-            routeFinalDestinationLabel.Size = new System.Drawing.Size(122, 13);
-            routeFinalDestinationLabel.TabIndex = 34;
-            routeFinalDestinationLabel.Text = "Route Final Destination:";
+            resources.ApplyResources(sender4Label, "sender4Label");
+            sender4Label.Name = "sender4Label";
             // 
-            // routeFinalDestinationTextBox
+            // senderAddress4Label
             // 
-            this.routeFinalDestinationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "RouteFinalDestination", true));
-            this.routeFinalDestinationTextBox.Location = new System.Drawing.Point(747, 485);
-            this.routeFinalDestinationTextBox.Name = "routeFinalDestinationTextBox";
-            this.routeFinalDestinationTextBox.Size = new System.Drawing.Size(200, 20);
-            this.routeFinalDestinationTextBox.TabIndex = 35;
+            resources.ApplyResources(senderAddress4Label, "senderAddress4Label");
+            senderAddress4Label.Name = "senderAddress4Label";
             // 
-            // senderLabel
+            // senderPhone4Label
             // 
-            senderLabel.AutoSize = true;
-            senderLabel.Location = new System.Drawing.Point(611, 514);
-            senderLabel.Name = "senderLabel";
-            senderLabel.Size = new System.Drawing.Size(45, 13);
-            senderLabel.TabIndex = 36;
-            senderLabel.Text = "Sender:";
+            resources.ApplyResources(senderPhone4Label, "senderPhone4Label");
+            senderPhone4Label.Name = "senderPhone4Label";
             // 
-            // senderTextBox
+            // sendersInstructions23Label
             // 
-            this.senderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Sender", true));
-            this.senderTextBox.Location = new System.Drawing.Point(747, 511);
-            this.senderTextBox.Name = "senderTextBox";
-            this.senderTextBox.Size = new System.Drawing.Size(200, 20);
-            this.senderTextBox.TabIndex = 37;
+            resources.ApplyResources(sendersInstructions23Label, "sendersInstructions23Label");
+            sendersInstructions23Label.Name = "sendersInstructions23Label";
             // 
-            // senderAddressLabel
+            // specialAgreements28Label
             // 
-            senderAddressLabel.AutoSize = true;
-            senderAddressLabel.Location = new System.Drawing.Point(611, 540);
-            senderAddressLabel.Name = "senderAddressLabel";
-            senderAddressLabel.Size = new System.Drawing.Size(87, 13);
-            senderAddressLabel.TabIndex = 38;
-            senderAddressLabel.Text = "Sender Address:";
+            resources.ApplyResources(specialAgreements28Label, "specialAgreements28Label");
+            specialAgreements28Label.Name = "specialAgreements28Label";
             // 
-            // senderAddressTextBox
+            // takingOverGoodsDate8Label
             // 
-            this.senderAddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderAddress", true));
-            this.senderAddressTextBox.Location = new System.Drawing.Point(747, 537);
-            this.senderAddressTextBox.Name = "senderAddressTextBox";
-            this.senderAddressTextBox.Size = new System.Drawing.Size(200, 20);
-            this.senderAddressTextBox.TabIndex = 39;
+            resources.ApplyResources(takingOverGoodsDate8Label, "takingOverGoodsDate8Label");
+            takingOverGoodsDate8Label.Name = "takingOverGoodsDate8Label";
             // 
-            // senderPhoneLabel
+            // takingOverGoodsPlace8Label
             // 
-            senderPhoneLabel.AutoSize = true;
-            senderPhoneLabel.Location = new System.Drawing.Point(611, 566);
-            senderPhoneLabel.Name = "senderPhoneLabel";
-            senderPhoneLabel.Size = new System.Drawing.Size(78, 13);
-            senderPhoneLabel.TabIndex = 40;
-            senderPhoneLabel.Text = "Sender Phone:";
+            resources.ApplyResources(takingOverGoodsPlace8Label, "takingOverGoodsPlace8Label");
+            takingOverGoodsPlace8Label.Name = "takingOverGoodsPlace8Label";
             // 
-            // senderPhoneTextBox
+            // tariffCode19_1Label
             // 
-            this.senderPhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderPhone", true));
-            this.senderPhoneTextBox.Location = new System.Drawing.Point(747, 563);
-            this.senderPhoneTextBox.Name = "senderPhoneTextBox";
-            this.senderPhoneTextBox.Size = new System.Drawing.Size(200, 20);
-            this.senderPhoneTextBox.TabIndex = 41;
+            resources.ApplyResources(tariffCode19_1Label, "tariffCode19_1Label");
+            tariffCode19_1Label.Name = "tariffCode19_1Label";
             // 
-            // takingOverGoodsDateLabel
+            // vehicleClass10Label
             // 
-            takingOverGoodsDateLabel.AutoSize = true;
-            takingOverGoodsDateLabel.Location = new System.Drawing.Point(611, 593);
-            takingOverGoodsDateLabel.Name = "takingOverGoodsDateLabel";
-            takingOverGoodsDateLabel.Size = new System.Drawing.Size(128, 13);
-            takingOverGoodsDateLabel.TabIndex = 42;
-            takingOverGoodsDateLabel.Text = "Taking Over Goods Date:";
+            resources.ApplyResources(vehicleClass10Label, "vehicleClass10Label");
+            vehicleClass10Label.Name = "vehicleClass10Label";
             // 
-            // takingOverGoodsDateDateTimePicker
+            // vehicleDriver10Label
             // 
-            this.takingOverGoodsDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "TakingOverGoodsDate", true));
-            this.takingOverGoodsDateDateTimePicker.Location = new System.Drawing.Point(747, 589);
-            this.takingOverGoodsDateDateTimePicker.Name = "takingOverGoodsDateDateTimePicker";
-            this.takingOverGoodsDateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.takingOverGoodsDateDateTimePicker.TabIndex = 43;
+            resources.ApplyResources(vehicleDriver10Label, "vehicleDriver10Label");
+            vehicleDriver10Label.Name = "vehicleDriver10Label";
             // 
-            // takingOverGoodsPlaceLabel
+            // vehicleNumber10Label
             // 
-            takingOverGoodsPlaceLabel.AutoSize = true;
-            takingOverGoodsPlaceLabel.Location = new System.Drawing.Point(611, 618);
-            takingOverGoodsPlaceLabel.Name = "takingOverGoodsPlaceLabel";
-            takingOverGoodsPlaceLabel.Size = new System.Drawing.Size(130, 13);
-            takingOverGoodsPlaceLabel.TabIndex = 44;
-            takingOverGoodsPlaceLabel.Text = "Taking Over Goods Place:";
+            resources.ApplyResources(vehicleNumber10Label, "vehicleNumber10Label");
+            vehicleNumber10Label.Name = "vehicleNumber10Label";
             // 
-            // takingOverGoodsPlaceTextBox
+            // vehicleType10Label
             // 
-            this.takingOverGoodsPlaceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TakingOverGoodsPlace", true));
-            this.takingOverGoodsPlaceTextBox.Location = new System.Drawing.Point(747, 615);
-            this.takingOverGoodsPlaceTextBox.Name = "takingOverGoodsPlaceTextBox";
-            this.takingOverGoodsPlaceTextBox.Size = new System.Drawing.Size(200, 20);
-            this.takingOverGoodsPlaceTextBox.TabIndex = 45;
+            resources.ApplyResources(vehicleType10Label, "vehicleType10Label");
+            vehicleType10Label.Name = "vehicleType10Label";
             // 
-            // vehicleClassLabel
+            // volume21_1Label
             // 
-            vehicleClassLabel.AutoSize = true;
-            vehicleClassLabel.Location = new System.Drawing.Point(611, 644);
-            vehicleClassLabel.Name = "vehicleClassLabel";
-            vehicleClassLabel.Size = new System.Drawing.Size(72, 13);
-            vehicleClassLabel.TabIndex = 46;
-            vehicleClassLabel.Text = "Vehicle Class:";
-            // 
-            // vehicleClassTextBox
-            // 
-            this.vehicleClassTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleClass", true));
-            this.vehicleClassTextBox.Location = new System.Drawing.Point(747, 641);
-            this.vehicleClassTextBox.Name = "vehicleClassTextBox";
-            this.vehicleClassTextBox.Size = new System.Drawing.Size(200, 20);
-            this.vehicleClassTextBox.TabIndex = 47;
-            // 
-            // vehicleDriverLabel
-            // 
-            vehicleDriverLabel.AutoSize = true;
-            vehicleDriverLabel.Location = new System.Drawing.Point(611, 670);
-            vehicleDriverLabel.Name = "vehicleDriverLabel";
-            vehicleDriverLabel.Size = new System.Drawing.Size(76, 13);
-            vehicleDriverLabel.TabIndex = 48;
-            vehicleDriverLabel.Text = "Vehicle Driver:";
-            // 
-            // vehicleDriverTextBox
-            // 
-            this.vehicleDriverTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleDriver", true));
-            this.vehicleDriverTextBox.Location = new System.Drawing.Point(747, 667);
-            this.vehicleDriverTextBox.Name = "vehicleDriverTextBox";
-            this.vehicleDriverTextBox.Size = new System.Drawing.Size(200, 20);
-            this.vehicleDriverTextBox.TabIndex = 49;
-            // 
-            // vehicleNumberLabel
-            // 
-            vehicleNumberLabel.AutoSize = true;
-            vehicleNumberLabel.Location = new System.Drawing.Point(611, 696);
-            vehicleNumberLabel.Name = "vehicleNumberLabel";
-            vehicleNumberLabel.Size = new System.Drawing.Size(84, 13);
-            vehicleNumberLabel.TabIndex = 50;
-            vehicleNumberLabel.Text = "Vehicle Number:";
-            // 
-            // vehicleNumberTextBox
-            // 
-            this.vehicleNumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleNumber", true));
-            this.vehicleNumberTextBox.Location = new System.Drawing.Point(747, 693);
-            this.vehicleNumberTextBox.Name = "vehicleNumberTextBox";
-            this.vehicleNumberTextBox.Size = new System.Drawing.Size(200, 20);
-            this.vehicleNumberTextBox.TabIndex = 51;
-            // 
-            // vehicleTypeLabel
-            // 
-            vehicleTypeLabel.AutoSize = true;
-            vehicleTypeLabel.Location = new System.Drawing.Point(611, 722);
-            vehicleTypeLabel.Name = "vehicleTypeLabel";
-            vehicleTypeLabel.Size = new System.Drawing.Size(71, 13);
-            vehicleTypeLabel.TabIndex = 52;
-            vehicleTypeLabel.Text = "Vehicle Type:";
-            // 
-            // vehicleTypeTextBox
-            // 
-            this.vehicleTypeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleType", true));
-            this.vehicleTypeTextBox.Location = new System.Drawing.Point(747, 719);
-            this.vehicleTypeTextBox.Name = "vehicleTypeTextBox";
-            this.vehicleTypeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.vehicleTypeTextBox.TabIndex = 53;
+            resources.ApplyResources(volume21_1Label, "volume21_1Label");
+            volume21_1Label.Name = "volume21_1Label";
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(49, 69);
+            resources.ApplyResources(this.btnNew, "btnNew");
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(75, 23);
-            this.btnNew.TabIndex = 54;
-            this.btnNew.Text = "جديد";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(49, 93);
+            resources.ApplyResources(this.btnUpdate, "btnUpdate");
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 54;
-            this.btnUpdate.Text = "تعديل";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(49, 118);
+            resources.ApplyResources(this.btnDelete, "btnDelete");
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 54;
-            this.btnDelete.Text = "حذف";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(49, 145);
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 54;
-            this.btnSave.Text = "حفظ";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(49, 170);
+            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 54;
-            this.btnCancel.Text = "إلغاء الأمر";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(annexedDocments14Label);
+            this.panel1.Controls.Add(this.annexedDocments14TextBox);
+            this.panel1.Controls.Add(cachonDelivery29Label);
+            this.panel1.Controls.Add(this.cachonDelivery29TextBox);
+            this.panel1.Controls.Add(carriageForward26Label);
+            this.panel1.Controls.Add(this.carriageForward26TextBox);
+            this.panel1.Controls.Add(carriageInstructions26Label);
+            this.panel1.Controls.Add(this.carriageInstructions26TextBox);
+            this.panel1.Controls.Add(carriagePaid26Label);
+            this.panel1.Controls.Add(this.carriagePaid26TextBox);
+            this.panel1.Controls.Add(carrier6Label);
+            this.panel1.Controls.Add(this.carrier6TextBox);
+            this.panel1.Controls.Add(carrierAddress6Label);
+            this.panel1.Controls.Add(this.carrierAddress6TextBox);
+            this.panel1.Controls.Add(carrierPhone6Label);
+            this.panel1.Controls.Add(this.carrierPhone6TextBox);
+            this.panel1.Controls.Add(customsDeclarationNo13Label);
+            this.panel1.Controls.Add(this.customsDeclarationNo13TextBox);
+            this.panel1.Controls.Add(dangerousGoodsClass22Label);
+            this.panel1.Controls.Add(this.dangerousGoodsClass22TextBox);
+            this.panel1.Controls.Add(dangerousGoodsCode22Label);
+            this.panel1.Controls.Add(this.dangerousGoodsCode22TextBox);
+            this.panel1.Controls.Add(dangerousGoodsInstructions22Label);
+            this.panel1.Controls.Add(this.dangerousGoodsInstructions22TextBox);
+            this.panel1.Controls.Add(dateOfIssue3Label);
+            this.panel1.Controls.Add(this.dateOfIssue3DateTimePicker);
+            this.panel1.Controls.Add(deliveryGoodsDate9Label);
+            this.panel1.Controls.Add(this.deliveryGoodsDate9DateTimePicker);
+            this.panel1.Controls.Add(deliveryGoodsPlace9Label);
+            this.panel1.Controls.Add(this.deliveryGoodsPlace9TextBox);
+            this.panel1.Controls.Add(demurrageDischarge25Label);
+            this.panel1.Controls.Add(this.demurrageDischarge25TextBox);
+            this.panel1.Controls.Add(demurrageLoading24Label);
+            this.panel1.Controls.Add(this.demurrageLoading24TextBox);
+            this.panel1.Controls.Add(forwarder7Label);
+            this.panel1.Controls.Add(this.forwarder7TextBox);
+            this.panel1.Controls.Add(forwarderAddress7Label);
+            this.panel1.Controls.Add(this.forwarderAddress7TextBox);
+            this.panel1.Controls.Add(forwarderObservation11Label);
+            this.panel1.Controls.Add(this.forwarderObservation11TextBox);
+            this.panel1.Controls.Add(forwarderPhone7Label);
+            this.panel1.Controls.Add(this.forwarderPhone7TextBox);
+            this.panel1.Controls.Add(grossWeight20_1Label);
+            this.panel1.Controls.Add(this.grossWeight20_1TextBox);
+            this.panel1.Controls.Add(ladingIDLabel);
+            this.panel1.Controls.Add(this.ladingIDTextBox);
+            this.panel1.Controls.Add(marksNos15Label);
+            this.panel1.Controls.Add(this.marksNos15TextBox);
+            this.panel1.Controls.Add(methodOfPacking17Label);
+            this.panel1.Controls.Add(this.methodOfPacking17TextBox);
+            this.panel1.Controls.Add(natureOfGoods18Label);
+            this.panel1.Controls.Add(this.natureOfGoods18TextBox);
+            this.panel1.Controls.Add(noOfPackages16Label);
+            this.panel1.Controls.Add(this.noOfPackages16TextBox);
+            this.panel1.Controls.Add(placeOfIssue2Label);
+            this.panel1.Controls.Add(this.placeOfIssue2TextBox);
+            this.panel1.Controls.Add(receiver5Label);
+            this.panel1.Controls.Add(this.receiver5TextBox);
+            this.panel1.Controls.Add(receiverAddress5Label);
+            this.panel1.Controls.Add(this.receiverAddress5TextBox);
+            this.panel1.Controls.Add(receiverPhone5Label);
+            this.panel1.Controls.Add(this.receiverPhone5TextBox);
+            this.panel1.Controls.Add(routeFinalDestination12Label);
+            this.panel1.Controls.Add(this.routeFinalDestination12TextBox);
+            this.panel1.Controls.Add(sender4Label);
+            this.panel1.Controls.Add(this.sender4TextBox);
+            this.panel1.Controls.Add(senderAddress4Label);
+            this.panel1.Controls.Add(this.senderAddress4TextBox);
+            this.panel1.Controls.Add(senderPhone4Label);
+            this.panel1.Controls.Add(this.senderPhone4TextBox);
+            this.panel1.Controls.Add(sendersInstructions23Label);
+            this.panel1.Controls.Add(this.sendersInstructions23TextBox);
+            this.panel1.Controls.Add(specialAgreements28Label);
+            this.panel1.Controls.Add(this.specialAgreements28TextBox);
+            this.panel1.Controls.Add(takingOverGoodsDate8Label);
+            this.panel1.Controls.Add(this.takingOverGoodsDate8DateTimePicker);
+            this.panel1.Controls.Add(takingOverGoodsPlace8Label);
+            this.panel1.Controls.Add(this.takingOverGoodsPlace8TextBox);
+            this.panel1.Controls.Add(tariffCode19_1Label);
+            this.panel1.Controls.Add(this.tariffCode19_1TextBox);
+            this.panel1.Controls.Add(vehicleClass10Label);
+            this.panel1.Controls.Add(this.vehicleClass10TextBox);
+            this.panel1.Controls.Add(vehicleDriver10Label);
+            this.panel1.Controls.Add(this.vehicleDriver10TextBox);
+            this.panel1.Controls.Add(vehicleNumber10Label);
+            this.panel1.Controls.Add(this.vehicleNumber10TextBox);
+            this.panel1.Controls.Add(vehicleType10Label);
+            this.panel1.Controls.Add(this.vehicleType10TextBox);
+            this.panel1.Controls.Add(volume21_1Label);
+            this.panel1.Controls.Add(this.volume21_1TextBox);
+            this.panel1.Name = "panel1";
+            // 
+            // annexedDocments14TextBox
+            // 
+            resources.ApplyResources(this.annexedDocments14TextBox, "annexedDocments14TextBox");
+            this.annexedDocments14TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "AnnexedDocments14", true));
+            this.annexedDocments14TextBox.Name = "annexedDocments14TextBox";
+            // 
+            // cachonDelivery29TextBox
+            // 
+            resources.ApplyResources(this.cachonDelivery29TextBox, "cachonDelivery29TextBox");
+            this.cachonDelivery29TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CachonDelivery29", true));
+            this.cachonDelivery29TextBox.Name = "cachonDelivery29TextBox";
+            // 
+            // carriageForward26TextBox
+            // 
+            resources.ApplyResources(this.carriageForward26TextBox, "carriageForward26TextBox");
+            this.carriageForward26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageForward26", true));
+            this.carriageForward26TextBox.Name = "carriageForward26TextBox";
+            // 
+            // carriageInstructions26TextBox
+            // 
+            resources.ApplyResources(this.carriageInstructions26TextBox, "carriageInstructions26TextBox");
+            this.carriageInstructions26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageInstructions26", true));
+            this.carriageInstructions26TextBox.Name = "carriageInstructions26TextBox";
+            // 
+            // carriagePaid26TextBox
+            // 
+            resources.ApplyResources(this.carriagePaid26TextBox, "carriagePaid26TextBox");
+            this.carriagePaid26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriagePaid26", true));
+            this.carriagePaid26TextBox.Name = "carriagePaid26TextBox";
+            // 
+            // carrier6TextBox
+            // 
+            resources.ApplyResources(this.carrier6TextBox, "carrier6TextBox");
+            this.carrier6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Carrier6", true));
+            this.carrier6TextBox.Name = "carrier6TextBox";
+            // 
+            // carrierAddress6TextBox
+            // 
+            resources.ApplyResources(this.carrierAddress6TextBox, "carrierAddress6TextBox");
+            this.carrierAddress6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierAddress6", true));
+            this.carrierAddress6TextBox.Name = "carrierAddress6TextBox";
+            // 
+            // carrierPhone6TextBox
+            // 
+            resources.ApplyResources(this.carrierPhone6TextBox, "carrierPhone6TextBox");
+            this.carrierPhone6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierPhone6", true));
+            this.carrierPhone6TextBox.Name = "carrierPhone6TextBox";
+            // 
+            // customsDeclarationNo13TextBox
+            // 
+            resources.ApplyResources(this.customsDeclarationNo13TextBox, "customsDeclarationNo13TextBox");
+            this.customsDeclarationNo13TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CustomsDeclarationNo13", true));
+            this.customsDeclarationNo13TextBox.Name = "customsDeclarationNo13TextBox";
+            // 
+            // dangerousGoodsClass22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsClass22TextBox, "dangerousGoodsClass22TextBox");
+            this.dangerousGoodsClass22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsClass22", true));
+            this.dangerousGoodsClass22TextBox.Name = "dangerousGoodsClass22TextBox";
+            // 
+            // dangerousGoodsCode22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsCode22TextBox, "dangerousGoodsCode22TextBox");
+            this.dangerousGoodsCode22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsCode22", true));
+            this.dangerousGoodsCode22TextBox.Name = "dangerousGoodsCode22TextBox";
+            // 
+            // dangerousGoodsInstructions22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsInstructions22TextBox, "dangerousGoodsInstructions22TextBox");
+            this.dangerousGoodsInstructions22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsInstructions22", true));
+            this.dangerousGoodsInstructions22TextBox.Name = "dangerousGoodsInstructions22TextBox";
+            // 
+            // dateOfIssue3DateTimePicker
+            // 
+            resources.ApplyResources(this.dateOfIssue3DateTimePicker, "dateOfIssue3DateTimePicker");
+            this.dateOfIssue3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DateOfIssue3", true));
+            this.dateOfIssue3DateTimePicker.Name = "dateOfIssue3DateTimePicker";
+            // 
+            // deliveryGoodsDate9DateTimePicker
+            // 
+            resources.ApplyResources(this.deliveryGoodsDate9DateTimePicker, "deliveryGoodsDate9DateTimePicker");
+            this.deliveryGoodsDate9DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DeliveryGoodsDate9", true));
+            this.deliveryGoodsDate9DateTimePicker.Name = "deliveryGoodsDate9DateTimePicker";
+            // 
+            // deliveryGoodsPlace9TextBox
+            // 
+            resources.ApplyResources(this.deliveryGoodsPlace9TextBox, "deliveryGoodsPlace9TextBox");
+            this.deliveryGoodsPlace9TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeliveryGoodsPlace9", true));
+            this.deliveryGoodsPlace9TextBox.Name = "deliveryGoodsPlace9TextBox";
+            // 
+            // demurrageDischarge25TextBox
+            // 
+            resources.ApplyResources(this.demurrageDischarge25TextBox, "demurrageDischarge25TextBox");
+            this.demurrageDischarge25TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageDischarge25", true));
+            this.demurrageDischarge25TextBox.Name = "demurrageDischarge25TextBox";
+            // 
+            // demurrageLoading24TextBox
+            // 
+            resources.ApplyResources(this.demurrageLoading24TextBox, "demurrageLoading24TextBox");
+            this.demurrageLoading24TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageLoading24", true));
+            this.demurrageLoading24TextBox.Name = "demurrageLoading24TextBox";
+            // 
+            // forwarder7TextBox
+            // 
+            resources.ApplyResources(this.forwarder7TextBox, "forwarder7TextBox");
+            this.forwarder7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Forwarder7", true));
+            this.forwarder7TextBox.Name = "forwarder7TextBox";
+            // 
+            // forwarderAddress7TextBox
+            // 
+            resources.ApplyResources(this.forwarderAddress7TextBox, "forwarderAddress7TextBox");
+            this.forwarderAddress7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderAddress7", true));
+            this.forwarderAddress7TextBox.Name = "forwarderAddress7TextBox";
+            // 
+            // forwarderObservation11TextBox
+            // 
+            resources.ApplyResources(this.forwarderObservation11TextBox, "forwarderObservation11TextBox");
+            this.forwarderObservation11TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderObservation11", true));
+            this.forwarderObservation11TextBox.Name = "forwarderObservation11TextBox";
+            // 
+            // forwarderPhone7TextBox
+            // 
+            resources.ApplyResources(this.forwarderPhone7TextBox, "forwarderPhone7TextBox");
+            this.forwarderPhone7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderPhone7", true));
+            this.forwarderPhone7TextBox.Name = "forwarderPhone7TextBox";
+            // 
+            // grossWeight20_1TextBox
+            // 
+            resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
+            this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_1", true));
+            this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
+            // 
+            // ladingIDTextBox
+            // 
+            resources.ApplyResources(this.ladingIDTextBox, "ladingIDTextBox");
+            this.ladingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingID", true));
+            this.ladingIDTextBox.Name = "ladingIDTextBox";
+            // 
+            // marksNos15TextBox
+            // 
+            resources.ApplyResources(this.marksNos15TextBox, "marksNos15TextBox");
+            this.marksNos15TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "MarksNos15", true));
+            this.marksNos15TextBox.Name = "marksNos15TextBox";
+            // 
+            // methodOfPacking17TextBox
+            // 
+            resources.ApplyResources(this.methodOfPacking17TextBox, "methodOfPacking17TextBox");
+            this.methodOfPacking17TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "MethodOfPacking17", true));
+            this.methodOfPacking17TextBox.Name = "methodOfPacking17TextBox";
+            // 
+            // natureOfGoods18TextBox
+            // 
+            resources.ApplyResources(this.natureOfGoods18TextBox, "natureOfGoods18TextBox");
+            this.natureOfGoods18TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NatureOfGoods18", true));
+            this.natureOfGoods18TextBox.Name = "natureOfGoods18TextBox";
+            // 
+            // noOfPackages16TextBox
+            // 
+            resources.ApplyResources(this.noOfPackages16TextBox, "noOfPackages16TextBox");
+            this.noOfPackages16TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoOfPackages16", true));
+            this.noOfPackages16TextBox.Name = "noOfPackages16TextBox";
+            // 
+            // placeOfIssue2TextBox
+            // 
+            resources.ApplyResources(this.placeOfIssue2TextBox, "placeOfIssue2TextBox");
+            this.placeOfIssue2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "PlaceOfIssue2", true));
+            this.placeOfIssue2TextBox.Name = "placeOfIssue2TextBox";
+            // 
+            // receiver5TextBox
+            // 
+            resources.ApplyResources(this.receiver5TextBox, "receiver5TextBox");
+            this.receiver5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Receiver5", true));
+            this.receiver5TextBox.Name = "receiver5TextBox";
+            // 
+            // receiverAddress5TextBox
+            // 
+            resources.ApplyResources(this.receiverAddress5TextBox, "receiverAddress5TextBox");
+            this.receiverAddress5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverAddress5", true));
+            this.receiverAddress5TextBox.Name = "receiverAddress5TextBox";
+            // 
+            // receiverPhone5TextBox
+            // 
+            resources.ApplyResources(this.receiverPhone5TextBox, "receiverPhone5TextBox");
+            this.receiverPhone5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverPhone5", true));
+            this.receiverPhone5TextBox.Name = "receiverPhone5TextBox";
+            // 
+            // routeFinalDestination12TextBox
+            // 
+            resources.ApplyResources(this.routeFinalDestination12TextBox, "routeFinalDestination12TextBox");
+            this.routeFinalDestination12TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "RouteFinalDestination12", true));
+            this.routeFinalDestination12TextBox.Name = "routeFinalDestination12TextBox";
+            // 
+            // sender4TextBox
+            // 
+            resources.ApplyResources(this.sender4TextBox, "sender4TextBox");
+            this.sender4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Sender4", true));
+            this.sender4TextBox.Name = "sender4TextBox";
+            // 
+            // senderAddress4TextBox
+            // 
+            resources.ApplyResources(this.senderAddress4TextBox, "senderAddress4TextBox");
+            this.senderAddress4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderAddress4", true));
+            this.senderAddress4TextBox.Name = "senderAddress4TextBox";
+            // 
+            // senderPhone4TextBox
+            // 
+            resources.ApplyResources(this.senderPhone4TextBox, "senderPhone4TextBox");
+            this.senderPhone4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderPhone4", true));
+            this.senderPhone4TextBox.Name = "senderPhone4TextBox";
+            // 
+            // sendersInstructions23TextBox
+            // 
+            resources.ApplyResources(this.sendersInstructions23TextBox, "sendersInstructions23TextBox");
+            this.sendersInstructions23TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SendersInstructions23", true));
+            this.sendersInstructions23TextBox.Name = "sendersInstructions23TextBox";
+            // 
+            // specialAgreements28TextBox
+            // 
+            resources.ApplyResources(this.specialAgreements28TextBox, "specialAgreements28TextBox");
+            this.specialAgreements28TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SpecialAgreements28", true));
+            this.specialAgreements28TextBox.Name = "specialAgreements28TextBox";
+            // 
+            // takingOverGoodsDate8DateTimePicker
+            // 
+            resources.ApplyResources(this.takingOverGoodsDate8DateTimePicker, "takingOverGoodsDate8DateTimePicker");
+            this.takingOverGoodsDate8DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "TakingOverGoodsDate8", true));
+            this.takingOverGoodsDate8DateTimePicker.Name = "takingOverGoodsDate8DateTimePicker";
+            // 
+            // takingOverGoodsPlace8TextBox
+            // 
+            resources.ApplyResources(this.takingOverGoodsPlace8TextBox, "takingOverGoodsPlace8TextBox");
+            this.takingOverGoodsPlace8TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TakingOverGoodsPlace8", true));
+            this.takingOverGoodsPlace8TextBox.Name = "takingOverGoodsPlace8TextBox";
+            // 
+            // tariffCode19_1TextBox
+            // 
+            resources.ApplyResources(this.tariffCode19_1TextBox, "tariffCode19_1TextBox");
+            this.tariffCode19_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_1", true));
+            this.tariffCode19_1TextBox.Name = "tariffCode19_1TextBox";
+            // 
+            // vehicleClass10TextBox
+            // 
+            resources.ApplyResources(this.vehicleClass10TextBox, "vehicleClass10TextBox");
+            this.vehicleClass10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleClass10", true));
+            this.vehicleClass10TextBox.Name = "vehicleClass10TextBox";
+            // 
+            // vehicleDriver10TextBox
+            // 
+            resources.ApplyResources(this.vehicleDriver10TextBox, "vehicleDriver10TextBox");
+            this.vehicleDriver10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleDriver10", true));
+            this.vehicleDriver10TextBox.Name = "vehicleDriver10TextBox";
+            // 
+            // vehicleNumber10TextBox
+            // 
+            resources.ApplyResources(this.vehicleNumber10TextBox, "vehicleNumber10TextBox");
+            this.vehicleNumber10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleNumber10", true));
+            this.vehicleNumber10TextBox.Name = "vehicleNumber10TextBox";
+            // 
+            // vehicleType10TextBox
+            // 
+            resources.ApplyResources(this.vehicleType10TextBox, "vehicleType10TextBox");
+            this.vehicleType10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleType10", true));
+            this.vehicleType10TextBox.Name = "vehicleType10TextBox";
+            // 
+            // volume21_1TextBox
+            // 
+            resources.ApplyResources(this.volume21_1TextBox, "volume21_1TextBox");
+            this.volume21_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_1", true));
+            this.volume21_1TextBox.Name = "volume21_1TextBox";
+            // 
+            // btnReport
+            // 
+            resources.ApplyResources(this.btnReport, "btnReport");
+            this.btnReport.Name = "btnReport";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // binSrcLading
             // 
@@ -634,112 +815,80 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 759);
+            this.Controls.Add(this.btnReport);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnNew);
-            this.Controls.Add(annexedDocmentsLabel);
-            this.Controls.Add(this.annexedDocmentsTextBox);
-            this.Controls.Add(carrierLabel);
-            this.Controls.Add(this.carrierTextBox);
-            this.Controls.Add(carrierAddressLabel);
-            this.Controls.Add(this.carrierAddressTextBox);
-            this.Controls.Add(carrierPhoneLabel);
-            this.Controls.Add(this.carrierPhoneTextBox);
-            this.Controls.Add(customsDeclarationNoLabel);
-            this.Controls.Add(this.customsDeclarationNoTextBox);
-            this.Controls.Add(dateOfIssueLabel);
-            this.Controls.Add(this.dateOfIssueDateTimePicker);
-            this.Controls.Add(deliveryGoodsDateLabel);
-            this.Controls.Add(this.deliveryGoodsDateDateTimePicker);
-            this.Controls.Add(deliveryGoodsPlaceLabel);
-            this.Controls.Add(this.deliveryGoodsPlaceTextBox);
-            this.Controls.Add(forwarderLabel);
-            this.Controls.Add(this.forwarderTextBox);
-            this.Controls.Add(forwarderAddressLabel);
-            this.Controls.Add(this.forwarderAddressTextBox);
-            this.Controls.Add(forwarderObservationLabel);
-            this.Controls.Add(this.forwarderObservationTextBox);
-            this.Controls.Add(forwarderPhoneLabel);
-            this.Controls.Add(this.forwarderPhoneTextBox);
-            this.Controls.Add(ladingIDLabel);
-            this.Controls.Add(this.ladingIDTextBox);
-            this.Controls.Add(placeOfIssueLabel);
-            this.Controls.Add(this.placeOfIssueTextBox);
-            this.Controls.Add(receiverLabel);
-            this.Controls.Add(this.receiverTextBox);
-            this.Controls.Add(receiverAddressLabel);
-            this.Controls.Add(this.receiverAddressTextBox);
-            this.Controls.Add(receiverPhoneLabel);
-            this.Controls.Add(this.receiverPhoneTextBox);
-            this.Controls.Add(routeFinalDestinationLabel);
-            this.Controls.Add(this.routeFinalDestinationTextBox);
-            this.Controls.Add(senderLabel);
-            this.Controls.Add(this.senderTextBox);
-            this.Controls.Add(senderAddressLabel);
-            this.Controls.Add(this.senderAddressTextBox);
-            this.Controls.Add(senderPhoneLabel);
-            this.Controls.Add(this.senderPhoneTextBox);
-            this.Controls.Add(takingOverGoodsDateLabel);
-            this.Controls.Add(this.takingOverGoodsDateDateTimePicker);
-            this.Controls.Add(takingOverGoodsPlaceLabel);
-            this.Controls.Add(this.takingOverGoodsPlaceTextBox);
-            this.Controls.Add(vehicleClassLabel);
-            this.Controls.Add(this.vehicleClassTextBox);
-            this.Controls.Add(vehicleDriverLabel);
-            this.Controls.Add(this.vehicleDriverTextBox);
-            this.Controls.Add(vehicleNumberLabel);
-            this.Controls.Add(this.vehicleNumberTextBox);
-            this.Controls.Add(vehicleTypeLabel);
-            this.Controls.Add(this.vehicleTypeTextBox);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
-            this.Text = "بوليصة شحن";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.BindingSource binSrcLading;
-        private System.Windows.Forms.TextBox annexedDocmentsTextBox;
-        private System.Windows.Forms.TextBox carrierTextBox;
-        private System.Windows.Forms.TextBox carrierAddressTextBox;
-        private System.Windows.Forms.TextBox carrierPhoneTextBox;
-        private System.Windows.Forms.TextBox customsDeclarationNoTextBox;
-        private System.Windows.Forms.DateTimePicker dateOfIssueDateTimePicker;
-        private System.Windows.Forms.DateTimePicker deliveryGoodsDateDateTimePicker;
-        private System.Windows.Forms.TextBox deliveryGoodsPlaceTextBox;
-        private System.Windows.Forms.TextBox forwarderTextBox;
-        private System.Windows.Forms.TextBox forwarderAddressTextBox;
-        private System.Windows.Forms.TextBox forwarderObservationTextBox;
-        private System.Windows.Forms.TextBox forwarderPhoneTextBox;
-        private System.Windows.Forms.TextBox ladingIDTextBox;
-        private System.Windows.Forms.TextBox placeOfIssueTextBox;
-        private System.Windows.Forms.TextBox receiverTextBox;
-        private System.Windows.Forms.TextBox receiverAddressTextBox;
-        private System.Windows.Forms.TextBox receiverPhoneTextBox;
-        private System.Windows.Forms.TextBox routeFinalDestinationTextBox;
-        private System.Windows.Forms.TextBox senderTextBox;
-        private System.Windows.Forms.TextBox senderAddressTextBox;
-        private System.Windows.Forms.TextBox senderPhoneTextBox;
-        private System.Windows.Forms.DateTimePicker takingOverGoodsDateDateTimePicker;
-        private System.Windows.Forms.TextBox takingOverGoodsPlaceTextBox;
-        private System.Windows.Forms.TextBox vehicleClassTextBox;
-        private System.Windows.Forms.TextBox vehicleDriverTextBox;
-        private System.Windows.Forms.TextBox vehicleNumberTextBox;
-        private System.Windows.Forms.TextBox vehicleTypeTextBox;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox annexedDocments14TextBox;
+        private System.Windows.Forms.TextBox cachonDelivery29TextBox;
+        private System.Windows.Forms.TextBox carriageForward26TextBox;
+        private System.Windows.Forms.TextBox carriageInstructions26TextBox;
+        private System.Windows.Forms.TextBox carriagePaid26TextBox;
+        private System.Windows.Forms.TextBox carrier6TextBox;
+        private System.Windows.Forms.TextBox carrierAddress6TextBox;
+        private System.Windows.Forms.TextBox carrierPhone6TextBox;
+        private System.Windows.Forms.TextBox customsDeclarationNo13TextBox;
+        private System.Windows.Forms.TextBox dangerousGoodsClass22TextBox;
+        private System.Windows.Forms.TextBox dangerousGoodsCode22TextBox;
+        private System.Windows.Forms.TextBox dangerousGoodsInstructions22TextBox;
+        private System.Windows.Forms.DateTimePicker dateOfIssue3DateTimePicker;
+        private System.Windows.Forms.DateTimePicker deliveryGoodsDate9DateTimePicker;
+        private System.Windows.Forms.TextBox deliveryGoodsPlace9TextBox;
+        private System.Windows.Forms.TextBox demurrageDischarge25TextBox;
+        private System.Windows.Forms.TextBox demurrageLoading24TextBox;
+        private System.Windows.Forms.TextBox forwarder7TextBox;
+        private System.Windows.Forms.TextBox forwarderAddress7TextBox;
+        private System.Windows.Forms.TextBox forwarderObservation11TextBox;
+        private System.Windows.Forms.TextBox forwarderPhone7TextBox;
+        private System.Windows.Forms.TextBox grossWeight20_1TextBox;
+        private System.Windows.Forms.TextBox ladingIDTextBox;
+        private System.Windows.Forms.TextBox marksNos15TextBox;
+        private System.Windows.Forms.TextBox methodOfPacking17TextBox;
+        private System.Windows.Forms.TextBox natureOfGoods18TextBox;
+        private System.Windows.Forms.TextBox noOfPackages16TextBox;
+        private System.Windows.Forms.TextBox placeOfIssue2TextBox;
+        private System.Windows.Forms.TextBox receiver5TextBox;
+        private System.Windows.Forms.TextBox receiverAddress5TextBox;
+        private System.Windows.Forms.TextBox receiverPhone5TextBox;
+        private System.Windows.Forms.TextBox routeFinalDestination12TextBox;
+        private System.Windows.Forms.TextBox sender4TextBox;
+        private System.Windows.Forms.TextBox senderAddress4TextBox;
+        private System.Windows.Forms.TextBox senderPhone4TextBox;
+        private System.Windows.Forms.TextBox sendersInstructions23TextBox;
+        private System.Windows.Forms.TextBox specialAgreements28TextBox;
+        private System.Windows.Forms.DateTimePicker takingOverGoodsDate8DateTimePicker;
+        private System.Windows.Forms.TextBox takingOverGoodsPlace8TextBox;
+        private System.Windows.Forms.TextBox tariffCode19_1TextBox;
+        private System.Windows.Forms.TextBox vehicleClass10TextBox;
+        private System.Windows.Forms.TextBox vehicleDriver10TextBox;
+        private System.Windows.Forms.TextBox vehicleNumber10TextBox;
+        private System.Windows.Forms.TextBox vehicleType10TextBox;
+        private System.Windows.Forms.TextBox volume21_1TextBox;
+        private System.Windows.Forms.Button btnReport;
     }
 }
 

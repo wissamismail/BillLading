@@ -24,6 +24,7 @@ namespace BillLading
         {
             using (DBModelLadings db = new DBModelLadings())
             {
+                panel1.Enabled = false;
                 binSrcLading.DataSource = db.Ladings.ToList();
             }
             
@@ -33,16 +34,22 @@ namespace BillLading
         {
             binSrcLading.Add(new Lading());
             binSrcLading.MoveLast();
+            panel1.Enabled = true;
+            ladingIDTextBox.Focus();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            panel1.Enabled = true;
+            ladingIDTextBox.Focus();
             Lading obj = binSrcLading.Current as Lading;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            panel1.Enabled = false;
             binSrcLading.ResetBindings(false);
+            Form1_Load(sender, e);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -60,27 +67,41 @@ namespace BillLading
                     db.SaveChanges();
                     MetroFramework.MetroMessageBox.Show(this, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     binSrcLading.RemoveCurrent();
+                    panel1.Enabled = false;
                 }
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            using (DBModelLadings db = new DBModelLadings())
+            try
             {
-                Lading obj = binSrcLading.Current as Lading;
-                if (obj != null)
+                using (DBModelLadings db = new DBModelLadings())
                 {
-                    if (db.Entry<Lading>(obj).State == EntityState.Deleted)
-                        db.Set<Lading>().Attach(obj);
-                    if (obj.LadingID == 0)
-                        db.Entry<Lading>(obj).State= EntityState.Added;
-                    else
-                        db.Entry<Lading>(obj).State = EntityState.Modified;
-                    db.SaveChanges();
-                    MetroFramework.MetroMessageBox.Show(this, "OK", "Item Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Lading obj = binSrcLading.Current as Lading;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Lading>(obj).State == EntityState.Deleted)
+                            db.Set<Lading>().Attach(obj);
+                        if (obj.LadingID == 0)
+                            db.Entry<Lading>(obj).State = EntityState.Added;
+                        else
+                            db.Entry<Lading>(obj).State = EntityState.Modified;
+                        db.SaveChanges();
+                        MetroFramework.MetroMessageBox.Show(this, "OK", "Item Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
+            catch(Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "OK", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            FormReport myReportForm = new FormReport() ;
+            myReportForm.Show();
         }
     }
 }
