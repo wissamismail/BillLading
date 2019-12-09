@@ -24,8 +24,9 @@ namespace BillLading
         {
             using (DBModelLadings db = new DBModelLadings())
             {
-                panel1.Enabled = false;
+                TabPage1.Enabled = false;
                 binSrcLading.DataSource = db.Ladings.ToList();
+                bindingNavigator1.BindingSource = binSrcLading;
             }
             
         }
@@ -34,20 +35,20 @@ namespace BillLading
         {
             binSrcLading.Add(new Lading());
             binSrcLading.MoveLast();
-            panel1.Enabled = true;
+            TabPage1.Enabled = true;
             ladingIDTextBox.Focus();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            panel1.Enabled = true;
+            TabPage1.Enabled = true;
             ladingIDTextBox.Focus();
             Lading obj = binSrcLading.Current as Lading;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            panel1.Enabled = false;
+            TabPage1.Enabled = false;
             binSrcLading.ResetBindings(false);
             Form1_Load(sender, e);
         }
@@ -67,7 +68,7 @@ namespace BillLading
                     db.SaveChanges();
                     MetroFramework.MetroMessageBox.Show(this, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     binSrcLading.RemoveCurrent();
-                    panel1.Enabled = false;
+                    TabPage1.Enabled = false;
                 }
             }
         }
@@ -102,6 +103,22 @@ namespace BillLading
         {
             FormReport myReportForm = new FormReport() ;
             myReportForm.Show();
+        }
+
+        private void TextBoxFind_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                int postition = binSrcLading.Find("LadingID", TextBoxFind.Text);
+                if (postition != -1)
+                {
+                    binSrcLading.Position = postition;
+                }
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, ex.Message, ex.StackTrace, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
