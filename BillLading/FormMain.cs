@@ -27,40 +27,27 @@ namespace BillLading
                 TabPage1.Enabled = false;
                 binSrcLading.DataSource = db.Ladings.ToList();
                 bindingNavigator1.BindingSource = binSrcLading;
-            }
-            
+            } 
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
-            binSrcLading.Add(new Lading());
+            Lading db = new Lading();         
+            binSrcLading.Add(db);
             binSrcLading.MoveLast();
             TabPage1.Enabled = true;
-            ladingIDTextBox.Focus();
+            ladingIDTextBox.Focus();          
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
-            TabPage1.Enabled = true;
-            ladingIDTextBox.Focus();
-            Lading obj = binSrcLading.Current as Lading;
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            TabPage1.Enabled = false;
-            binSrcLading.ResetBindings(false);
-            Form1_Load(sender, e);
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (MetroFramework.MetroMessageBox.Show(this, "Delete Item", "Delete Current Item,Are You Sure?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+            if (MetroFramework.MetroMessageBox.Show(this, "Delete Current Item,Are You Sure?", "Delete Item", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
             { return; }
+
             using (DBModelLadings db = new DBModelLadings())
             {
                 Lading obj = binSrcLading.Current as Lading;
-                if(obj != null)
+                if (obj != null)
                 {
                     if (db.Entry<Lading>(obj).State == EntityState.Deleted)
                         db.Set<Lading>().Attach(obj);
@@ -73,7 +60,14 @@ namespace BillLading
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void bindingNavigatorEditItem_Click(object sender, EventArgs e)
+        {
+            TabPage1.Enabled = true;
+            ladingIDTextBox.Focus();
+            Lading obj = binSrcLading.Current as Lading;
+        }
+
+        private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             try
             {
@@ -93,23 +87,30 @@ namespace BillLading
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MetroFramework.MetroMessageBox.Show(this, "OK", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,  ex.StackTrace, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
+        private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
         {
-            FormReport myReportForm = new FormReport() ;
+            TabPage1.Enabled = false;
+            binSrcLading.ResetBindings(false);
+            Form1_Load(sender, e);
+        }
+
+        private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
+        {
+            FormReport myReportForm = new FormReport();
             myReportForm.Show();
         }
 
-        private void TextBoxFind_KeyDown(object sender, KeyEventArgs e)
+        private void bindingNavigatorFindIDItem_KeyDown(object sender, KeyEventArgs e)
         {
-            try
+        try
             {
-                int postition = binSrcLading.Find("LadingID", TextBoxFind.Text);
+                int postition = binSrcLading.Find("LadingID", bindingNavigatorFindIDItem.Text);
                 if (postition != -1)
                 {
                     binSrcLading.Position = postition;
@@ -120,5 +121,12 @@ namespace BillLading
                 MetroFramework.MetroMessageBox.Show(this, ex.Message, ex.StackTrace, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void bindingNavigatorTableItem_Click(object sender, EventArgs e)
+        {
+            FormTable myFormTable = new FormTable();
+            myFormTable.Show();
+        }
+
     }
 }

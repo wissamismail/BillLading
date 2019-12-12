@@ -89,6 +89,12 @@
     <Compile Include="FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTable.Designer.cs">
+      <DependentUpon>FormTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lading.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTable.resx">
+      <DependentUpon>FormTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LadingReport.rdlc" />
     <EmbeddedResource Include="Migrations\201911202017068_Lading.resx">
@@ -154,6 +163,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\First record.png" />
+    <None Include="Resources\Go back.png" />
+    <None Include="Resources\Go forward.png" />
+    <None Include="Resources\Last recor.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\Erase.png" />
+    <None Include="Resources\Modify.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\View.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Abort.png" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\iconfinder_Print_16x16_229118.png" />
+    <None Include="Resources\Table.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

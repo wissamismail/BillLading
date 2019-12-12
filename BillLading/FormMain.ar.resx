@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="annexedDocments14Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="annexedDocments14Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 482</value>
@@ -131,32 +127,17 @@
   <data name="annexedDocments14Label.Text" xml:space="preserve">
     <value>الوثائق المرفقة</value>
   </data>
-  <data name="cachonDelivery29Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="cachonDelivery29Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 24</value>
-  </data>
-  <data name="carriageForward26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="carriageForward26Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 50</value>
   </data>
-  <data name="carriageInstructions26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="carriageInstructions26Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 76</value>
   </data>
-  <data name="carriagePaid26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="carriagePaid26Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 102</value>
-  </data>
-  <data name="carrier6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="carrier6Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>270, 22</value>
@@ -167,9 +148,6 @@
   <data name="carrier6Label.Text" xml:space="preserve">
     <value>الناقل</value>
   </data>
-  <data name="carrierAddress6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="carrierAddress6Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 49</value>
   </data>
@@ -178,9 +156,6 @@
   </data>
   <data name="carrierAddress6Label.Text" xml:space="preserve">
     <value>العنوان</value>
-  </data>
-  <data name="carrierPhone6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="carrierPhone6Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>268, 75</value>
@@ -191,9 +166,6 @@
   <data name="carrierPhone6Label.Text" xml:space="preserve">
     <value>الهاتف</value>
   </data>
-  <data name="customsDeclarationNo13Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="customsDeclarationNo13Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>286, 459</value>
   </data>
@@ -203,26 +175,14 @@
   <data name="customsDeclarationNo13Label.Text" xml:space="preserve">
     <value>رقم البيان الجمركي</value>
   </data>
-  <data name="dangerousGoodsClass22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="dangerousGoodsClass22Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 143</value>
-  </data>
-  <data name="dangerousGoodsCode22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="dangerousGoodsCode22Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 169</value>
   </data>
-  <data name="dangerousGoodsInstructions22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="dangerousGoodsInstructions22Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 195</value>
-  </data>
-  <data name="dateOfIssue3Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="dateOfIssue3Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>287, 44</value>
@@ -233,9 +193,6 @@
   <data name="dateOfIssue3Label.Text" xml:space="preserve">
     <value>تاريخ الاصدار :</value>
   </data>
-  <data name="deliveryGoodsDate9Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="deliveryGoodsDate9Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 337</value>
   </data>
@@ -244,9 +201,6 @@
   </data>
   <data name="deliveryGoodsDate9Label.Text" xml:space="preserve">
     <value>تاريخ تسليم البضائع</value>
-  </data>
-  <data name="deliveryGoodsPlace9Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="deliveryGoodsPlace9Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 310</value>
@@ -257,20 +211,11 @@
   <data name="deliveryGoodsPlace9Label.Text" xml:space="preserve">
     <value>مكان تسليم البضائع</value>
   </data>
-  <data name="demurrageDischarge25Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="demurrageDischarge25Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 242</value>
   </data>
-  <data name="demurrageLoading24Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="demurrageLoading24Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 268</value>
-  </data>
-  <data name="forwarder7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="forwarder7Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>236, 17</value>
@@ -280,9 +225,6 @@
   </data>
   <data name="forwarder7Label.Text" xml:space="preserve">
     <value>وسيط النقل</value>
-  </data>
-  <data name="forwarderAddress7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="forwarderAddress7Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 43</value>
@@ -297,9 +239,6 @@
   <data name="forwarderObservation11Label.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="forwarderObservation11Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="forwarderObservation11Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 382</value>
   </data>
@@ -308,9 +247,6 @@
   </data>
   <data name="forwarderObservation11Label.Text" xml:space="preserve">
     <value>تحفظات وملاحظات وسيط النقل / الناقل</value>
-  </data>
-  <data name="forwarderPhone7Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="forwarderPhone7Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 70</value>
@@ -321,14 +257,8 @@
   <data name="forwarderPhone7Label.Text" xml:space="preserve">
     <value>الهاتف</value>
   </data>
-  <data name="grossWeight20_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="grossWeight20_1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 220</value>
-  </data>
-  <data name="ladingIDLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="ladingIDLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>615, 18</value>
@@ -339,32 +269,17 @@
   <data name="ladingIDLabel.Text" xml:space="preserve">
     <value>وثيقة النقل رقم:</value>
   </data>
-  <data name="marksNos15Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="marksNos15Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 31</value>
-  </data>
-  <data name="methodOfPacking17Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="methodOfPacking17Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 81</value>
   </data>
-  <data name="natureOfGoods18Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="natureOfGoods18Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 107</value>
   </data>
-  <data name="noOfPackages16Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="noOfPackages16Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 57</value>
-  </data>
-  <data name="placeOfIssue2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="placeOfIssue2Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 19</value>
@@ -375,9 +290,6 @@
   <data name="placeOfIssue2Label.Text" xml:space="preserve">
     <value>مكان الإصدار:</value>
   </data>
-  <data name="receiver5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="receiver5Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 18</value>
   </data>
@@ -386,9 +298,6 @@
   </data>
   <data name="receiver5Label.Text" xml:space="preserve">
     <value>المرسل اليه</value>
-  </data>
-  <data name="receiverAddress5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="receiverAddress5Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 40</value>
@@ -399,9 +308,6 @@
   <data name="receiverAddress5Label.Text" xml:space="preserve">
     <value>العنوان</value>
   </data>
-  <data name="receiverPhone5Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="receiverPhone5Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>268, 66</value>
   </data>
@@ -410,9 +316,6 @@
   </data>
   <data name="receiverPhone5Label.Text" xml:space="preserve">
     <value>الهاتف</value>
-  </data>
-  <data name="routeFinalDestination12Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="routeFinalDestination12Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>302, 436</value>
@@ -423,9 +326,6 @@
   <data name="routeFinalDestination12Label.Text" xml:space="preserve">
     <value>خط سير البضائع</value>
   </data>
-  <data name="sender4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="sender4Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 19</value>
   </data>
@@ -434,9 +334,6 @@
   </data>
   <data name="sender4Label.Text" xml:space="preserve">
     <value>الشاحن/ المرسل  </value>
-  </data>
-  <data name="senderAddress4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="senderAddress4Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>264, 43</value>
@@ -447,9 +344,6 @@
   <data name="senderAddress4Label.Text" xml:space="preserve">
     <value>العنوان</value>
   </data>
-  <data name="senderPhone4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="senderPhone4Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>264, 69</value>
   </data>
@@ -459,20 +353,11 @@
   <data name="senderPhone4Label.Text" xml:space="preserve">
     <value>الهاتف</value>
   </data>
-  <data name="sendersInstructions23Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="sendersInstructions23Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 345</value>
   </data>
-  <data name="specialAgreements28Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="specialAgreements28Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 371</value>
-  </data>
-  <data name="takingOverGoodsDate8Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="takingOverGoodsDate8Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>593, 337</value>
@@ -483,9 +368,6 @@
   <data name="takingOverGoodsDate8Label.Text" xml:space="preserve">
     <value>تاريخ استلام البضائع</value>
   </data>
-  <data name="takingOverGoodsPlace8Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="takingOverGoodsPlace8Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>593, 310</value>
   </data>
@@ -495,14 +377,8 @@
   <data name="takingOverGoodsPlace8Label.Text" xml:space="preserve">
     <value>مكان استلام البضائع</value>
   </data>
-  <data name="tariffCode19_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="tariffCode19_1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 159</value>
-  </data>
-  <data name="vehicleClass10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="vehicleClass10Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 22</value>
@@ -513,9 +389,6 @@
   <data name="vehicleClass10Label.Text" xml:space="preserve">
     <value>النوع</value>
   </data>
-  <data name="vehicleDriver10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="vehicleDriver10Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>249, 50</value>
   </data>
@@ -524,9 +397,6 @@
   </data>
   <data name="vehicleDriver10Label.Text" xml:space="preserve">
     <value>فئة المركبة</value>
-  </data>
-  <data name="vehicleNumber10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="vehicleNumber10Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>212, 75</value>
@@ -537,9 +407,6 @@
   <data name="vehicleNumber10Label.Text" xml:space="preserve">
     <value>رقم تسجيل المركبة</value>
   </data>
-  <data name="vehicleType10Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="vehicleType10Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 100</value>
   </data>
@@ -549,26 +416,8 @@
   <data name="vehicleType10Label.Text" xml:space="preserve">
     <value>اسم السائق</value>
   </data>
-  <data name="volume21_1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="volume21_1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 249</value>
-  </data>
-  <data name="btnNew.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnUpdate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="cachonDelivery29TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>157, 17</value>
@@ -747,9 +596,6 @@
   <data name="vehicleType10TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 97</value>
   </data>
-  <data name="btnReport.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 371</value>
   </data>
@@ -760,39 +606,96 @@
     <value>واسطة النقل</value>
   </data>
   <data name="TabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 545</value>
+    <value>754, 506</value>
   </data>
   <data name="TabPage1.Text" xml:space="preserve">
     <value>صفحة 1</value>
   </data>
   <data name="metroTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 545</value>
+    <value>754, 506</value>
   </data>
   <data name="metroTabPage2.Text" xml:space="preserve">
     <value>صفحة 2</value>
   </data>
   <data name="metroTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>733, 545</value>
+    <value>754, 506</value>
   </data>
   <data name="metroTabPage3.Text" xml:space="preserve">
     <value>صفحة 3</value>
   </data>
   <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 21</value>
+    <value>20, 91</value>
   </data>
   <data name="metroTabControl1.RightToLeftLayout" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>741, 587</value>
+    <value>762, 548</value>
+  </data>
+  <data name="bindingNavigatorAddNewItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 28</value>
+  </data>
+  <data name="bindingNavigatorDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="bindingNavigatorSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 31</value>
+  </data>
+  <data name="bindingNavigatorEditItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="bindingNavigatorEditItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="bindingNavigatorSaveItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="bindingNavigatorSaveItem.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="bindingNavigatorCancelItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="bindingNavigatorCancelItem.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="bindingNavigatorPrintItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="bindingNavigatorPrintItem.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="bindingNavigatorTableItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="bindingNavigatorTableItem.Text" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 31</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1129, 642</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>WindowsDefaultLocation</value>
+    <value>802, 659</value>
   </data>
 </root>
