@@ -554,8 +554,14 @@
   <data name="dateOfIssue3DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>58, 44</value>
   </data>
+  <data name="dateOfIssue3DateTimePicker.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="deliveryGoodsDate9DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 336</value>
+  </data>
+  <data name="deliveryGoodsDate9DateTimePicker.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="deliveryGoodsPlace9TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 310</value>
@@ -580,6 +586,9 @@
   </data>
   <data name="takingOverGoodsDate8DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 336</value>
+  </data>
+  <data name="takingOverGoodsDate8DateTimePicker.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="takingOverGoodsPlace8TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 310</value>
@@ -632,14 +641,8 @@
   <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 548</value>
   </data>
-  <data name="bindingNavigatorAddNewItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
   <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 28</value>
-  </data>
-  <data name="bindingNavigatorDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
   </data>
   <data name="bindingNavigatorMoveFirstItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 28</value>
@@ -667,6 +670,12 @@
   </data>
   <data name="bindingNavigatorEditItem.Text" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="bindingNavigatorAddNewItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="bindingNavigatorDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
   </data>
   <data name="bindingNavigatorSaveItem.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -697,5 +706,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>802, 659</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
 </root>

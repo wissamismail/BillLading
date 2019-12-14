@@ -23,11 +23,15 @@ namespace BillLading
         private void Form1_Load(object sender, EventArgs e)
         {
             using (DBModelLadings db = new DBModelLadings())
-            {
-                TabPage1.Enabled = false;
+            {                
                 binSrcLading.DataSource = db.Ladings.ToList();
                 bindingNavigator1.BindingSource = binSrcLading;
             } 
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            ReadOnlyTxt(true);
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
@@ -35,8 +39,8 @@ namespace BillLading
             Lading db = new Lading();         
             binSrcLading.Add(db);
             binSrcLading.MoveLast();
-            TabPage1.Enabled = true;
-            ladingIDTextBox.Focus();          
+            ReadOnlyTxt(false);
+            placeOfIssue2TextBox.Focus();          
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
@@ -55,15 +59,15 @@ namespace BillLading
                     db.SaveChanges();
                     MetroFramework.MetroMessageBox.Show(this, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     binSrcLading.RemoveCurrent();
-                    TabPage1.Enabled = false;
+                    ReadOnlyTxt(true);
                 }
             }
         }
 
         private void bindingNavigatorEditItem_Click(object sender, EventArgs e)
         {
-            TabPage1.Enabled = true;
-            ladingIDTextBox.Focus();
+            ReadOnlyTxt(false);
+            placeOfIssue2TextBox.Focus();
             Lading obj = binSrcLading.Current as Lading;
         }
 
@@ -73,15 +77,16 @@ namespace BillLading
             {
                 using (DBModelLadings db = new DBModelLadings())
                 {
-                    Lading obj = binSrcLading.Current as Lading;
-                    if (obj != null)
+                    Lading myLading = binSrcLading.Current as Lading;
+                    if (myLading != null)
                     {
-                        if (db.Entry<Lading>(obj).State == EntityState.Deleted)
-                            db.Set<Lading>().Attach(obj);
-                        if (obj.LadingID == 0)
-                            db.Entry<Lading>(obj).State = EntityState.Added;
+                        if (db.Entry<Lading>(myLading).State == EntityState.Deleted)
+                            db.Set<Lading>().Attach(myLading);
+                        if (myLading.LadingID == 0)
+                            db.Entry<Lading>(myLading).State = EntityState.Added;
+                            // myLading.DateOfIssue3
                         else
-                            db.Entry<Lading>(obj).State = EntityState.Modified;
+                            db.Entry<Lading>(myLading).State = EntityState.Modified;
                         db.SaveChanges();
                         MetroFramework.MetroMessageBox.Show(this, "OK", "Item Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -89,13 +94,13 @@ namespace BillLading
             }
             catch (Exception ex)
             {
-                MetroFramework.MetroMessageBox.Show(this,  ex.StackTrace, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this,  ex.StackTrace +'\n'+ ex.InnerException.InnerException.Message , ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
         {
-            TabPage1.Enabled = false;
+            ReadOnlyTxt(true);
             binSrcLading.ResetBindings(false);
             Form1_Load(sender, e);
         }
@@ -128,5 +133,42 @@ namespace BillLading
             myFormTable.Show();
         }
 
+        private void binSrcLading_PositionChanged(object sender, EventArgs e)
+        {
+            ReadOnlyTxt(true);
+        }
+
+        private void ReadOnlyTxt(bool Enable)
+        {            
+           foreach (Control myCtl in TabPage1.Controls)
+            {
+                if (myCtl is TextBox) 
+                {
+                    TextBox myTxt = (TextBox)myCtl;
+                    myTxt.ReadOnly = Enable;
+                }
+
+                else if(myCtl is DateTimePicker)
+                {
+                    DateTimePicker myDT = (DateTimePicker)myCtl;
+                    myDT.Enabled = !(Enable);
+                }
+                else if (myCtl is GroupBox)
+                {
+                    foreach (Control myCtl2 in myCtl.Controls)
+                    {
+                        if (myCtl2 is TextBox)
+                        {
+                            TextBox myTxt2 = (TextBox)myCtl2;
+                            myTxt2.ReadOnly = Enable;
+                        }
+                    }
+                }
+            }
+            ladingIDTextBox.ReadOnly = true;
+
+        }
+
+ 
     }
 }

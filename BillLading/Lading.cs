@@ -15,7 +15,7 @@ namespace BillLading
         [StringLength(255)]
         public string PlaceOfIssue2 { get; set; }
 
-        public DateTime DateOfIssue3 { get; set; }
+        public Nullable<DateTime> DateOfIssue3 { get; set; }
 
         [StringLength(255)]
         public string Sender4 { get; set; }
@@ -51,11 +51,11 @@ namespace BillLading
 
         [StringLength(255)]
         public string TakingOverGoodsPlace8 { get; set; }
-        public DateTime TakingOverGoodsDate8 { get; set; }
+        public Nullable<DateTime> TakingOverGoodsDate8 { get; set; }
 
         [StringLength(255)]
         public string DeliveryGoodsPlace9 { get; set; }
-        public DateTime DeliveryGoodsDate9 { get; set; }
+        public Nullable<DateTime> DeliveryGoodsDate9 { get; set; }
 
         [StringLength(255)]
         public string VehicleType10 { get; set; }

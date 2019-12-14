@@ -130,9 +130,7 @@
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -142,6 +140,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorEditItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCancelItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -695,12 +695,14 @@
             resources.ApplyResources(this.dateOfIssue3DateTimePicker, "dateOfIssue3DateTimePicker");
             this.dateOfIssue3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DateOfIssue3", true));
             this.dateOfIssue3DateTimePicker.Name = "dateOfIssue3DateTimePicker";
+            this.dateOfIssue3DateTimePicker.ShowCheckBox = true;
             // 
             // deliveryGoodsDate9DateTimePicker
             // 
             resources.ApplyResources(this.deliveryGoodsDate9DateTimePicker, "deliveryGoodsDate9DateTimePicker");
             this.deliveryGoodsDate9DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DeliveryGoodsDate9", true));
             this.deliveryGoodsDate9DateTimePicker.Name = "deliveryGoodsDate9DateTimePicker";
+            this.deliveryGoodsDate9DateTimePicker.ShowCheckBox = true;
             // 
             // deliveryGoodsPlace9TextBox
             // 
@@ -738,6 +740,7 @@
             resources.ApplyResources(this.takingOverGoodsDate8DateTimePicker, "takingOverGoodsDate8DateTimePicker");
             this.takingOverGoodsDate8DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "TakingOverGoodsDate8", true));
             this.takingOverGoodsDate8DateTimePicker.Name = "takingOverGoodsDate8DateTimePicker";
+            this.takingOverGoodsDate8DateTimePicker.ShowCheckBox = true;
             // 
             // takingOverGoodsPlace8TextBox
             // 
@@ -776,7 +779,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTabControl1.UseSelectable = true;
@@ -895,10 +898,10 @@
             // bindingNavigator1
             // 
             resources.ApplyResources(this.bindingNavigator1, "bindingNavigator1");
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.AddNewItem = null;
             this.bindingNavigator1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -930,26 +933,10 @@
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorAddNewItem, "bindingNavigatorAddNewItem");
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = global::BillLading.Properties.Resources.Add;
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
-            // 
             // bindingNavigatorCountItem
             // 
             resources.ApplyResources(this.bindingNavigatorCountItem, "bindingNavigatorCountItem");
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            resources.ApplyResources(this.bindingNavigatorDeleteItem, "bindingNavigatorDeleteItem");
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = global::BillLading.Properties.Resources.Erase;
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -1007,6 +994,22 @@
             this.bindingNavigatorEditItem.Image = global::BillLading.Properties.Resources.Modify;
             this.bindingNavigatorEditItem.Name = "bindingNavigatorEditItem";
             this.bindingNavigatorEditItem.Click += new System.EventHandler(this.bindingNavigatorEditItem_Click);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            resources.ApplyResources(this.bindingNavigatorAddNewItem, "bindingNavigatorAddNewItem");
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = global::BillLading.Properties.Resources.Add;
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            resources.ApplyResources(this.bindingNavigatorDeleteItem, "bindingNavigatorDeleteItem");
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = global::BillLading.Properties.Resources.Erase;
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorSaveItem
             // 
@@ -1066,6 +1069,7 @@
             // binSrcLading
             // 
             this.binSrcLading.DataSource = typeof(BillLading.Lading);
+            this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // Form1
             // 
@@ -1076,6 +1080,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
