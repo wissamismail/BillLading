@@ -17,13 +17,15 @@ namespace BillLading
             InitializeComponent();
         }
 
+        public int LadingID { get; internal set; }
+
         private void FormReport_Load(object sender, EventArgs e)
         {
 
             using (DBModelLadings db = new DBModelLadings())
             {
                 // TODO: This line of code loads data into the 'TirDS.Carnet' table. You can move, or remove it, as needed.
-                this.LadingBindingSource.DataSource = db.Ladings.ToList();
+                this.LadingBindingSource.DataSource = db.Ladings.Where(s => s.LadingID == this.LadingID).ToList();
             }
 
 
