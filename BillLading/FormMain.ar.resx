@@ -130,15 +130,6 @@
   <data name="cachonDelivery29Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 24</value>
   </data>
-  <data name="carriageForward26Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 50</value>
-  </data>
-  <data name="carriageInstructions26Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 76</value>
-  </data>
-  <data name="carriagePaid26Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 102</value>
-  </data>
   <data name="carrier6Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>270, 22</value>
   </data>
@@ -175,15 +166,6 @@
   <data name="customsDeclarationNo13Label.Text" xml:space="preserve">
     <value>رقم البيان الجمركي</value>
   </data>
-  <data name="dangerousGoodsClass22Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 143</value>
-  </data>
-  <data name="dangerousGoodsCode22Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 169</value>
-  </data>
-  <data name="dangerousGoodsInstructions22Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 195</value>
-  </data>
   <data name="dateOfIssue3Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>287, 44</value>
   </data>
@@ -210,12 +192,6 @@
   </data>
   <data name="deliveryGoodsPlace9Label.Text" xml:space="preserve">
     <value>مكان تسليم البضائع</value>
-  </data>
-  <data name="demurrageDischarge25Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 242</value>
-  </data>
-  <data name="demurrageLoading24Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 268</value>
   </data>
   <data name="forwarder7Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>236, 17</value>
@@ -258,7 +234,13 @@
     <value>الهاتف</value>
   </data>
   <data name="grossWeight20_1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 220</value>
+    <value>474, 150</value>
+  </data>
+  <data name="grossWeight20_1Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="grossWeight20_1Label.Text" xml:space="preserve">
+    <value>الوزن القائم (كلغ)</value>
   </data>
   <data name="ladingIDLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>615, 18</value>
@@ -270,16 +252,40 @@
     <value>وثيقة النقل رقم:</value>
   </data>
   <data name="marksNos15Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 31</value>
+    <value>626, 35</value>
+  </data>
+  <data name="marksNos15Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="marksNos15Label.Text" xml:space="preserve">
+    <value>العلامات والارقام</value>
   </data>
   <data name="methodOfPacking17Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 81</value>
+    <value>421, 35</value>
+  </data>
+  <data name="methodOfPacking17Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="methodOfPacking17Label.Text" xml:space="preserve">
+    <value>نوع التغليف</value>
   </data>
   <data name="natureOfGoods18Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 107</value>
+    <value>305, 35</value>
+  </data>
+  <data name="natureOfGoods18Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="natureOfGoods18Label.Text" xml:space="preserve">
+    <value>طبيعة البضاعة</value>
   </data>
   <data name="noOfPackages16Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 57</value>
+    <value>521, 35</value>
+  </data>
+  <data name="noOfPackages16Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="noOfPackages16Label.Text" xml:space="preserve">
+    <value>عدد الطرود</value>
   </data>
   <data name="placeOfIssue2Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 19</value>
@@ -353,9 +359,6 @@
   <data name="senderPhone4Label.Text" xml:space="preserve">
     <value>الهاتف</value>
   </data>
-  <data name="sendersInstructions23Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 345</value>
-  </data>
   <data name="specialAgreements28Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 371</value>
   </data>
@@ -378,7 +381,13 @@
     <value>مكان استلام البضائع</value>
   </data>
   <data name="tariffCode19_1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 159</value>
+    <value>631, 150</value>
+  </data>
+  <data name="tariffCode19_1Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="tariffCode19_1Label.Text" xml:space="preserve">
+    <value>رقم التعرفة</value>
   </data>
   <data name="vehicleClass10Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>278, 22</value>
@@ -417,61 +426,73 @@
     <value>اسم السائق</value>
   </data>
   <data name="volume21_1Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 249</value>
+    <value>297, 150</value>
+  </data>
+  <data name="volume21_1Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="volume21_1Label.Text" xml:space="preserve">
+    <value>الحجم ( بالمتر المكعب )</value>
   </data>
   <data name="cachonDelivery29TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>157, 17</value>
   </data>
-  <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 43</value>
-  </data>
-  <data name="carriageInstructions26TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 69</value>
-  </data>
-  <data name="carriagePaid26TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 95</value>
-  </data>
-  <data name="dangerousGoodsClass22TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 140</value>
-  </data>
-  <data name="dangerousGoodsCode22TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 166</value>
-  </data>
-  <data name="dangerousGoodsInstructions22TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 192</value>
-  </data>
-  <data name="demurrageDischarge25TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 239</value>
-  </data>
-  <data name="demurrageLoading24TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 265</value>
-  </data>
   <data name="grossWeight20_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 217</value>
+    <value>434, 167</value>
+  </data>
+  <data name="grossWeight20_1TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
   </data>
   <data name="marksNos15TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 28</value>
+    <value>588, 51</value>
+  </data>
+  <data name="marksNos15TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="marksNos15TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 74</value>
   </data>
   <data name="methodOfPacking17TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 78</value>
+    <value>399, 51</value>
+  </data>
+  <data name="methodOfPacking17TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="methodOfPacking17TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 74</value>
   </data>
   <data name="natureOfGoods18TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 104</value>
+    <value>288, 51</value>
+  </data>
+  <data name="natureOfGoods18TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="natureOfGoods18TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 74</value>
   </data>
   <data name="noOfPackages16TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 54</value>
+    <value>510, 51</value>
   </data>
-  <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 342</value>
+  <data name="noOfPackages16TextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="noOfPackages16TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 74</value>
   </data>
   <data name="specialAgreements28TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>206, 368</value>
   </data>
   <data name="tariffCode19_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 156</value>
+    <value>584, 167</value>
+  </data>
+  <data name="tariffCode19_1TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
   </data>
   <data name="volume21_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 246</value>
+    <value>284, 167</value>
+  </data>
+  <data name="volume21_1TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
   </data>
   <data name="senderPhone4TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 72</value>
@@ -597,13 +618,13 @@
     <value>6, 19</value>
   </data>
   <data name="vehicleDriver10TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 45</value>
+    <value>6, 97</value>
   </data>
   <data name="vehicleNumber10TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 71</value>
   </data>
   <data name="vehicleType10TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 97</value>
+    <value>6, 43</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 371</value>
@@ -619,6 +640,222 @@
   </data>
   <data name="TabPage1.Text" xml:space="preserve">
     <value>صفحة 1</value>
+  </data>
+  <data name="metroTabPage2.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="carriageForward26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 400</value>
+  </data>
+  <data name="carriageForward26Label.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 393</value>
+  </data>
+  <data name="carriageForward26TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="carriageInstructions26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 426</value>
+  </data>
+  <data name="carriageInstructions26Label.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="carriageInstructions26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 419</value>
+  </data>
+  <data name="carriageInstructions26TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="carriagePaid26Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 452</value>
+  </data>
+  <data name="carriagePaid26Label.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="carriagePaid26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 445</value>
+  </data>
+  <data name="carriagePaid26TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="demurrageLoading24TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 19</value>
+  </data>
+  <data name="demurrageLoading24TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="demurrageLoading24Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="demurrageLoading24Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="demurrageLoading24Label.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="demurrageLoading24Label.Text" xml:space="preserve">
+    <value>بتحميل البضائع </value>
+  </data>
+  <data name="demurrageDischarge25TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 49</value>
+  </data>
+  <data name="demurrageDischarge25TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="demurrageDischarge25Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 52</value>
+  </data>
+  <data name="demurrageDischarge25Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="demurrageDischarge25Label.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="demurrageDischarge25Label.Text" xml:space="preserve">
+    <value>بتفريغ البضائع </value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 102</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>مدة السماح</value>
+  </data>
+  <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 377</value>
+  </data>
+  <data name="sendersInstructions23TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="sendersInstructions23Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>605, 377</value>
+  </data>
+  <data name="sendersInstructions23Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 13</value>
+  </data>
+  <data name="sendersInstructions23Label.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="sendersInstructions23Label.Text" xml:space="preserve">
+    <value>تعليمات الشاحن / المرسل </value>
+  </data>
+  <data name="dangerousGoodsClass22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 22</value>
+  </data>
+  <data name="dangerousGoodsClass22Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="dangerousGoodsClass22Label.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="dangerousGoodsClass22Label.Text" xml:space="preserve">
+    <value>الصنف</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 48</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="dangerousGoodsCode22Label.Text" xml:space="preserve">
+    <value>الرمز</value>
+  </data>
+  <data name="dangerousGoodsClass22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 22</value>
+  </data>
+  <data name="dangerousGoodsClass22TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 74</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="dangerousGoodsInstructions22Label.Text" xml:space="preserve">
+    <value>الرقم</value>
+  </data>
+  <data name="dangerousGoodsCode22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 48</value>
+  </data>
+  <data name="dangerousGoodsCode22TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="dangerousGoodsInstructions22TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 74</value>
+  </data>
+  <data name="dangerousGoodsInstructions22TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 269</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 102</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>تعليمات مواد خطرة</value>
+  </data>
+  <data name="volume21_4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 224</value>
+  </data>
+  <data name="volume21_4TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="volume21_3TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 205</value>
+  </data>
+  <data name="volume21_3TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="volume21_2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 186</value>
+  </data>
+  <data name="volume21_2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="grossWeight20_4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 224</value>
+  </data>
+  <data name="grossWeight20_4TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="grossWeight20_3TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 205</value>
+  </data>
+  <data name="grossWeight20_3TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="grossWeight20_2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 186</value>
+  </data>
+  <data name="grossWeight20_2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="tariffCode19_4TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 224</value>
+  </data>
+  <data name="tariffCode19_4TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="tariffCode19_3TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 205</value>
+  </data>
+  <data name="tariffCode19_3TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="tariffCode19_2TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 186</value>
+  </data>
+  <data name="tariffCode19_2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 20</value>
   </data>
   <data name="metroTabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>754, 506</value>
@@ -706,9 +943,5 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>802, 659</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

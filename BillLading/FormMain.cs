@@ -172,6 +172,14 @@ namespace BillLading
 
         }
 
- 
+        private void metroTabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dangerousGoodsInstructions22Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

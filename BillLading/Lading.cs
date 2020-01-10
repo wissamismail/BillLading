@@ -83,12 +83,30 @@ namespace BillLading
         public string MethodOfPacking17 { get; set; }
         [StringLength(255)]
         public string NatureOfGoods18 { get; set; }
-        [StringLength(255)]
+        [StringLength(100)]
         public string TariffCode19_1 { get; set; }
-        [StringLength(255)]
+        [StringLength(100)]
         public string GrossWeight20_1 { get; set; }
-        [StringLength(255)]
+        [StringLength(100)]
         public string Volume21_1 { get; set; }
+        [StringLength(100)]
+        public string TariffCode19_2 { get; set; }
+        [StringLength(100)]
+        public string GrossWeight20_2 { get; set; }
+        [StringLength(100)]
+        public string Volume21_2 { get; set; }
+        [StringLength(100)]
+        public string TariffCode19_3 { get; set; }
+        [StringLength(100)]
+        public string GrossWeight20_3 { get; set; }
+        [StringLength(100)]
+        public string Volume21_3 { get; set; }
+        [StringLength(100)]
+        public string TariffCode19_4 { get; set; }
+        [StringLength(100)]
+        public string GrossWeight20_4 { get; set; }
+        [StringLength(100)]
+        public string Volume21_4 { get; set; }
 
         [StringLength(255)]
         public string DangerousGoodsInstructions22 { get; set; }
