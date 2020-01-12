@@ -133,12 +133,33 @@ namespace BillLading
         [StringLength(255)]
         public string CachonDelivery29 { get; set; }
 
-
-
-
-
-
-
+        [StringLength(15)]
+        public string CarriageChargesSender27 { get; set; }
+        [StringLength(15)]
+        public string CarriageChargesCurrency27 { get; set; }
+        [StringLength(50)]
+        public string CarriageChargesConsignee27 { get; set; }
+        [StringLength(15)]
+        public string DeductionsSender27 { get; set; }
+        [StringLength(15)]
+        public string DeductionsCurrency27 { get; set; }
+        [StringLength(50)]
+        public string DeductionsConsignee27 { get; set; }
+        [StringLength(15)]
+        public string SupplChargesSender27 { get; set; }
+        [StringLength(15)]
+        public string SupplChargesCurrency27 { get; set; }
+        [StringLength(50)]
+        public string SupplChargesConsignee27 { get; set; }
+        [StringLength(15)]
+        public string OtherChargesSender27 { get; set; }
+        [StringLength(15)]
+        public string OtherChargesCurrency27 { get; set; }
+        [StringLength(50)]
+        public string OtherChargesConsignee27 { get; set; }
+        [StringLength(100)]
+        public string GoodsReceivedPlace32 { get; set; }
+        public Nullable<DateTime> GoodsReceivedDate32 { get; set; }
 
 
     }

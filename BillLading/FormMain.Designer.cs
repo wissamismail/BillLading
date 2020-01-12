@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label annexedDocments14Label;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.Label cachonDelivery29Label;
             System.Windows.Forms.Label carrier6Label;
             System.Windows.Forms.Label carrierAddress6Label;
             System.Windows.Forms.Label carrierPhone6Label;
@@ -57,7 +56,6 @@
             System.Windows.Forms.Label sender4Label;
             System.Windows.Forms.Label senderAddress4Label;
             System.Windows.Forms.Label senderPhone4Label;
-            System.Windows.Forms.Label specialAgreements28Label;
             System.Windows.Forms.Label takingOverGoodsDate8Label;
             System.Windows.Forms.Label takingOverGoodsPlace8Label;
             System.Windows.Forms.Label tariffCode19_1Label;
@@ -75,13 +73,13 @@
             System.Windows.Forms.Label carriageForward26Label;
             System.Windows.Forms.Label carriageInstructions26Label;
             System.Windows.Forms.Label carriagePaid26Label;
-            this.cachonDelivery29TextBox = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.Label specialAgreements28Label1;
+            System.Windows.Forms.Label cachonDelivery29Label1;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
             this.noOfPackages16TextBox = new System.Windows.Forms.TextBox();
-            this.specialAgreements28TextBox = new System.Windows.Forms.TextBox();
             this.tariffCode19_1TextBox = new System.Windows.Forms.TextBox();
             this.volume21_1TextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -119,6 +117,26 @@
             this.TabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.carriageForward26TextBox = new System.Windows.Forms.TextBox();
+            this.carriageInstructions26TextBox = new System.Windows.Forms.TextBox();
+            this.carriagePaid26TextBox = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.demurrageLoading24TextBox = new System.Windows.Forms.TextBox();
+            this.demurrageDischarge25TextBox = new System.Windows.Forms.TextBox();
+            this.sendersInstructions23TextBox = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dangerousGoodsClass22TextBox = new System.Windows.Forms.TextBox();
+            this.dangerousGoodsCode22TextBox = new System.Windows.Forms.TextBox();
+            this.dangerousGoodsInstructions22TextBox = new System.Windows.Forms.TextBox();
+            this.volume21_4TextBox = new System.Windows.Forms.TextBox();
+            this.volume21_3TextBox = new System.Windows.Forms.TextBox();
+            this.volume21_2TextBox = new System.Windows.Forms.TextBox();
+            this.grossWeight20_4TextBox = new System.Windows.Forms.TextBox();
+            this.grossWeight20_3TextBox = new System.Windows.Forms.TextBox();
+            this.grossWeight20_2TextBox = new System.Windows.Forms.TextBox();
+            this.tariffCode19_4TextBox = new System.Windows.Forms.TextBox();
+            this.tariffCode19_3TextBox = new System.Windows.Forms.TextBox();
+            this.tariffCode19_2TextBox = new System.Windows.Forms.TextBox();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -141,29 +159,11 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.specialAgreements28TextBox1 = new System.Windows.Forms.TextBox();
+            this.cachonDelivery29TextBox1 = new System.Windows.Forms.TextBox();
             this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
-            this.tariffCode19_2TextBox = new System.Windows.Forms.TextBox();
-            this.tariffCode19_3TextBox = new System.Windows.Forms.TextBox();
-            this.tariffCode19_4TextBox = new System.Windows.Forms.TextBox();
-            this.grossWeight20_2TextBox = new System.Windows.Forms.TextBox();
-            this.grossWeight20_3TextBox = new System.Windows.Forms.TextBox();
-            this.grossWeight20_4TextBox = new System.Windows.Forms.TextBox();
-            this.volume21_2TextBox = new System.Windows.Forms.TextBox();
-            this.volume21_3TextBox = new System.Windows.Forms.TextBox();
-            this.volume21_4TextBox = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dangerousGoodsClass22TextBox = new System.Windows.Forms.TextBox();
-            this.dangerousGoodsCode22TextBox = new System.Windows.Forms.TextBox();
-            this.dangerousGoodsInstructions22TextBox = new System.Windows.Forms.TextBox();
-            this.sendersInstructions23TextBox = new System.Windows.Forms.TextBox();
-            this.demurrageLoading24TextBox = new System.Windows.Forms.TextBox();
-            this.demurrageDischarge25TextBox = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.carriageForward26TextBox = new System.Windows.Forms.TextBox();
-            this.carriageInstructions26TextBox = new System.Windows.Forms.TextBox();
-            this.carriagePaid26TextBox = new System.Windows.Forms.TextBox();
             annexedDocments14Label = new System.Windows.Forms.Label();
-            cachonDelivery29Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
             carrierPhone6Label = new System.Windows.Forms.Label();
@@ -189,7 +189,6 @@
             sender4Label = new System.Windows.Forms.Label();
             senderAddress4Label = new System.Windows.Forms.Label();
             senderPhone4Label = new System.Windows.Forms.Label();
-            specialAgreements28Label = new System.Windows.Forms.Label();
             takingOverGoodsDate8Label = new System.Windows.Forms.Label();
             takingOverGoodsPlace8Label = new System.Windows.Forms.Label();
             tariffCode19_1Label = new System.Windows.Forms.Label();
@@ -207,6 +206,8 @@
             carriageForward26Label = new System.Windows.Forms.Label();
             carriageInstructions26Label = new System.Windows.Forms.Label();
             carriagePaid26Label = new System.Windows.Forms.Label();
+            specialAgreements28Label1 = new System.Windows.Forms.Label();
+            cachonDelivery29Label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -215,12 +216,12 @@
             this.TabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
-            this.metroTabPage3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // annexedDocments14Label
@@ -228,11 +229,6 @@
             resources.ApplyResources(annexedDocments14Label, "annexedDocments14Label");
             annexedDocments14Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
             annexedDocments14Label.Name = "annexedDocments14Label";
-            // 
-            // cachonDelivery29Label
-            // 
-            resources.ApplyResources(cachonDelivery29Label, "cachonDelivery29Label");
-            cachonDelivery29Label.Name = "cachonDelivery29Label";
             // 
             // carrier6Label
             // 
@@ -372,11 +368,6 @@
             resources.ApplyResources(senderPhone4Label, "senderPhone4Label");
             senderPhone4Label.Name = "senderPhone4Label";
             // 
-            // specialAgreements28Label
-            // 
-            resources.ApplyResources(specialAgreements28Label, "specialAgreements28Label");
-            specialAgreements28Label.Name = "specialAgreements28Label";
-            // 
             // takingOverGoodsDate8Label
             // 
             resources.ApplyResources(takingOverGoodsDate8Label, "takingOverGoodsDate8Label");
@@ -421,11 +412,54 @@
             volume21_1Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
             volume21_1Label.Name = "volume21_1Label";
             // 
-            // cachonDelivery29TextBox
+            // dangerousGoodsClass22Label
             // 
-            resources.ApplyResources(this.cachonDelivery29TextBox, "cachonDelivery29TextBox");
-            this.cachonDelivery29TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CachonDelivery29", true));
-            this.cachonDelivery29TextBox.Name = "cachonDelivery29TextBox";
+            resources.ApplyResources(dangerousGoodsClass22Label, "dangerousGoodsClass22Label");
+            dangerousGoodsClass22Label.Name = "dangerousGoodsClass22Label";
+            // 
+            // dangerousGoodsCode22Label
+            // 
+            resources.ApplyResources(dangerousGoodsCode22Label, "dangerousGoodsCode22Label");
+            dangerousGoodsCode22Label.Name = "dangerousGoodsCode22Label";
+            // 
+            // dangerousGoodsInstructions22Label
+            // 
+            resources.ApplyResources(dangerousGoodsInstructions22Label, "dangerousGoodsInstructions22Label");
+            dangerousGoodsInstructions22Label.Name = "dangerousGoodsInstructions22Label";
+            dangerousGoodsInstructions22Label.Click += new System.EventHandler(this.dangerousGoodsInstructions22Label_Click);
+            // 
+            // sendersInstructions23Label
+            // 
+            resources.ApplyResources(sendersInstructions23Label, "sendersInstructions23Label");
+            sendersInstructions23Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            sendersInstructions23Label.Name = "sendersInstructions23Label";
+            // 
+            // demurrageLoading24Label
+            // 
+            resources.ApplyResources(demurrageLoading24Label, "demurrageLoading24Label");
+            demurrageLoading24Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            demurrageLoading24Label.Name = "demurrageLoading24Label";
+            // 
+            // demurrageDischarge25Label
+            // 
+            resources.ApplyResources(demurrageDischarge25Label, "demurrageDischarge25Label");
+            demurrageDischarge25Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            demurrageDischarge25Label.Name = "demurrageDischarge25Label";
+            // 
+            // carriageForward26Label
+            // 
+            resources.ApplyResources(carriageForward26Label, "carriageForward26Label");
+            carriageForward26Label.Name = "carriageForward26Label";
+            // 
+            // carriageInstructions26Label
+            // 
+            resources.ApplyResources(carriageInstructions26Label, "carriageInstructions26Label");
+            carriageInstructions26Label.Name = "carriageInstructions26Label";
+            // 
+            // carriagePaid26Label
+            // 
+            resources.ApplyResources(carriagePaid26Label, "carriagePaid26Label");
+            carriagePaid26Label.Name = "carriagePaid26Label";
             // 
             // grossWeight20_1TextBox
             // 
@@ -456,12 +490,6 @@
             resources.ApplyResources(this.noOfPackages16TextBox, "noOfPackages16TextBox");
             this.noOfPackages16TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoOfPackages16", true));
             this.noOfPackages16TextBox.Name = "noOfPackages16TextBox";
-            // 
-            // specialAgreements28TextBox
-            // 
-            resources.ApplyResources(this.specialAgreements28TextBox, "specialAgreements28TextBox");
-            this.specialAgreements28TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SpecialAgreements28", true));
-            this.specialAgreements28TextBox.Name = "specialAgreements28TextBox";
             // 
             // tariffCode19_1TextBox
             // 
@@ -700,7 +728,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTabControl1.UseSelectable = true;
@@ -761,12 +789,11 @@
             // metroTabPage2
             // 
             resources.ApplyResources(this.metroTabPage2, "metroTabPage2");
-            this.metroTabPage2.Controls.Add(carriageForward26Label);
-            this.metroTabPage2.Controls.Add(this.carriageForward26TextBox);
-            this.metroTabPage2.Controls.Add(carriageInstructions26Label);
-            this.metroTabPage2.Controls.Add(this.carriageInstructions26TextBox);
-            this.metroTabPage2.Controls.Add(carriagePaid26Label);
-            this.metroTabPage2.Controls.Add(this.carriagePaid26TextBox);
+            this.metroTabPage2.Controls.Add(cachonDelivery29Label1);
+            this.metroTabPage2.Controls.Add(this.cachonDelivery29TextBox1);
+            this.metroTabPage2.Controls.Add(specialAgreements28Label1);
+            this.metroTabPage2.Controls.Add(this.specialAgreements28TextBox1);
+            this.metroTabPage2.Controls.Add(this.groupBox8);
             this.metroTabPage2.Controls.Add(this.groupBox7);
             this.metroTabPage2.Controls.Add(this.sendersInstructions23TextBox);
             this.metroTabPage2.Controls.Add(sendersInstructions23Label);
@@ -805,13 +832,141 @@
             this.metroTabPage2.VerticalScrollbarSize = 10;
             this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             // 
+            // carriageForward26TextBox
+            // 
+            resources.ApplyResources(this.carriageForward26TextBox, "carriageForward26TextBox");
+            this.carriageForward26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageForward26", true));
+            this.carriageForward26TextBox.Name = "carriageForward26TextBox";
+            // 
+            // carriageInstructions26TextBox
+            // 
+            resources.ApplyResources(this.carriageInstructions26TextBox, "carriageInstructions26TextBox");
+            this.carriageInstructions26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageInstructions26", true));
+            this.carriageInstructions26TextBox.Name = "carriageInstructions26TextBox";
+            // 
+            // carriagePaid26TextBox
+            // 
+            resources.ApplyResources(this.carriagePaid26TextBox, "carriagePaid26TextBox");
+            this.carriagePaid26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriagePaid26", true));
+            this.carriagePaid26TextBox.Name = "carriagePaid26TextBox";
+            // 
+            // groupBox7
+            // 
+            resources.ApplyResources(this.groupBox7, "groupBox7");
+            this.groupBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox7.Controls.Add(this.demurrageLoading24TextBox);
+            this.groupBox7.Controls.Add(demurrageLoading24Label);
+            this.groupBox7.Controls.Add(this.demurrageDischarge25TextBox);
+            this.groupBox7.Controls.Add(demurrageDischarge25Label);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.TabStop = false;
+            // 
+            // demurrageLoading24TextBox
+            // 
+            resources.ApplyResources(this.demurrageLoading24TextBox, "demurrageLoading24TextBox");
+            this.demurrageLoading24TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageLoading24", true));
+            this.demurrageLoading24TextBox.Name = "demurrageLoading24TextBox";
+            // 
+            // demurrageDischarge25TextBox
+            // 
+            resources.ApplyResources(this.demurrageDischarge25TextBox, "demurrageDischarge25TextBox");
+            this.demurrageDischarge25TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageDischarge25", true));
+            this.demurrageDischarge25TextBox.Name = "demurrageDischarge25TextBox";
+            // 
+            // sendersInstructions23TextBox
+            // 
+            resources.ApplyResources(this.sendersInstructions23TextBox, "sendersInstructions23TextBox");
+            this.sendersInstructions23TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SendersInstructions23", true));
+            this.sendersInstructions23TextBox.Name = "sendersInstructions23TextBox";
+            // 
+            // groupBox6
+            // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox6.Controls.Add(dangerousGoodsClass22Label);
+            this.groupBox6.Controls.Add(dangerousGoodsCode22Label);
+            this.groupBox6.Controls.Add(this.dangerousGoodsClass22TextBox);
+            this.groupBox6.Controls.Add(dangerousGoodsInstructions22Label);
+            this.groupBox6.Controls.Add(this.dangerousGoodsCode22TextBox);
+            this.groupBox6.Controls.Add(this.dangerousGoodsInstructions22TextBox);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
+            // 
+            // dangerousGoodsClass22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsClass22TextBox, "dangerousGoodsClass22TextBox");
+            this.dangerousGoodsClass22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsClass22", true));
+            this.dangerousGoodsClass22TextBox.Name = "dangerousGoodsClass22TextBox";
+            // 
+            // dangerousGoodsCode22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsCode22TextBox, "dangerousGoodsCode22TextBox");
+            this.dangerousGoodsCode22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsCode22", true));
+            this.dangerousGoodsCode22TextBox.Name = "dangerousGoodsCode22TextBox";
+            // 
+            // dangerousGoodsInstructions22TextBox
+            // 
+            resources.ApplyResources(this.dangerousGoodsInstructions22TextBox, "dangerousGoodsInstructions22TextBox");
+            this.dangerousGoodsInstructions22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsInstructions22", true));
+            this.dangerousGoodsInstructions22TextBox.Name = "dangerousGoodsInstructions22TextBox";
+            // 
+            // volume21_4TextBox
+            // 
+            resources.ApplyResources(this.volume21_4TextBox, "volume21_4TextBox");
+            this.volume21_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_4", true));
+            this.volume21_4TextBox.Name = "volume21_4TextBox";
+            // 
+            // volume21_3TextBox
+            // 
+            resources.ApplyResources(this.volume21_3TextBox, "volume21_3TextBox");
+            this.volume21_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_3", true));
+            this.volume21_3TextBox.Name = "volume21_3TextBox";
+            // 
+            // volume21_2TextBox
+            // 
+            resources.ApplyResources(this.volume21_2TextBox, "volume21_2TextBox");
+            this.volume21_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_2", true));
+            this.volume21_2TextBox.Name = "volume21_2TextBox";
+            // 
+            // grossWeight20_4TextBox
+            // 
+            resources.ApplyResources(this.grossWeight20_4TextBox, "grossWeight20_4TextBox");
+            this.grossWeight20_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_4", true));
+            this.grossWeight20_4TextBox.Name = "grossWeight20_4TextBox";
+            // 
+            // grossWeight20_3TextBox
+            // 
+            resources.ApplyResources(this.grossWeight20_3TextBox, "grossWeight20_3TextBox");
+            this.grossWeight20_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_3", true));
+            this.grossWeight20_3TextBox.Name = "grossWeight20_3TextBox";
+            // 
+            // grossWeight20_2TextBox
+            // 
+            resources.ApplyResources(this.grossWeight20_2TextBox, "grossWeight20_2TextBox");
+            this.grossWeight20_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_2", true));
+            this.grossWeight20_2TextBox.Name = "grossWeight20_2TextBox";
+            // 
+            // tariffCode19_4TextBox
+            // 
+            resources.ApplyResources(this.tariffCode19_4TextBox, "tariffCode19_4TextBox");
+            this.tariffCode19_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_4", true));
+            this.tariffCode19_4TextBox.Name = "tariffCode19_4TextBox";
+            // 
+            // tariffCode19_3TextBox
+            // 
+            resources.ApplyResources(this.tariffCode19_3TextBox, "tariffCode19_3TextBox");
+            this.tariffCode19_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_3", true));
+            this.tariffCode19_3TextBox.Name = "tariffCode19_3TextBox";
+            // 
+            // tariffCode19_2TextBox
+            // 
+            resources.ApplyResources(this.tariffCode19_2TextBox, "tariffCode19_2TextBox");
+            this.tariffCode19_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_2", true));
+            this.tariffCode19_2TextBox.Name = "tariffCode19_2TextBox";
+            // 
             // metroTabPage3
             // 
             resources.ApplyResources(this.metroTabPage3, "metroTabPage3");
-            this.metroTabPage3.Controls.Add(cachonDelivery29Label);
-            this.metroTabPage3.Controls.Add(this.cachonDelivery29TextBox);
-            this.metroTabPage3.Controls.Add(this.specialAgreements28TextBox);
-            this.metroTabPage3.Controls.Add(specialAgreements28Label);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 10;
@@ -991,191 +1146,47 @@
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
             // 
+            // groupBox8
+            // 
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox8.Controls.Add(this.carriageInstructions26TextBox);
+            this.groupBox8.Controls.Add(this.carriagePaid26TextBox);
+            this.groupBox8.Controls.Add(this.carriageForward26TextBox);
+            this.groupBox8.Controls.Add(carriageForward26Label);
+            this.groupBox8.Controls.Add(carriageInstructions26Label);
+            this.groupBox8.Controls.Add(carriagePaid26Label);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // specialAgreements28Label1
+            // 
+            resources.ApplyResources(specialAgreements28Label1, "specialAgreements28Label1");
+            specialAgreements28Label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            specialAgreements28Label1.Name = "specialAgreements28Label1";
+            // 
+            // specialAgreements28TextBox1
+            // 
+            resources.ApplyResources(this.specialAgreements28TextBox1, "specialAgreements28TextBox1");
+            this.specialAgreements28TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SpecialAgreements28", true));
+            this.specialAgreements28TextBox1.Name = "specialAgreements28TextBox1";
+            // 
+            // cachonDelivery29Label1
+            // 
+            resources.ApplyResources(cachonDelivery29Label1, "cachonDelivery29Label1");
+            cachonDelivery29Label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            cachonDelivery29Label1.Name = "cachonDelivery29Label1";
+            // 
+            // cachonDelivery29TextBox1
+            // 
+            resources.ApplyResources(this.cachonDelivery29TextBox1, "cachonDelivery29TextBox1");
+            this.cachonDelivery29TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CachonDelivery29", true));
+            this.cachonDelivery29TextBox1.Name = "cachonDelivery29TextBox1";
+            // 
             // binSrcLading
             // 
             this.binSrcLading.DataSource = typeof(BillLading.Lading);
             this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
-            // 
-            // tariffCode19_2TextBox
-            // 
-            resources.ApplyResources(this.tariffCode19_2TextBox, "tariffCode19_2TextBox");
-            this.tariffCode19_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_2", true));
-            this.tariffCode19_2TextBox.Name = "tariffCode19_2TextBox";
-            // 
-            // tariffCode19_3TextBox
-            // 
-            resources.ApplyResources(this.tariffCode19_3TextBox, "tariffCode19_3TextBox");
-            this.tariffCode19_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_3", true));
-            this.tariffCode19_3TextBox.Name = "tariffCode19_3TextBox";
-            // 
-            // tariffCode19_4TextBox
-            // 
-            resources.ApplyResources(this.tariffCode19_4TextBox, "tariffCode19_4TextBox");
-            this.tariffCode19_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_4", true));
-            this.tariffCode19_4TextBox.Name = "tariffCode19_4TextBox";
-            // 
-            // grossWeight20_2TextBox
-            // 
-            resources.ApplyResources(this.grossWeight20_2TextBox, "grossWeight20_2TextBox");
-            this.grossWeight20_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_2", true));
-            this.grossWeight20_2TextBox.Name = "grossWeight20_2TextBox";
-            // 
-            // grossWeight20_3TextBox
-            // 
-            resources.ApplyResources(this.grossWeight20_3TextBox, "grossWeight20_3TextBox");
-            this.grossWeight20_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_3", true));
-            this.grossWeight20_3TextBox.Name = "grossWeight20_3TextBox";
-            // 
-            // grossWeight20_4TextBox
-            // 
-            resources.ApplyResources(this.grossWeight20_4TextBox, "grossWeight20_4TextBox");
-            this.grossWeight20_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_4", true));
-            this.grossWeight20_4TextBox.Name = "grossWeight20_4TextBox";
-            // 
-            // volume21_2TextBox
-            // 
-            resources.ApplyResources(this.volume21_2TextBox, "volume21_2TextBox");
-            this.volume21_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_2", true));
-            this.volume21_2TextBox.Name = "volume21_2TextBox";
-            // 
-            // volume21_3TextBox
-            // 
-            resources.ApplyResources(this.volume21_3TextBox, "volume21_3TextBox");
-            this.volume21_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_3", true));
-            this.volume21_3TextBox.Name = "volume21_3TextBox";
-            // 
-            // volume21_4TextBox
-            // 
-            resources.ApplyResources(this.volume21_4TextBox, "volume21_4TextBox");
-            this.volume21_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_4", true));
-            this.volume21_4TextBox.Name = "volume21_4TextBox";
-            // 
-            // groupBox6
-            // 
-            resources.ApplyResources(this.groupBox6, "groupBox6");
-            this.groupBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox6.Controls.Add(dangerousGoodsClass22Label);
-            this.groupBox6.Controls.Add(dangerousGoodsCode22Label);
-            this.groupBox6.Controls.Add(this.dangerousGoodsClass22TextBox);
-            this.groupBox6.Controls.Add(dangerousGoodsInstructions22Label);
-            this.groupBox6.Controls.Add(this.dangerousGoodsCode22TextBox);
-            this.groupBox6.Controls.Add(this.dangerousGoodsInstructions22TextBox);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.TabStop = false;
-            // 
-            // dangerousGoodsClass22Label
-            // 
-            resources.ApplyResources(dangerousGoodsClass22Label, "dangerousGoodsClass22Label");
-            dangerousGoodsClass22Label.Name = "dangerousGoodsClass22Label";
-            // 
-            // dangerousGoodsClass22TextBox
-            // 
-            resources.ApplyResources(this.dangerousGoodsClass22TextBox, "dangerousGoodsClass22TextBox");
-            this.dangerousGoodsClass22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsClass22", true));
-            this.dangerousGoodsClass22TextBox.Name = "dangerousGoodsClass22TextBox";
-            // 
-            // dangerousGoodsCode22Label
-            // 
-            resources.ApplyResources(dangerousGoodsCode22Label, "dangerousGoodsCode22Label");
-            dangerousGoodsCode22Label.Name = "dangerousGoodsCode22Label";
-            // 
-            // dangerousGoodsCode22TextBox
-            // 
-            resources.ApplyResources(this.dangerousGoodsCode22TextBox, "dangerousGoodsCode22TextBox");
-            this.dangerousGoodsCode22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsCode22", true));
-            this.dangerousGoodsCode22TextBox.Name = "dangerousGoodsCode22TextBox";
-            // 
-            // dangerousGoodsInstructions22TextBox
-            // 
-            resources.ApplyResources(this.dangerousGoodsInstructions22TextBox, "dangerousGoodsInstructions22TextBox");
-            this.dangerousGoodsInstructions22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsInstructions22", true));
-            this.dangerousGoodsInstructions22TextBox.Name = "dangerousGoodsInstructions22TextBox";
-            // 
-            // dangerousGoodsInstructions22Label
-            // 
-            resources.ApplyResources(dangerousGoodsInstructions22Label, "dangerousGoodsInstructions22Label");
-            dangerousGoodsInstructions22Label.Name = "dangerousGoodsInstructions22Label";
-            dangerousGoodsInstructions22Label.Click += new System.EventHandler(this.dangerousGoodsInstructions22Label_Click);
-            // 
-            // sendersInstructions23TextBox
-            // 
-            resources.ApplyResources(this.sendersInstructions23TextBox, "sendersInstructions23TextBox");
-            this.sendersInstructions23TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SendersInstructions23", true));
-            this.sendersInstructions23TextBox.Name = "sendersInstructions23TextBox";
-            // 
-            // sendersInstructions23Label
-            // 
-            resources.ApplyResources(sendersInstructions23Label, "sendersInstructions23Label");
-            sendersInstructions23Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            sendersInstructions23Label.Name = "sendersInstructions23Label";
-            // 
-            // demurrageLoading24TextBox
-            // 
-            resources.ApplyResources(this.demurrageLoading24TextBox, "demurrageLoading24TextBox");
-            this.demurrageLoading24TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageLoading24", true));
-            this.demurrageLoading24TextBox.Name = "demurrageLoading24TextBox";
-            // 
-            // demurrageLoading24Label
-            // 
-            resources.ApplyResources(demurrageLoading24Label, "demurrageLoading24Label");
-            demurrageLoading24Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            demurrageLoading24Label.Name = "demurrageLoading24Label";
-            // 
-            // demurrageDischarge25TextBox
-            // 
-            resources.ApplyResources(this.demurrageDischarge25TextBox, "demurrageDischarge25TextBox");
-            this.demurrageDischarge25TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageDischarge25", true));
-            this.demurrageDischarge25TextBox.Name = "demurrageDischarge25TextBox";
-            // 
-            // demurrageDischarge25Label
-            // 
-            resources.ApplyResources(demurrageDischarge25Label, "demurrageDischarge25Label");
-            demurrageDischarge25Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            demurrageDischarge25Label.Name = "demurrageDischarge25Label";
-            // 
-            // groupBox7
-            // 
-            resources.ApplyResources(this.groupBox7, "groupBox7");
-            this.groupBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox7.Controls.Add(this.demurrageLoading24TextBox);
-            this.groupBox7.Controls.Add(demurrageLoading24Label);
-            this.groupBox7.Controls.Add(this.demurrageDischarge25TextBox);
-            this.groupBox7.Controls.Add(demurrageDischarge25Label);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.TabStop = false;
-            // 
-            // carriageForward26Label
-            // 
-            resources.ApplyResources(carriageForward26Label, "carriageForward26Label");
-            carriageForward26Label.Name = "carriageForward26Label";
-            // 
-            // carriageForward26TextBox
-            // 
-            resources.ApplyResources(this.carriageForward26TextBox, "carriageForward26TextBox");
-            this.carriageForward26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageForward26", true));
-            this.carriageForward26TextBox.Name = "carriageForward26TextBox";
-            // 
-            // carriageInstructions26Label
-            // 
-            resources.ApplyResources(carriageInstructions26Label, "carriageInstructions26Label");
-            carriageInstructions26Label.Name = "carriageInstructions26Label";
-            // 
-            // carriageInstructions26TextBox
-            // 
-            resources.ApplyResources(this.carriageInstructions26TextBox, "carriageInstructions26TextBox");
-            this.carriageInstructions26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageInstructions26", true));
-            this.carriageInstructions26TextBox.Name = "carriageInstructions26TextBox";
-            // 
-            // carriagePaid26Label
-            // 
-            resources.ApplyResources(carriagePaid26Label, "carriagePaid26Label");
-            carriagePaid26Label.Name = "carriagePaid26Label";
-            // 
-            // carriagePaid26TextBox
-            // 
-            resources.ApplyResources(this.carriagePaid26TextBox, "carriagePaid26TextBox");
-            this.carriagePaid26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriagePaid26", true));
-            this.carriagePaid26TextBox.Name = "carriagePaid26TextBox";
             // 
             // Form1
             // 
@@ -1202,16 +1213,16 @@
             this.groupBox5.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
-            this.metroTabPage3.ResumeLayout(false);
-            this.metroTabPage3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1221,7 +1232,6 @@
 
         private System.Windows.Forms.BindingSource binSrcLading;
         private System.Windows.Forms.TextBox annexedDocments14TextBox;
-        private System.Windows.Forms.TextBox cachonDelivery29TextBox;
         private System.Windows.Forms.TextBox carrier6TextBox;
         private System.Windows.Forms.TextBox carrierAddress6TextBox;
         private System.Windows.Forms.TextBox carrierPhone6TextBox;
@@ -1247,7 +1257,6 @@
         private System.Windows.Forms.TextBox sender4TextBox;
         private System.Windows.Forms.TextBox senderAddress4TextBox;
         private System.Windows.Forms.TextBox senderPhone4TextBox;
-        private System.Windows.Forms.TextBox specialAgreements28TextBox;
         private System.Windows.Forms.DateTimePicker takingOverGoodsDate8DateTimePicker;
         private System.Windows.Forms.TextBox takingOverGoodsPlace8TextBox;
         private System.Windows.Forms.TextBox tariffCode19_1TextBox;
@@ -1306,6 +1315,9 @@
         private System.Windows.Forms.TextBox carriageForward26TextBox;
         private System.Windows.Forms.TextBox carriageInstructions26TextBox;
         private System.Windows.Forms.TextBox carriagePaid26TextBox;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox cachonDelivery29TextBox1;
+        private System.Windows.Forms.TextBox specialAgreements28TextBox1;
     }
 }
 
