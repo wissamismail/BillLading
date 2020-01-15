@@ -122,15 +122,15 @@ namespace BillLading
         [StringLength(255)]
         public string DemurrageDischarge25 { get; set; }
 
-        [StringLength(255)]
+        [StringLength(150)]
         public string CarriageInstructions26 { get; set; }
-        [StringLength(1)]
+        [StringLength(150)]
         public string CarriagePaid26 { get; set; }
-        [StringLength(1)]
+        [StringLength(150)]
         public string CarriageForward26 { get; set; }
         [StringLength(255)]
         public string SpecialAgreements28 { get; set; }
-        [StringLength(255)]
+        [StringLength(100)]
         public string CachonDelivery29 { get; set; }
 
         [StringLength(15)]
@@ -160,7 +160,8 @@ namespace BillLading
         [StringLength(100)]
         public string GoodsReceivedPlace32 { get; set; }
         public Nullable<DateTime> GoodsReceivedDate32 { get; set; }
-
+        [StringLength(30)]
+        public string NoCopies33 { get; set; }
 
     }
 }

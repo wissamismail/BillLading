@@ -177,6 +177,11 @@ namespace BillLading
                             TextBox myTxt2 = (TextBox)myCtl2;
                             myTxt2.ReadOnly = Enable;
                         }
+                        else if (myCtl2 is DateTimePicker)
+                        {
+                            DateTimePicker myDT2 = (DateTimePicker)myCtl2;
+                            myDT2.Enabled = !(Enable);
+                        }
                     }
                 }
             }
@@ -190,6 +195,11 @@ namespace BillLading
         }
 
         private void dangerousGoodsInstructions22Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabPage3_Click(object sender, EventArgs e)
         {
 
         }

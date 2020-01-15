@@ -118,6 +118,10 @@
     <Compile Include="Migrations\202001102107542_Lading5.designer.cs">
       <DependentUpon>202001102107542_Lading5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001152016235_CreateLadingV4.cs" />
+    <Compile Include="Migrations\202001152016235_CreateLadingV4.designer.cs">
+      <DependentUpon>202001152016235_CreateLadingV4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="Program.cs" />
@@ -147,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001102107542_Lading5.resx">
       <DependentUpon>202001102107542_Lading5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001152016235_CreateLadingV4.resx">
+      <DependentUpon>202001152016235_CreateLadingV4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
