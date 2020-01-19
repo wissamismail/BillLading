@@ -90,6 +90,7 @@
             System.Windows.Forms.Label noCopies33Label;
             System.Windows.Forms.Label goodsReceivedPlace32Label;
             System.Windows.Forms.Label goodsReceivedDate32Label;
+            System.Windows.Forms.Label ladingTypeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
@@ -102,6 +103,7 @@
             this.senderAddress4TextBox = new System.Windows.Forms.TextBox();
             this.sender4TextBox = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.receiverPhone5TextBox = new System.Windows.Forms.TextBox();
             this.receiverAddress5TextBox = new System.Windows.Forms.TextBox();
             this.receiver5TextBox = new System.Windows.Forms.TextBox();
@@ -130,7 +132,10 @@
             this.vehicleType10TextBox = new System.Windows.Forms.TextBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.TabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.cachonDelivery29TextBox1 = new System.Windows.Forms.TextBox();
             this.specialAgreements28TextBox1 = new System.Windows.Forms.TextBox();
@@ -156,6 +161,22 @@
             this.tariffCode19_3TextBox = new System.Windows.Forms.TextBox();
             this.tariffCode19_2TextBox = new System.Windows.Forms.TextBox();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.noCopies33TextBox = new System.Windows.Forms.TextBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.goodsReceivedDate32DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.goodsReceivedPlace32TextBox = new System.Windows.Forms.TextBox();
+            this.otherChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
+            this.otherChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
+            this.otherChargesSender27TextBox = new System.Windows.Forms.TextBox();
+            this.supplChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
+            this.supplChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
+            this.supplChargesSender27TextBox = new System.Windows.Forms.TextBox();
+            this.deductionsConsignee27TextBox = new System.Windows.Forms.TextBox();
+            this.deductionsCurrency27TextBox = new System.Windows.Forms.TextBox();
+            this.deductionsSender27TextBox = new System.Windows.Forms.TextBox();
+            this.carriageChargesSender27TextBox = new System.Windows.Forms.TextBox();
+            this.carriageChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
+            this.carriageChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -177,27 +198,9 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.carriageChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
-            this.carriageChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
-            this.carriageChargesSender27TextBox = new System.Windows.Forms.TextBox();
-            this.deductionsSender27TextBox = new System.Windows.Forms.TextBox();
-            this.deductionsCurrency27TextBox = new System.Windows.Forms.TextBox();
-            this.deductionsConsignee27TextBox = new System.Windows.Forms.TextBox();
-            this.supplChargesSender27TextBox = new System.Windows.Forms.TextBox();
-            this.supplChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
-            this.supplChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
-            this.otherChargesSender27TextBox = new System.Windows.Forms.TextBox();
-            this.otherChargesCurrency27TextBox = new System.Windows.Forms.TextBox();
-            this.otherChargesConsignee27TextBox = new System.Windows.Forms.TextBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.noCopies33TextBox = new System.Windows.Forms.TextBox();
-            this.goodsReceivedPlace32TextBox = new System.Windows.Forms.TextBox();
-            this.goodsReceivedDate32DateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.ladingTypeComboBox = new System.Windows.Forms.ComboBox();
             this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
+            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
@@ -258,25 +261,27 @@
             noCopies33Label = new System.Windows.Forms.Label();
             goodsReceivedPlace32Label = new System.Windows.Forms.Label();
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
+            ladingTypeLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // annexedDocments14Label
@@ -528,6 +533,106 @@
             cachonDelivery29Label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             cachonDelivery29Label1.Name = "cachonDelivery29Label1";
             // 
+            // carriageChargesConsignee27Label
+            // 
+            resources.ApplyResources(carriageChargesConsignee27Label, "carriageChargesConsignee27Label");
+            carriageChargesConsignee27Label.BackColor = System.Drawing.SystemColors.Control;
+            carriageChargesConsignee27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            carriageChargesConsignee27Label.Name = "carriageChargesConsignee27Label";
+            // 
+            // carriageChargesCurrency27Label
+            // 
+            resources.ApplyResources(carriageChargesCurrency27Label, "carriageChargesCurrency27Label");
+            carriageChargesCurrency27Label.BackColor = System.Drawing.SystemColors.Control;
+            carriageChargesCurrency27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            carriageChargesCurrency27Label.Name = "carriageChargesCurrency27Label";
+            // 
+            // carriageChargesSender27Label
+            // 
+            resources.ApplyResources(carriageChargesSender27Label, "carriageChargesSender27Label");
+            carriageChargesSender27Label.BackColor = System.Drawing.SystemColors.Control;
+            carriageChargesSender27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            carriageChargesSender27Label.Name = "carriageChargesSender27Label";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(label1, "label1");
+            label1.BackColor = System.Drawing.SystemColors.Control;
+            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.BackColor = System.Drawing.SystemColors.Control;
+            label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label2.Name = "label2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.BackColor = System.Drawing.SystemColors.Control;
+            label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.BackColor = System.Drawing.SystemColors.Control;
+            label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label4.Name = "label4";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(label5, "label5");
+            label5.BackColor = System.Drawing.SystemColors.Control;
+            label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label5.Name = "label5";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(label6, "label6");
+            label6.BackColor = System.Drawing.SystemColors.Control;
+            label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(label7, "label7");
+            label7.BackColor = System.Drawing.SystemColors.ControlLight;
+            label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(label8, "label8");
+            label8.BackColor = System.Drawing.SystemColors.ControlLight;
+            label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(label9, "label9");
+            label9.BackColor = System.Drawing.SystemColors.ControlLight;
+            label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            label9.Name = "label9";
+            // 
+            // noCopies33Label
+            // 
+            resources.ApplyResources(noCopies33Label, "noCopies33Label");
+            noCopies33Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            noCopies33Label.Name = "noCopies33Label";
+            // 
+            // goodsReceivedPlace32Label
+            // 
+            resources.ApplyResources(goodsReceivedPlace32Label, "goodsReceivedPlace32Label");
+            goodsReceivedPlace32Label.Name = "goodsReceivedPlace32Label";
+            // 
+            // goodsReceivedDate32Label
+            // 
+            resources.ApplyResources(goodsReceivedDate32Label, "goodsReceivedDate32Label");
+            goodsReceivedDate32Label.Name = "goodsReceivedDate32Label";
+            // 
             // grossWeight20_1TextBox
             // 
             resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
@@ -614,6 +719,13 @@
             this.groupBox4.Controls.Add(receiver5Label);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // groupBox10
+            // 
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
             // 
             // receiverPhone5TextBox
             // 
@@ -799,7 +911,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.metroTabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTabControl1.UseSelectable = true;
@@ -807,6 +919,8 @@
             // TabPage1
             // 
             resources.ApplyResources(this.TabPage1, "TabPage1");
+            this.TabPage1.Controls.Add(this.ladingTypeComboBox);
+            this.TabPage1.Controls.Add(ladingTypeLabel);
             this.TabPage1.Controls.Add(this.groupBox12);
             this.TabPage1.Controls.Add(this.groupBox11);
             this.TabPage1.Controls.Add(this.groupBox5);
@@ -821,13 +935,37 @@
             this.TabPage1.Controls.Add(this.dateOfIssue3DateTimePicker);
             this.TabPage1.Controls.Add(dateOfIssue3Label);
             this.TabPage1.Controls.Add(this.groupBox13);
+            this.TabPage1.HorizontalScrollbar = true;
             this.TabPage1.HorizontalScrollbarBarColor = true;
             this.TabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.TabPage1.HorizontalScrollbarSize = 10;
             this.TabPage1.Name = "TabPage1";
+            this.TabPage1.VerticalScrollbar = true;
             this.TabPage1.VerticalScrollbarBarColor = true;
             this.TabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.TabPage1.VerticalScrollbarSize = 10;
+            // 
+            // groupBox12
+            // 
+            resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox12.Controls.Add(this.deliveryGoodsPlace9TextBox);
+            this.groupBox12.Controls.Add(deliveryGoodsPlace9Label);
+            this.groupBox12.Controls.Add(this.deliveryGoodsDate9DateTimePicker);
+            this.groupBox12.Controls.Add(deliveryGoodsDate9Label);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.TabStop = false;
+            // 
+            // groupBox11
+            // 
+            resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox11.Controls.Add(takingOverGoodsPlace8Label);
+            this.groupBox11.Controls.Add(takingOverGoodsDate8Label);
+            this.groupBox11.Controls.Add(this.takingOverGoodsPlace8TextBox);
+            this.groupBox11.Controls.Add(this.takingOverGoodsDate8DateTimePicker);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.TabStop = false;
             // 
             // groupBox5
             // 
@@ -843,6 +981,21 @@
             this.groupBox5.Controls.Add(this.vehicleType10TextBox);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
+            // 
+            // groupBox13
+            // 
+            resources.ApplyResources(this.groupBox13, "groupBox13");
+            this.groupBox13.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox13.Controls.Add(this.forwarderObservation11TextBox);
+            this.groupBox13.Controls.Add(this.routeFinalDestination12TextBox);
+            this.groupBox13.Controls.Add(routeFinalDestination12Label);
+            this.groupBox13.Controls.Add(forwarderObservation11Label);
+            this.groupBox13.Controls.Add(this.customsDeclarationNo13TextBox);
+            this.groupBox13.Controls.Add(annexedDocments14Label);
+            this.groupBox13.Controls.Add(customsDeclarationNo13Label);
+            this.groupBox13.Controls.Add(this.annexedDocments14TextBox);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.TabStop = false;
             // 
             // metroTabPage2
             // 
@@ -1088,6 +1241,109 @@
             this.metroTabPage3.VerticalScrollbarSize = 10;
             this.metroTabPage3.Click += new System.EventHandler(this.metroTabPage3_Click);
             // 
+            // noCopies33TextBox
+            // 
+            resources.ApplyResources(this.noCopies33TextBox, "noCopies33TextBox");
+            this.noCopies33TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoCopies33", true));
+            this.noCopies33TextBox.Name = "noCopies33TextBox";
+            // 
+            // groupBox9
+            // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox9.Controls.Add(goodsReceivedDate32Label);
+            this.groupBox9.Controls.Add(this.goodsReceivedDate32DateTimePicker);
+            this.groupBox9.Controls.Add(goodsReceivedPlace32Label);
+            this.groupBox9.Controls.Add(this.goodsReceivedPlace32TextBox);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // goodsReceivedDate32DateTimePicker
+            // 
+            resources.ApplyResources(this.goodsReceivedDate32DateTimePicker, "goodsReceivedDate32DateTimePicker");
+            this.goodsReceivedDate32DateTimePicker.Checked = false;
+            this.goodsReceivedDate32DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "GoodsReceivedDate32", true));
+            this.goodsReceivedDate32DateTimePicker.Name = "goodsReceivedDate32DateTimePicker";
+            this.goodsReceivedDate32DateTimePicker.ShowCheckBox = true;
+            // 
+            // goodsReceivedPlace32TextBox
+            // 
+            resources.ApplyResources(this.goodsReceivedPlace32TextBox, "goodsReceivedPlace32TextBox");
+            this.goodsReceivedPlace32TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GoodsReceivedPlace32", true));
+            this.goodsReceivedPlace32TextBox.Name = "goodsReceivedPlace32TextBox";
+            // 
+            // otherChargesConsignee27TextBox
+            // 
+            resources.ApplyResources(this.otherChargesConsignee27TextBox, "otherChargesConsignee27TextBox");
+            this.otherChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesConsignee27", true));
+            this.otherChargesConsignee27TextBox.Name = "otherChargesConsignee27TextBox";
+            // 
+            // otherChargesCurrency27TextBox
+            // 
+            resources.ApplyResources(this.otherChargesCurrency27TextBox, "otherChargesCurrency27TextBox");
+            this.otherChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesCurrency27", true));
+            this.otherChargesCurrency27TextBox.Name = "otherChargesCurrency27TextBox";
+            // 
+            // otherChargesSender27TextBox
+            // 
+            resources.ApplyResources(this.otherChargesSender27TextBox, "otherChargesSender27TextBox");
+            this.otherChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesSender27", true));
+            this.otherChargesSender27TextBox.Name = "otherChargesSender27TextBox";
+            // 
+            // supplChargesConsignee27TextBox
+            // 
+            resources.ApplyResources(this.supplChargesConsignee27TextBox, "supplChargesConsignee27TextBox");
+            this.supplChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesConsignee27", true));
+            this.supplChargesConsignee27TextBox.Name = "supplChargesConsignee27TextBox";
+            // 
+            // supplChargesCurrency27TextBox
+            // 
+            resources.ApplyResources(this.supplChargesCurrency27TextBox, "supplChargesCurrency27TextBox");
+            this.supplChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesCurrency27", true));
+            this.supplChargesCurrency27TextBox.Name = "supplChargesCurrency27TextBox";
+            // 
+            // supplChargesSender27TextBox
+            // 
+            resources.ApplyResources(this.supplChargesSender27TextBox, "supplChargesSender27TextBox");
+            this.supplChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesSender27", true));
+            this.supplChargesSender27TextBox.Name = "supplChargesSender27TextBox";
+            // 
+            // deductionsConsignee27TextBox
+            // 
+            resources.ApplyResources(this.deductionsConsignee27TextBox, "deductionsConsignee27TextBox");
+            this.deductionsConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsConsignee27", true));
+            this.deductionsConsignee27TextBox.Name = "deductionsConsignee27TextBox";
+            // 
+            // deductionsCurrency27TextBox
+            // 
+            resources.ApplyResources(this.deductionsCurrency27TextBox, "deductionsCurrency27TextBox");
+            this.deductionsCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsCurrency27", true));
+            this.deductionsCurrency27TextBox.Name = "deductionsCurrency27TextBox";
+            // 
+            // deductionsSender27TextBox
+            // 
+            resources.ApplyResources(this.deductionsSender27TextBox, "deductionsSender27TextBox");
+            this.deductionsSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsSender27", true));
+            this.deductionsSender27TextBox.Name = "deductionsSender27TextBox";
+            // 
+            // carriageChargesSender27TextBox
+            // 
+            resources.ApplyResources(this.carriageChargesSender27TextBox, "carriageChargesSender27TextBox");
+            this.carriageChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesSender27", true));
+            this.carriageChargesSender27TextBox.Name = "carriageChargesSender27TextBox";
+            // 
+            // carriageChargesCurrency27TextBox
+            // 
+            resources.ApplyResources(this.carriageChargesCurrency27TextBox, "carriageChargesCurrency27TextBox");
+            this.carriageChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesCurrency27", true));
+            this.carriageChargesCurrency27TextBox.Name = "carriageChargesCurrency27TextBox";
+            // 
+            // carriageChargesConsignee27TextBox
+            // 
+            resources.ApplyResources(this.carriageChargesConsignee27TextBox, "carriageChargesConsignee27TextBox");
+            this.carriageChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesConsignee27", true));
+            this.carriageChargesConsignee27TextBox.Name = "carriageChargesConsignee27TextBox";
+            // 
             // bindingNavigator1
             // 
             resources.ApplyResources(this.bindingNavigator1, "bindingNavigator1");
@@ -1259,257 +1515,32 @@
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
             // 
-            // carriageChargesConsignee27Label
-            // 
-            resources.ApplyResources(carriageChargesConsignee27Label, "carriageChargesConsignee27Label");
-            carriageChargesConsignee27Label.BackColor = System.Drawing.SystemColors.Control;
-            carriageChargesConsignee27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            carriageChargesConsignee27Label.Name = "carriageChargesConsignee27Label";
-            // 
-            // carriageChargesConsignee27TextBox
-            // 
-            resources.ApplyResources(this.carriageChargesConsignee27TextBox, "carriageChargesConsignee27TextBox");
-            this.carriageChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesConsignee27", true));
-            this.carriageChargesConsignee27TextBox.Name = "carriageChargesConsignee27TextBox";
-            // 
-            // carriageChargesCurrency27Label
-            // 
-            resources.ApplyResources(carriageChargesCurrency27Label, "carriageChargesCurrency27Label");
-            carriageChargesCurrency27Label.BackColor = System.Drawing.SystemColors.Control;
-            carriageChargesCurrency27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            carriageChargesCurrency27Label.Name = "carriageChargesCurrency27Label";
-            // 
-            // carriageChargesCurrency27TextBox
-            // 
-            resources.ApplyResources(this.carriageChargesCurrency27TextBox, "carriageChargesCurrency27TextBox");
-            this.carriageChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesCurrency27", true));
-            this.carriageChargesCurrency27TextBox.Name = "carriageChargesCurrency27TextBox";
-            // 
-            // carriageChargesSender27Label
-            // 
-            resources.ApplyResources(carriageChargesSender27Label, "carriageChargesSender27Label");
-            carriageChargesSender27Label.BackColor = System.Drawing.SystemColors.Control;
-            carriageChargesSender27Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            carriageChargesSender27Label.Name = "carriageChargesSender27Label";
-            // 
-            // carriageChargesSender27TextBox
-            // 
-            resources.ApplyResources(this.carriageChargesSender27TextBox, "carriageChargesSender27TextBox");
-            this.carriageChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesSender27", true));
-            this.carriageChargesSender27TextBox.Name = "carriageChargesSender27TextBox";
-            // 
-            // deductionsSender27TextBox
-            // 
-            resources.ApplyResources(this.deductionsSender27TextBox, "deductionsSender27TextBox");
-            this.deductionsSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsSender27", true));
-            this.deductionsSender27TextBox.Name = "deductionsSender27TextBox";
-            // 
-            // deductionsCurrency27TextBox
-            // 
-            resources.ApplyResources(this.deductionsCurrency27TextBox, "deductionsCurrency27TextBox");
-            this.deductionsCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsCurrency27", true));
-            this.deductionsCurrency27TextBox.Name = "deductionsCurrency27TextBox";
-            // 
-            // deductionsConsignee27TextBox
-            // 
-            resources.ApplyResources(this.deductionsConsignee27TextBox, "deductionsConsignee27TextBox");
-            this.deductionsConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsConsignee27", true));
-            this.deductionsConsignee27TextBox.Name = "deductionsConsignee27TextBox";
-            // 
-            // supplChargesSender27TextBox
-            // 
-            resources.ApplyResources(this.supplChargesSender27TextBox, "supplChargesSender27TextBox");
-            this.supplChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesSender27", true));
-            this.supplChargesSender27TextBox.Name = "supplChargesSender27TextBox";
-            // 
-            // supplChargesCurrency27TextBox
-            // 
-            resources.ApplyResources(this.supplChargesCurrency27TextBox, "supplChargesCurrency27TextBox");
-            this.supplChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesCurrency27", true));
-            this.supplChargesCurrency27TextBox.Name = "supplChargesCurrency27TextBox";
-            // 
-            // supplChargesConsignee27TextBox
-            // 
-            resources.ApplyResources(this.supplChargesConsignee27TextBox, "supplChargesConsignee27TextBox");
-            this.supplChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesConsignee27", true));
-            this.supplChargesConsignee27TextBox.Name = "supplChargesConsignee27TextBox";
-            // 
-            // otherChargesSender27TextBox
-            // 
-            resources.ApplyResources(this.otherChargesSender27TextBox, "otherChargesSender27TextBox");
-            this.otherChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesSender27", true));
-            this.otherChargesSender27TextBox.Name = "otherChargesSender27TextBox";
-            // 
-            // otherChargesCurrency27TextBox
-            // 
-            resources.ApplyResources(this.otherChargesCurrency27TextBox, "otherChargesCurrency27TextBox");
-            this.otherChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesCurrency27", true));
-            this.otherChargesCurrency27TextBox.Name = "otherChargesCurrency27TextBox";
-            // 
-            // otherChargesConsignee27TextBox
-            // 
-            resources.ApplyResources(this.otherChargesConsignee27TextBox, "otherChargesConsignee27TextBox");
-            this.otherChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesConsignee27", true));
-            this.otherChargesConsignee27TextBox.Name = "otherChargesConsignee27TextBox";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(label1, "label1");
-            label1.BackColor = System.Drawing.SystemColors.Control;
-            label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(label2, "label2");
-            label2.BackColor = System.Drawing.SystemColors.Control;
-            label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(label3, "label3");
-            label3.BackColor = System.Drawing.SystemColors.Control;
-            label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(label4, "label4");
-            label4.BackColor = System.Drawing.SystemColors.Control;
-            label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(label5, "label5");
-            label5.BackColor = System.Drawing.SystemColors.Control;
-            label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(label6, "label6");
-            label6.BackColor = System.Drawing.SystemColors.Control;
-            label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(label7, "label7");
-            label7.BackColor = System.Drawing.SystemColors.ControlLight;
-            label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(label8, "label8");
-            label8.BackColor = System.Drawing.SystemColors.ControlLight;
-            label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(label9, "label9");
-            label9.BackColor = System.Drawing.SystemColors.ControlLight;
-            label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            label9.Name = "label9";
-            // 
-            // groupBox9
-            // 
-            resources.ApplyResources(this.groupBox9, "groupBox9");
-            this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox9.Controls.Add(goodsReceivedDate32Label);
-            this.groupBox9.Controls.Add(this.goodsReceivedDate32DateTimePicker);
-            this.groupBox9.Controls.Add(goodsReceivedPlace32Label);
-            this.groupBox9.Controls.Add(this.goodsReceivedPlace32TextBox);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.TabStop = false;
-            // 
-            // noCopies33Label
-            // 
-            resources.ApplyResources(noCopies33Label, "noCopies33Label");
-            noCopies33Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            noCopies33Label.Name = "noCopies33Label";
-            // 
-            // noCopies33TextBox
-            // 
-            resources.ApplyResources(this.noCopies33TextBox, "noCopies33TextBox");
-            this.noCopies33TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoCopies33", true));
-            this.noCopies33TextBox.Name = "noCopies33TextBox";
-            // 
-            // goodsReceivedPlace32Label
-            // 
-            resources.ApplyResources(goodsReceivedPlace32Label, "goodsReceivedPlace32Label");
-            goodsReceivedPlace32Label.Name = "goodsReceivedPlace32Label";
-            // 
-            // goodsReceivedPlace32TextBox
-            // 
-            resources.ApplyResources(this.goodsReceivedPlace32TextBox, "goodsReceivedPlace32TextBox");
-            this.goodsReceivedPlace32TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GoodsReceivedPlace32", true));
-            this.goodsReceivedPlace32TextBox.Name = "goodsReceivedPlace32TextBox";
-            // 
-            // goodsReceivedDate32Label
-            // 
-            resources.ApplyResources(goodsReceivedDate32Label, "goodsReceivedDate32Label");
-            goodsReceivedDate32Label.Name = "goodsReceivedDate32Label";
-            // 
-            // goodsReceivedDate32DateTimePicker
-            // 
-            resources.ApplyResources(this.goodsReceivedDate32DateTimePicker, "goodsReceivedDate32DateTimePicker");
-            this.goodsReceivedDate32DateTimePicker.Checked = false;
-            this.goodsReceivedDate32DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "GoodsReceivedDate32", true));
-            this.goodsReceivedDate32DateTimePicker.Name = "goodsReceivedDate32DateTimePicker";
-            this.goodsReceivedDate32DateTimePicker.ShowCheckBox = true;
-            // 
-            // groupBox10
-            // 
-            resources.ApplyResources(this.groupBox10, "groupBox10");
-            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.TabStop = false;
-            // 
-            // groupBox11
-            // 
-            resources.ApplyResources(this.groupBox11, "groupBox11");
-            this.groupBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox11.Controls.Add(takingOverGoodsPlace8Label);
-            this.groupBox11.Controls.Add(takingOverGoodsDate8Label);
-            this.groupBox11.Controls.Add(this.takingOverGoodsPlace8TextBox);
-            this.groupBox11.Controls.Add(this.takingOverGoodsDate8DateTimePicker);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.TabStop = false;
-            // 
-            // groupBox12
-            // 
-            resources.ApplyResources(this.groupBox12, "groupBox12");
-            this.groupBox12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox12.Controls.Add(this.deliveryGoodsPlace9TextBox);
-            this.groupBox12.Controls.Add(deliveryGoodsPlace9Label);
-            this.groupBox12.Controls.Add(this.deliveryGoodsDate9DateTimePicker);
-            this.groupBox12.Controls.Add(deliveryGoodsDate9Label);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.TabStop = false;
-            // 
-            // groupBox13
-            // 
-            resources.ApplyResources(this.groupBox13, "groupBox13");
-            this.groupBox13.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox13.Controls.Add(this.forwarderObservation11TextBox);
-            this.groupBox13.Controls.Add(this.routeFinalDestination12TextBox);
-            this.groupBox13.Controls.Add(routeFinalDestination12Label);
-            this.groupBox13.Controls.Add(forwarderObservation11Label);
-            this.groupBox13.Controls.Add(this.customsDeclarationNo13TextBox);
-            this.groupBox13.Controls.Add(annexedDocments14Label);
-            this.groupBox13.Controls.Add(customsDeclarationNo13Label);
-            this.groupBox13.Controls.Add(this.annexedDocments14TextBox);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.TabStop = false;
+            // ladingTypeLabel
+            // 
+            resources.ApplyResources(ladingTypeLabel, "ladingTypeLabel");
+            ladingTypeLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            ladingTypeLabel.Name = "ladingTypeLabel";
+            // 
+            // ladingTypeComboBox
+            // 
+            resources.ApplyResources(this.ladingTypeComboBox, "ladingTypeComboBox");
+            this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingType", true));
+            this.ladingTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ladingTypeComboBox.FormattingEnabled = true;
+            this.ladingTypeComboBox.Items.AddRange(new object[] {
+            resources.GetString("ladingTypeComboBox.Items"),
+            resources.GetString("ladingTypeComboBox.Items1"),
+            resources.GetString("ladingTypeComboBox.Items2")});
+            this.ladingTypeComboBox.Name = "ladingTypeComboBox";
             // 
             // binSrcLading
             // 
             this.binSrcLading.DataSource = typeof(BillLading.Lading);
             this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
+            // 
+            // ladingBindingSource
+            // 
+            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
             // 
             // Form1
             // 
@@ -1532,8 +1563,14 @@
             this.metroTabControl1.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -1544,18 +1581,13 @@
             this.groupBox6.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1671,6 +1703,8 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.ComboBox ladingTypeComboBox;
+        private System.Windows.Forms.BindingSource ladingBindingSource;
     }
 }
 

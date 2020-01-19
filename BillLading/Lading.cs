@@ -11,6 +11,7 @@ namespace BillLading
     {
         [Key]
         public int LadingID { get; set; }
+        public Nullable<Int16> LadingType { get; set; }
 
         [StringLength(255)]
         public string PlaceOfIssue2 { get; set; }
