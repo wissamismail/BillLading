@@ -31,9 +31,7 @@ namespace BillLading
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            ReadOnlyTxt(true, TabPage1);
-            ReadOnlyTxt(true, metroTabPage2);
-            ReadOnlyTxt(true, metroTabPage3);
+            LockTabs(true);
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
@@ -41,9 +39,7 @@ namespace BillLading
             Lading db = new Lading();         
             binSrcLading.Add(db);
             binSrcLading.MoveLast();
-            ReadOnlyTxt(false, TabPage1);
-            ReadOnlyTxt(false, metroTabPage2);
-            ReadOnlyTxt(false, metroTabPage3);
+            LockTabs(false);
             placeOfIssue2TextBox.Focus();          
         }
 
@@ -63,18 +59,14 @@ namespace BillLading
                     db.SaveChanges();
                     MetroFramework.MetroMessageBox.Show(this, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     binSrcLading.RemoveCurrent();
-                    ReadOnlyTxt(true, TabPage1);
-                    ReadOnlyTxt(true, metroTabPage2);
-                    ReadOnlyTxt(true, metroTabPage3);
+                    LockTabs(true);
                 }
             }
         }
 
         private void bindingNavigatorEditItem_Click(object sender, EventArgs e)
         {
-            ReadOnlyTxt(false, TabPage1);
-            ReadOnlyTxt(false, metroTabPage2);
-            ReadOnlyTxt(false, metroTabPage3);
+            LockTabs(false);
             placeOfIssue2TextBox.Focus();
             Lading obj = binSrcLading.Current as Lading;
         }
@@ -108,9 +100,7 @@ namespace BillLading
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
         {
-            ReadOnlyTxt(true, TabPage1);
-            ReadOnlyTxt(true, metroTabPage2);
-            ReadOnlyTxt(true, metroTabPage3);
+            LockTabs(true);
             binSrcLading.ResetBindings(false);
             Form1_Load(sender, e);
         }
@@ -148,13 +138,19 @@ namespace BillLading
 
         private void binSrcLading_PositionChanged(object sender, EventArgs e)
         {
-            ReadOnlyTxt(true, TabPage1);
-            ReadOnlyTxt(true, metroTabPage2);
-            ReadOnlyTxt(true, metroTabPage3);
+            LockTabs(true);
         }
 
-        private void ReadOnlyTxt(bool Enable, MetroFramework.Controls.MetroTabPage TabPage)
-        {            
+        private void LockTabs(bool Enable)
+        {
+            LockTab(Enable, TabPage1);
+            LockTab(Enable, metroTabPage2);
+            LockTab(Enable, metroTabPage3);
+        }
+
+        private void LockTab(bool Enable, MetroFramework.Controls.MetroTabPage TabPage)
+        {
+           ladingTypeComboBox.Enabled = !(Enable);
            foreach (Control myCtl in TabPage.Controls)
             {
                 if (myCtl is TextBox) 
@@ -168,6 +164,7 @@ namespace BillLading
                     DateTimePicker myDT = (DateTimePicker)myCtl;
                     myDT.Enabled = !(Enable);
                 }
+
                 else if (myCtl is GroupBox)
                 {
                     foreach (Control myCtl2 in myCtl.Controls)
@@ -189,19 +186,5 @@ namespace BillLading
 
         }
 
-        private void metroTabPage2_Click(object sender, EventArgs e)
-        {
-
         }
-
-        private void dangerousGoodsInstructions22Label_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
 }

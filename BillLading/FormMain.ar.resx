@@ -792,6 +792,21 @@
   <data name="goodsReceivedDate32Label.Text" xml:space="preserve">
     <value>بتاريخ</value>
   </data>
+  <data name="ladingTypeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ladingTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ladingTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>668, 44</value>
+  </data>
+  <data name="ladingTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="ladingTypeLabel.Text" xml:space="preserve">
+    <value>نوع اللائحة</value>
+  </data>
   <data name="grossWeight20_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>434, 149</value>
   </data>
@@ -1066,31 +1081,13 @@
     <value>True</value>
   </data>
   <data name="ladingTypeComboBox.Items" xml:space="preserve">
-    <value>0</value>
+    <value>شحن قوميسيون</value>
   </data>
   <data name="ladingTypeComboBox.Items1" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ladingTypeComboBox.Items2" xml:space="preserve">
-    <value>2</value>
+    <value>شحن خاص</value>
   </data>
   <data name="ladingTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 21</value>
-  </data>
-  <data name="ladingTypeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ladingTypeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ladingTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>668, 44</value>
-  </data>
-  <data name="ladingTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="ladingTypeLabel.Text" xml:space="preserve">
-    <value>نوع اللائحة</value>
   </data>
   <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
     <value>348, 86</value>

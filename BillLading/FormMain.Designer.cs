@@ -132,6 +132,7 @@
             this.vehicleType10TextBox = new System.Windows.Forms.TextBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.TabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.ladingTypeComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -198,7 +199,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.ladingTypeComboBox = new System.Windows.Forms.ComboBox();
             this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
@@ -486,7 +486,6 @@
             // 
             resources.ApplyResources(dangerousGoodsInstructions22Label, "dangerousGoodsInstructions22Label");
             dangerousGoodsInstructions22Label.Name = "dangerousGoodsInstructions22Label";
-            dangerousGoodsInstructions22Label.Click += new System.EventHandler(this.dangerousGoodsInstructions22Label_Click);
             // 
             // sendersInstructions23Label
             // 
@@ -632,6 +631,12 @@
             // 
             resources.ApplyResources(goodsReceivedDate32Label, "goodsReceivedDate32Label");
             goodsReceivedDate32Label.Name = "goodsReceivedDate32Label";
+            // 
+            // ladingTypeLabel
+            // 
+            resources.ApplyResources(ladingTypeLabel, "ladingTypeLabel");
+            ladingTypeLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            ladingTypeLabel.Name = "ladingTypeLabel";
             // 
             // grossWeight20_1TextBox
             // 
@@ -945,6 +950,17 @@
             this.TabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.TabPage1.VerticalScrollbarSize = 10;
             // 
+            // ladingTypeComboBox
+            // 
+            resources.ApplyResources(this.ladingTypeComboBox, "ladingTypeComboBox");
+            this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingType", true));
+            this.ladingTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ladingTypeComboBox.FormattingEnabled = true;
+            this.ladingTypeComboBox.Items.AddRange(new object[] {
+            resources.GetString("ladingTypeComboBox.Items"),
+            resources.GetString("ladingTypeComboBox.Items1")});
+            this.ladingTypeComboBox.Name = "ladingTypeComboBox";
+            // 
             // groupBox12
             // 
             resources.ApplyResources(this.groupBox12, "groupBox12");
@@ -1041,7 +1057,6 @@
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
-            this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             // 
             // cachonDelivery29TextBox1
             // 
@@ -1239,7 +1254,6 @@
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
-            this.metroTabPage3.Click += new System.EventHandler(this.metroTabPage3_Click);
             // 
             // noCopies33TextBox
             // 
@@ -1514,24 +1528,6 @@
             // 
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
-            // 
-            // ladingTypeLabel
-            // 
-            resources.ApplyResources(ladingTypeLabel, "ladingTypeLabel");
-            ladingTypeLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            ladingTypeLabel.Name = "ladingTypeLabel";
-            // 
-            // ladingTypeComboBox
-            // 
-            resources.ApplyResources(this.ladingTypeComboBox, "ladingTypeComboBox");
-            this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingType", true));
-            this.ladingTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ladingTypeComboBox.FormattingEnabled = true;
-            this.ladingTypeComboBox.Items.AddRange(new object[] {
-            resources.GetString("ladingTypeComboBox.Items"),
-            resources.GetString("ladingTypeComboBox.Items1"),
-            resources.GetString("ladingTypeComboBox.Items2")});
-            this.ladingTypeComboBox.Name = "ladingTypeComboBox";
             // 
             // binSrcLading
             // 
