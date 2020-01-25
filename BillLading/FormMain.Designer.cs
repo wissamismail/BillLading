@@ -92,6 +92,7 @@
             System.Windows.Forms.Label goodsReceivedDate32Label;
             System.Windows.Forms.Label ladingTypeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
+            this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
@@ -195,11 +196,11 @@
             this.bindingNavigatorCancelItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPrintItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorTableItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorTableSQ = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorTableSP = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
@@ -262,6 +263,7 @@
             goodsReceivedPlace32Label = new System.Windows.Forms.Label();
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -280,7 +282,6 @@
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -643,6 +644,11 @@
             resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
             this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_1", true));
             this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
+            // 
+            // binSrcLading
+            // 
+            this.binSrcLading.DataSource = typeof(BillLading.Lading);
+            this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // marksNos15TextBox
             // 
@@ -1384,7 +1390,8 @@
             this.bindingNavigatorCancelItem,
             this.toolStripSeparator1,
             this.bindingNavigatorPrintItem,
-            this.bindingNavigatorTableItem,
+            this.bindingNavigatorTableSQ,
+            this.bindingNavigatorTableSP,
             this.toolStripSeparator2,
             this.bindingNavigatorFindIDItem,
             this.toolStripSeparator});
@@ -1504,13 +1511,21 @@
             this.bindingNavigatorPrintItem.Name = "bindingNavigatorPrintItem";
             this.bindingNavigatorPrintItem.Click += new System.EventHandler(this.bindingNavigatorPrintItem_Click);
             // 
-            // bindingNavigatorTableItem
+            // bindingNavigatorTableSQ
             // 
-            resources.ApplyResources(this.bindingNavigatorTableItem, "bindingNavigatorTableItem");
-            this.bindingNavigatorTableItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorTableItem.Image = global::BillLading.Properties.Resources.Table;
-            this.bindingNavigatorTableItem.Name = "bindingNavigatorTableItem";
-            this.bindingNavigatorTableItem.Click += new System.EventHandler(this.bindingNavigatorTableItem_Click);
+            resources.ApplyResources(this.bindingNavigatorTableSQ, "bindingNavigatorTableSQ");
+            this.bindingNavigatorTableSQ.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorTableSQ.Image = global::BillLading.Properties.Resources.delivery_truck;
+            this.bindingNavigatorTableSQ.Name = "bindingNavigatorTableSQ";
+            this.bindingNavigatorTableSQ.Click += new System.EventHandler(this.bindingNavigatorTableSQ_Click);
+            // 
+            // bindingNavigatorTableSP
+            // 
+            resources.ApplyResources(this.bindingNavigatorTableSP, "bindingNavigatorTableSP");
+            this.bindingNavigatorTableSP.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorTableSP.Image = global::BillLading.Properties.Resources.small_truck;
+            this.bindingNavigatorTableSP.Name = "bindingNavigatorTableSP";
+            this.bindingNavigatorTableSP.Click += new System.EventHandler(this.bindingNavigatorTableItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -1529,11 +1544,6 @@
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
             // 
-            // binSrcLading
-            // 
-            this.binSrcLading.DataSource = typeof(BillLading.Lading);
-            this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
-            // 
             // ladingBindingSource
             // 
             this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
@@ -1542,12 +1552,17 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackImage = global::BillLading.Properties.Resources.logistics_32;
+            this.BackImagePadding = new System.Windows.Forms.Padding(150, 25, 0, 0);
+            this.BackMaxSize = 32;
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.bindingNavigator1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1582,7 +1597,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1653,7 +1667,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorPrintItem;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorFindIDItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorTableItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorTableSP;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.TextBox tariffCode19_4TextBox;
@@ -1701,6 +1715,7 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox ladingTypeComboBox;
         private System.Windows.Forms.BindingSource ladingBindingSource;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorTableSQ;
     }
 }
 

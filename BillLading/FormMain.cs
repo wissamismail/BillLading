@@ -130,12 +130,6 @@ namespace BillLading
             }
         }
 
-        private void bindingNavigatorTableItem_Click(object sender, EventArgs e)
-        {
-            FormTable myFormTable = new FormTable();
-            myFormTable.Show();
-        }
-
         private void binSrcLading_PositionChanged(object sender, EventArgs e)
         {
             LockTabs(true);
@@ -186,5 +180,16 @@ namespace BillLading
 
         }
 
+        private void bindingNavigatorTableItem_Click(object sender, EventArgs e)
+        {
+            FormTablePrivate myFormTable = new FormTablePrivate();
+            myFormTable.Show();
         }
+
+        private void bindingNavigatorTableSQ_Click(object sender, EventArgs e)
+        {
+            FormTableQomision myFormTable = new FormTableQomision();
+            myFormTable.Show();
+        }
+    }
 }

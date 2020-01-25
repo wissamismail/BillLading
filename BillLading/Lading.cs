@@ -165,5 +165,18 @@ namespace BillLading
         [StringLength(30)]
         public string NoCopies33 { get; set; }
 
+        [StringLength(20)]
+        public string SP_Code { get; set; }
+        [StringLength(50)]
+        public string SP_Reference { get; set; }
+        public Nullable<DateTime> SP_AdvanceDate { get; set; }
+        public int SP_AdvanceValue { get; set; }
+        [StringLength(10)]
+        public string SP_AdvanceType { get; set; }
+
+        [StringLength(100)]
+        public string SQ_Reference { get; set; }
+        [StringLength(150)]
+        public string SQ_Customer { get; set; }
     }
 }

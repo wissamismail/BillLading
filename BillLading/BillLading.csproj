@@ -89,11 +89,17 @@
     <Compile Include="FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTable.cs">
+    <Compile Include="FormTableQomision.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTable.Designer.cs">
-      <DependentUpon>FormTable.cs</DependentUpon>
+    <Compile Include="FormTableQomision.Designer.cs">
+      <DependentUpon>FormTableQomision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTablePrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTablePrivate.Designer.cs">
+      <DependentUpon>FormTablePrivate.cs</DependentUpon>
     </Compile>
     <Compile Include="Lading.cs" />
     <Compile Include="FormMain.cs">
@@ -102,37 +108,9 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911202017068_Lading.cs" />
-    <Compile Include="Migrations\201911202017068_Lading.designer.cs">
-      <DependentUpon>201911202017068_Lading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911272042485_CreateLading1.cs" />
-    <Compile Include="Migrations\201911272042485_CreateLading1.designer.cs">
-      <DependentUpon>201911272042485_CreateLading1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201912141827132_LadingV3.cs" />
-    <Compile Include="Migrations\201912141827132_LadingV3.designer.cs">
-      <DependentUpon>201912141827132_LadingV3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001102107542_Lading5.cs" />
-    <Compile Include="Migrations\202001102107542_Lading5.designer.cs">
-      <DependentUpon>202001102107542_Lading5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001152016235_CreateLadingV4.cs" />
-    <Compile Include="Migrations\202001152016235_CreateLadingV4.designer.cs">
-      <DependentUpon>202001152016235_CreateLadingV4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001152131196_CreateLadingV5.cs" />
-    <Compile Include="Migrations\202001152131196_CreateLadingV5.designer.cs">
-      <DependentUpon>202001152131196_CreateLadingV5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001152149141_CreateLadingV6.cs" />
-    <Compile Include="Migrations\202001152149141_CreateLadingV6.designer.cs">
-      <DependentUpon>202001152149141_CreateLadingV6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001202123190_CreateLadingV7.cs" />
-    <Compile Include="Migrations\202001202123190_CreateLadingV7.designer.cs">
-      <DependentUpon>202001202123190_CreateLadingV7.cs</DependentUpon>
+    <Compile Include="Migrations\202001252136140_CreateLadingV8.cs" />
+    <Compile Include="Migrations\202001252136140_CreateLadingV8.designer.cs">
+      <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
@@ -148,33 +126,15 @@
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTable.resx">
-      <DependentUpon>FormTable.cs</DependentUpon>
+    <EmbeddedResource Include="FormTableQomision.resx">
+      <DependentUpon>FormTableQomision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTablePrivate.resx">
+      <DependentUpon>FormTablePrivate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LadingReport.rdlc" />
-    <EmbeddedResource Include="Migrations\201911202017068_Lading.resx">
-      <DependentUpon>201911202017068_Lading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911272042485_CreateLading1.resx">
-      <DependentUpon>201911272042485_CreateLading1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201912141827132_LadingV3.resx">
-      <DependentUpon>201912141827132_LadingV3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001102107542_Lading5.resx">
-      <DependentUpon>202001102107542_Lading5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001152016235_CreateLadingV4.resx">
-      <DependentUpon>202001152016235_CreateLadingV4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001152131196_CreateLadingV5.resx">
-      <DependentUpon>202001152131196_CreateLadingV5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001152149141_CreateLadingV6.resx">
-      <DependentUpon>202001152149141_CreateLadingV6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001202123190_CreateLadingV7.resx">
-      <DependentUpon>202001202123190_CreateLadingV7.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001252136140_CreateLadingV8.resx">
+      <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -219,6 +179,12 @@
     <None Include="Resources\Report.png" />
     <None Include="Resources\iconfinder_Print_16x16_229118.png" />
     <None Include="Resources\Table.png" />
+    <None Include="Resources\delivery_truck.png" />
+    <None Include="Resources\small_truck.png" />
+    <None Include="Resources\logistics64.png" />
+    <None Include="Resources\24.png" />
+    <None Include="Resources\logistics_48.png" />
+    <None Include="Resources\logistics_32.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

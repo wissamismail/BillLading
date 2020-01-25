@@ -13,9 +13,9 @@ using MetroFramework.Forms;
 
 namespace BillLading
 {
-    public partial class FormTable : Form
+    public partial class FormTablePrivate : MetroFramework.Forms.MetroForm
     {
-        public FormTable()
+        public FormTablePrivate()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace BillLading
             using (DBModelLadings db = new DBModelLadings())
             {
 
-                ladingBindingSource.DataSource = db.Ladings.ToList();
+                ladingBindingSource.DataSource = db.Ladings.Where(s => s.LadingType == "شحن خاص").ToList();
                
             }
         }

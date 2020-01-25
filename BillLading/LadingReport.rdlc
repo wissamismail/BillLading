@@ -2160,7 +2160,7 @@
           </Textbox>
         </ReportItems>
         <Top>2.17311cm</Top>
-        <Left>0.99263cm</Left>
+        <Left>0.45288cm</Left>
         <Height>23.87814cm</Height>
         <Width>19.17616cm</Width>
         <Style>
@@ -2197,7 +2197,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>0.72477cm</Top>
-        <Left>7.8378cm</Left>
+        <Left>7.29805cm</Left>
         <Height>1.36136cm</Height>
         <Width>12.07474cm</Width>
         <ZIndex>1</ZIndex>
@@ -2233,7 +2233,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>26.22764cm</Top>
-        <Left>0.89121cm</Left>
+        <Left>0.57371cm</Left>
         <Height>1.5525cm</Height>
         <Width>18.98069cm</Width>
         <ZIndex>2</ZIndex>
@@ -2256,7 +2256,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>21.01546cm</Width>
+  <Width>20.16879cm</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
