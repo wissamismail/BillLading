@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,8 @@ namespace BillLading
 {
     public partial class FormTablePrivate : MetroFramework.Forms.MetroForm
     {
+        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => s.LadingType == LadingBussiness.LadingTypeSP;
+
         public FormTablePrivate()
         {
             InitializeComponent();
@@ -22,12 +25,40 @@ namespace BillLading
 
         private void FormTable_Load(object sender, EventArgs e)
         {
-            using (DBModelLadings db = new DBModelLadings())
-            {
+            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1);
+        }
 
-                ladingBindingSource.DataSource = db.Ladings.Where(s => s.LadingType == "شحن خاص").ToList();
-               
-            }
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, false, LadingBussiness.LadingTypeSP);
+            ladingDataGridView.ReadOnly = false;
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            LadingBussiness.bindingNavigatorDeleteItem(ladingBindingSource, this);
+            ladingDataGridView.ReadOnly = true;
+        }
+
+        private void bindingNavigatorEditItem_Click(object sender, EventArgs e)
+        {
+            ladingDataGridView.ReadOnly = false;
+        }
+
+        private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
+        }
+
+        private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
+        {
+            ladingDataGridView.ReadOnly = true;
+            LadingBussiness.bindingNavigatorCancelItem(ladingBindingSource, myQuery, bindingNavigator1);
+        }
+
+        private void ladingBindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            ladingDataGridView.ReadOnly = true;
         }
     }
 }

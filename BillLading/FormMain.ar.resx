@@ -1802,4 +1802,7 @@
         GAAAHH/////8AAAf//////wYCD///////nw+f////////n////8=
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
 </root>

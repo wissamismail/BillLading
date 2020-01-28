@@ -108,9 +108,14 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="LadingBussiness.cs" />
     <Compile Include="Migrations\202001252136140_CreateLadingV8.cs" />
     <Compile Include="Migrations\202001252136140_CreateLadingV8.designer.cs">
       <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001282038305_CreateLading1.cs" />
+    <Compile Include="Migrations\202001282038305_CreateLading1.designer.cs">
+      <DependentUpon>202001282038305_CreateLading1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
@@ -135,6 +140,9 @@
     <EmbeddedResource Include="LadingReport.rdlc" />
     <EmbeddedResource Include="Migrations\202001252136140_CreateLadingV8.resx">
       <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001282038305_CreateLading1.resx">
+      <DependentUpon>202001282038305_CreateLading1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

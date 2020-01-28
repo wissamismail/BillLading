@@ -14,6 +14,10 @@ namespace BillLading
         [StringLength(15)]
         public string LadingType { get; set; }
 
+        public int LadingCode { get; set; }
+
+        public Boolean isLading { get; set; }
+
         [StringLength(255)]
         public string PlaceOfIssue2 { get; set; }
 

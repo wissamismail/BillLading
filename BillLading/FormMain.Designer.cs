@@ -92,7 +92,6 @@
             System.Windows.Forms.Label goodsReceivedDate32Label;
             System.Windows.Forms.Label ladingTypeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
-            this.binSrcLading = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
@@ -263,7 +262,6 @@
             goodsReceivedPlace32Label = new System.Windows.Forms.Label();
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -642,48 +640,43 @@
             // grossWeight20_1TextBox
             // 
             resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
-            this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_1", true));
+            this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_1", true));
             this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
-            // 
-            // binSrcLading
-            // 
-            this.binSrcLading.DataSource = typeof(BillLading.Lading);
-            this.binSrcLading.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // marksNos15TextBox
             // 
             resources.ApplyResources(this.marksNos15TextBox, "marksNos15TextBox");
-            this.marksNos15TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "MarksNos15", true));
+            this.marksNos15TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "MarksNos15", true));
             this.marksNos15TextBox.Name = "marksNos15TextBox";
             // 
             // methodOfPacking17TextBox
             // 
             resources.ApplyResources(this.methodOfPacking17TextBox, "methodOfPacking17TextBox");
-            this.methodOfPacking17TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "MethodOfPacking17", true));
+            this.methodOfPacking17TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "MethodOfPacking17", true));
             this.methodOfPacking17TextBox.Name = "methodOfPacking17TextBox";
             // 
             // natureOfGoods18TextBox
             // 
             resources.ApplyResources(this.natureOfGoods18TextBox, "natureOfGoods18TextBox");
-            this.natureOfGoods18TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NatureOfGoods18", true));
+            this.natureOfGoods18TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "NatureOfGoods18", true));
             this.natureOfGoods18TextBox.Name = "natureOfGoods18TextBox";
             // 
             // noOfPackages16TextBox
             // 
             resources.ApplyResources(this.noOfPackages16TextBox, "noOfPackages16TextBox");
-            this.noOfPackages16TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoOfPackages16", true));
+            this.noOfPackages16TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "NoOfPackages16", true));
             this.noOfPackages16TextBox.Name = "noOfPackages16TextBox";
             // 
             // tariffCode19_1TextBox
             // 
             resources.ApplyResources(this.tariffCode19_1TextBox, "tariffCode19_1TextBox");
-            this.tariffCode19_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_1", true));
+            this.tariffCode19_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TariffCode19_1", true));
             this.tariffCode19_1TextBox.Name = "tariffCode19_1TextBox";
             // 
             // volume21_1TextBox
             // 
             resources.ApplyResources(this.volume21_1TextBox, "volume21_1TextBox");
-            this.volume21_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_1", true));
+            this.volume21_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Volume21_1", true));
             this.volume21_1TextBox.Name = "volume21_1TextBox";
             // 
             // groupBox1
@@ -702,19 +695,19 @@
             // senderPhone4TextBox
             // 
             resources.ApplyResources(this.senderPhone4TextBox, "senderPhone4TextBox");
-            this.senderPhone4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderPhone4", true));
+            this.senderPhone4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SenderPhone4", true));
             this.senderPhone4TextBox.Name = "senderPhone4TextBox";
             // 
             // senderAddress4TextBox
             // 
             resources.ApplyResources(this.senderAddress4TextBox, "senderAddress4TextBox");
-            this.senderAddress4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SenderAddress4", true));
+            this.senderAddress4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SenderAddress4", true));
             this.senderAddress4TextBox.Name = "senderAddress4TextBox";
             // 
             // sender4TextBox
             // 
             resources.ApplyResources(this.sender4TextBox, "sender4TextBox");
-            this.sender4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Sender4", true));
+            this.sender4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Sender4", true));
             this.sender4TextBox.Name = "sender4TextBox";
             // 
             // groupBox4
@@ -741,19 +734,19 @@
             // receiverPhone5TextBox
             // 
             resources.ApplyResources(this.receiverPhone5TextBox, "receiverPhone5TextBox");
-            this.receiverPhone5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverPhone5", true));
+            this.receiverPhone5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ReceiverPhone5", true));
             this.receiverPhone5TextBox.Name = "receiverPhone5TextBox";
             // 
             // receiverAddress5TextBox
             // 
             resources.ApplyResources(this.receiverAddress5TextBox, "receiverAddress5TextBox");
-            this.receiverAddress5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ReceiverAddress5", true));
+            this.receiverAddress5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ReceiverAddress5", true));
             this.receiverAddress5TextBox.Name = "receiverAddress5TextBox";
             // 
             // receiver5TextBox
             // 
             resources.ApplyResources(this.receiver5TextBox, "receiver5TextBox");
-            this.receiver5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Receiver5", true));
+            this.receiver5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Receiver5", true));
             this.receiver5TextBox.Name = "receiver5TextBox";
             // 
             // groupBox3
@@ -772,19 +765,19 @@
             // carrierPhone6TextBox
             // 
             resources.ApplyResources(this.carrierPhone6TextBox, "carrierPhone6TextBox");
-            this.carrierPhone6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierPhone6", true));
+            this.carrierPhone6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarrierPhone6", true));
             this.carrierPhone6TextBox.Name = "carrierPhone6TextBox";
             // 
             // carrierAddress6TextBox
             // 
             resources.ApplyResources(this.carrierAddress6TextBox, "carrierAddress6TextBox");
-            this.carrierAddress6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarrierAddress6", true));
+            this.carrierAddress6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarrierAddress6", true));
             this.carrierAddress6TextBox.Name = "carrierAddress6TextBox";
             // 
             // carrier6TextBox
             // 
             resources.ApplyResources(this.carrier6TextBox, "carrier6TextBox");
-            this.carrier6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Carrier6", true));
+            this.carrier6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Carrier6", true));
             this.carrier6TextBox.Name = "carrier6TextBox";
             // 
             // groupBox2
@@ -803,38 +796,38 @@
             // forwarder7TextBox
             // 
             resources.ApplyResources(this.forwarder7TextBox, "forwarder7TextBox");
-            this.forwarder7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Forwarder7", true));
+            this.forwarder7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Forwarder7", true));
             this.forwarder7TextBox.Name = "forwarder7TextBox";
             // 
             // forwarderPhone7TextBox
             // 
             resources.ApplyResources(this.forwarderPhone7TextBox, "forwarderPhone7TextBox");
-            this.forwarderPhone7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderPhone7", true));
+            this.forwarderPhone7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderPhone7", true));
             this.forwarderPhone7TextBox.Name = "forwarderPhone7TextBox";
             // 
             // forwarderAddress7TextBox
             // 
             resources.ApplyResources(this.forwarderAddress7TextBox, "forwarderAddress7TextBox");
-            this.forwarderAddress7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderAddress7", true));
+            this.forwarderAddress7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderAddress7", true));
             this.forwarderAddress7TextBox.Name = "forwarderAddress7TextBox";
             // 
             // annexedDocments14TextBox
             // 
             resources.ApplyResources(this.annexedDocments14TextBox, "annexedDocments14TextBox");
-            this.annexedDocments14TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "AnnexedDocments14", true));
+            this.annexedDocments14TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "AnnexedDocments14", true));
             this.annexedDocments14TextBox.Name = "annexedDocments14TextBox";
             // 
             // customsDeclarationNo13TextBox
             // 
             resources.ApplyResources(this.customsDeclarationNo13TextBox, "customsDeclarationNo13TextBox");
-            this.customsDeclarationNo13TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CustomsDeclarationNo13", true));
+            this.customsDeclarationNo13TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CustomsDeclarationNo13", true));
             this.customsDeclarationNo13TextBox.Name = "customsDeclarationNo13TextBox";
             // 
             // dateOfIssue3DateTimePicker
             // 
             resources.ApplyResources(this.dateOfIssue3DateTimePicker, "dateOfIssue3DateTimePicker");
             this.dateOfIssue3DateTimePicker.Checked = false;
-            this.dateOfIssue3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DateOfIssue3", true));
+            this.dateOfIssue3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ladingBindingSource, "DateOfIssue3", true));
             this.dateOfIssue3DateTimePicker.Name = "dateOfIssue3DateTimePicker";
             this.dateOfIssue3DateTimePicker.ShowCheckBox = true;
             // 
@@ -842,77 +835,77 @@
             // 
             resources.ApplyResources(this.deliveryGoodsDate9DateTimePicker, "deliveryGoodsDate9DateTimePicker");
             this.deliveryGoodsDate9DateTimePicker.Checked = false;
-            this.deliveryGoodsDate9DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "DeliveryGoodsDate9", true));
+            this.deliveryGoodsDate9DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ladingBindingSource, "DeliveryGoodsDate9", true));
             this.deliveryGoodsDate9DateTimePicker.Name = "deliveryGoodsDate9DateTimePicker";
             this.deliveryGoodsDate9DateTimePicker.ShowCheckBox = true;
             // 
             // deliveryGoodsPlace9TextBox
             // 
             resources.ApplyResources(this.deliveryGoodsPlace9TextBox, "deliveryGoodsPlace9TextBox");
-            this.deliveryGoodsPlace9TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeliveryGoodsPlace9", true));
+            this.deliveryGoodsPlace9TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DeliveryGoodsPlace9", true));
             this.deliveryGoodsPlace9TextBox.Name = "deliveryGoodsPlace9TextBox";
             // 
             // forwarderObservation11TextBox
             // 
             resources.ApplyResources(this.forwarderObservation11TextBox, "forwarderObservation11TextBox");
-            this.forwarderObservation11TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "ForwarderObservation11", true));
+            this.forwarderObservation11TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderObservation11", true));
             this.forwarderObservation11TextBox.Name = "forwarderObservation11TextBox";
             // 
             // ladingIDTextBox
             // 
             resources.ApplyResources(this.ladingIDTextBox, "ladingIDTextBox");
-            this.ladingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingID", true));
+            this.ladingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingID", true));
             this.ladingIDTextBox.Name = "ladingIDTextBox";
             this.ladingIDTextBox.ReadOnly = true;
             // 
             // placeOfIssue2TextBox
             // 
             resources.ApplyResources(this.placeOfIssue2TextBox, "placeOfIssue2TextBox");
-            this.placeOfIssue2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "PlaceOfIssue2", true));
+            this.placeOfIssue2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "PlaceOfIssue2", true));
             this.placeOfIssue2TextBox.Name = "placeOfIssue2TextBox";
             // 
             // routeFinalDestination12TextBox
             // 
             resources.ApplyResources(this.routeFinalDestination12TextBox, "routeFinalDestination12TextBox");
-            this.routeFinalDestination12TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "RouteFinalDestination12", true));
+            this.routeFinalDestination12TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "RouteFinalDestination12", true));
             this.routeFinalDestination12TextBox.Name = "routeFinalDestination12TextBox";
             // 
             // takingOverGoodsDate8DateTimePicker
             // 
             resources.ApplyResources(this.takingOverGoodsDate8DateTimePicker, "takingOverGoodsDate8DateTimePicker");
             this.takingOverGoodsDate8DateTimePicker.Checked = false;
-            this.takingOverGoodsDate8DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "TakingOverGoodsDate8", true));
+            this.takingOverGoodsDate8DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ladingBindingSource, "TakingOverGoodsDate8", true));
             this.takingOverGoodsDate8DateTimePicker.Name = "takingOverGoodsDate8DateTimePicker";
             this.takingOverGoodsDate8DateTimePicker.ShowCheckBox = true;
             // 
             // takingOverGoodsPlace8TextBox
             // 
             resources.ApplyResources(this.takingOverGoodsPlace8TextBox, "takingOverGoodsPlace8TextBox");
-            this.takingOverGoodsPlace8TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TakingOverGoodsPlace8", true));
+            this.takingOverGoodsPlace8TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TakingOverGoodsPlace8", true));
             this.takingOverGoodsPlace8TextBox.Name = "takingOverGoodsPlace8TextBox";
             // 
             // vehicleClass10TextBox
             // 
             resources.ApplyResources(this.vehicleClass10TextBox, "vehicleClass10TextBox");
-            this.vehicleClass10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleClass10", true));
+            this.vehicleClass10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "VehicleClass10", true));
             this.vehicleClass10TextBox.Name = "vehicleClass10TextBox";
             // 
             // vehicleDriver10TextBox
             // 
             resources.ApplyResources(this.vehicleDriver10TextBox, "vehicleDriver10TextBox");
-            this.vehicleDriver10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleDriver10", true));
+            this.vehicleDriver10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "VehicleDriver10", true));
             this.vehicleDriver10TextBox.Name = "vehicleDriver10TextBox";
             // 
             // vehicleNumber10TextBox
             // 
             resources.ApplyResources(this.vehicleNumber10TextBox, "vehicleNumber10TextBox");
-            this.vehicleNumber10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleNumber10", true));
+            this.vehicleNumber10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "VehicleNumber10", true));
             this.vehicleNumber10TextBox.Name = "vehicleNumber10TextBox";
             // 
             // vehicleType10TextBox
             // 
             resources.ApplyResources(this.vehicleType10TextBox, "vehicleType10TextBox");
-            this.vehicleType10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "VehicleType10", true));
+            this.vehicleType10TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "VehicleType10", true));
             this.vehicleType10TextBox.Name = "vehicleType10TextBox";
             // 
             // metroTabControl1
@@ -959,7 +952,7 @@
             // ladingTypeComboBox
             // 
             resources.ApplyResources(this.ladingTypeComboBox, "ladingTypeComboBox");
-            this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "LadingType", true));
+            this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingType", true));
             this.ladingTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ladingTypeComboBox.FormattingEnabled = true;
             this.ladingTypeComboBox.Items.AddRange(new object[] {
@@ -1067,13 +1060,13 @@
             // cachonDelivery29TextBox1
             // 
             resources.ApplyResources(this.cachonDelivery29TextBox1, "cachonDelivery29TextBox1");
-            this.cachonDelivery29TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CachonDelivery29", true));
+            this.cachonDelivery29TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CachonDelivery29", true));
             this.cachonDelivery29TextBox1.Name = "cachonDelivery29TextBox1";
             // 
             // specialAgreements28TextBox1
             // 
             resources.ApplyResources(this.specialAgreements28TextBox1, "specialAgreements28TextBox1");
-            this.specialAgreements28TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SpecialAgreements28", true));
+            this.specialAgreements28TextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SpecialAgreements28", true));
             this.specialAgreements28TextBox1.Name = "specialAgreements28TextBox1";
             // 
             // groupBox8
@@ -1092,19 +1085,19 @@
             // carriageInstructions26TextBox
             // 
             resources.ApplyResources(this.carriageInstructions26TextBox, "carriageInstructions26TextBox");
-            this.carriageInstructions26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageInstructions26", true));
+            this.carriageInstructions26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriageInstructions26", true));
             this.carriageInstructions26TextBox.Name = "carriageInstructions26TextBox";
             // 
             // carriagePaid26TextBox
             // 
             resources.ApplyResources(this.carriagePaid26TextBox, "carriagePaid26TextBox");
-            this.carriagePaid26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriagePaid26", true));
+            this.carriagePaid26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriagePaid26", true));
             this.carriagePaid26TextBox.Name = "carriagePaid26TextBox";
             // 
             // carriageForward26TextBox
             // 
             resources.ApplyResources(this.carriageForward26TextBox, "carriageForward26TextBox");
-            this.carriageForward26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageForward26", true));
+            this.carriageForward26TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriageForward26", true));
             this.carriageForward26TextBox.Name = "carriageForward26TextBox";
             // 
             // groupBox7
@@ -1121,19 +1114,19 @@
             // demurrageLoading24TextBox
             // 
             resources.ApplyResources(this.demurrageLoading24TextBox, "demurrageLoading24TextBox");
-            this.demurrageLoading24TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageLoading24", true));
+            this.demurrageLoading24TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DemurrageLoading24", true));
             this.demurrageLoading24TextBox.Name = "demurrageLoading24TextBox";
             // 
             // demurrageDischarge25TextBox
             // 
             resources.ApplyResources(this.demurrageDischarge25TextBox, "demurrageDischarge25TextBox");
-            this.demurrageDischarge25TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DemurrageDischarge25", true));
+            this.demurrageDischarge25TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DemurrageDischarge25", true));
             this.demurrageDischarge25TextBox.Name = "demurrageDischarge25TextBox";
             // 
             // sendersInstructions23TextBox
             // 
             resources.ApplyResources(this.sendersInstructions23TextBox, "sendersInstructions23TextBox");
-            this.sendersInstructions23TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SendersInstructions23", true));
+            this.sendersInstructions23TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SendersInstructions23", true));
             this.sendersInstructions23TextBox.Name = "sendersInstructions23TextBox";
             // 
             // groupBox6
@@ -1152,73 +1145,73 @@
             // dangerousGoodsClass22TextBox
             // 
             resources.ApplyResources(this.dangerousGoodsClass22TextBox, "dangerousGoodsClass22TextBox");
-            this.dangerousGoodsClass22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsClass22", true));
+            this.dangerousGoodsClass22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DangerousGoodsClass22", true));
             this.dangerousGoodsClass22TextBox.Name = "dangerousGoodsClass22TextBox";
             // 
             // dangerousGoodsCode22TextBox
             // 
             resources.ApplyResources(this.dangerousGoodsCode22TextBox, "dangerousGoodsCode22TextBox");
-            this.dangerousGoodsCode22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsCode22", true));
+            this.dangerousGoodsCode22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DangerousGoodsCode22", true));
             this.dangerousGoodsCode22TextBox.Name = "dangerousGoodsCode22TextBox";
             // 
             // dangerousGoodsInstructions22TextBox
             // 
             resources.ApplyResources(this.dangerousGoodsInstructions22TextBox, "dangerousGoodsInstructions22TextBox");
-            this.dangerousGoodsInstructions22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DangerousGoodsInstructions22", true));
+            this.dangerousGoodsInstructions22TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DangerousGoodsInstructions22", true));
             this.dangerousGoodsInstructions22TextBox.Name = "dangerousGoodsInstructions22TextBox";
             // 
             // volume21_4TextBox
             // 
             resources.ApplyResources(this.volume21_4TextBox, "volume21_4TextBox");
-            this.volume21_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_4", true));
+            this.volume21_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Volume21_4", true));
             this.volume21_4TextBox.Name = "volume21_4TextBox";
             // 
             // volume21_3TextBox
             // 
             resources.ApplyResources(this.volume21_3TextBox, "volume21_3TextBox");
-            this.volume21_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_3", true));
+            this.volume21_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Volume21_3", true));
             this.volume21_3TextBox.Name = "volume21_3TextBox";
             // 
             // volume21_2TextBox
             // 
             resources.ApplyResources(this.volume21_2TextBox, "volume21_2TextBox");
-            this.volume21_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "Volume21_2", true));
+            this.volume21_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Volume21_2", true));
             this.volume21_2TextBox.Name = "volume21_2TextBox";
             // 
             // grossWeight20_4TextBox
             // 
             resources.ApplyResources(this.grossWeight20_4TextBox, "grossWeight20_4TextBox");
-            this.grossWeight20_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_4", true));
+            this.grossWeight20_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_4", true));
             this.grossWeight20_4TextBox.Name = "grossWeight20_4TextBox";
             // 
             // grossWeight20_3TextBox
             // 
             resources.ApplyResources(this.grossWeight20_3TextBox, "grossWeight20_3TextBox");
-            this.grossWeight20_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_3", true));
+            this.grossWeight20_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_3", true));
             this.grossWeight20_3TextBox.Name = "grossWeight20_3TextBox";
             // 
             // grossWeight20_2TextBox
             // 
             resources.ApplyResources(this.grossWeight20_2TextBox, "grossWeight20_2TextBox");
-            this.grossWeight20_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GrossWeight20_2", true));
+            this.grossWeight20_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_2", true));
             this.grossWeight20_2TextBox.Name = "grossWeight20_2TextBox";
             // 
             // tariffCode19_4TextBox
             // 
             resources.ApplyResources(this.tariffCode19_4TextBox, "tariffCode19_4TextBox");
-            this.tariffCode19_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_4", true));
+            this.tariffCode19_4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TariffCode19_4", true));
             this.tariffCode19_4TextBox.Name = "tariffCode19_4TextBox";
             // 
             // tariffCode19_3TextBox
             // 
             resources.ApplyResources(this.tariffCode19_3TextBox, "tariffCode19_3TextBox");
-            this.tariffCode19_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_3", true));
+            this.tariffCode19_3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TariffCode19_3", true));
             this.tariffCode19_3TextBox.Name = "tariffCode19_3TextBox";
             // 
             // tariffCode19_2TextBox
             // 
             resources.ApplyResources(this.tariffCode19_2TextBox, "tariffCode19_2TextBox");
-            this.tariffCode19_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "TariffCode19_2", true));
+            this.tariffCode19_2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TariffCode19_2", true));
             this.tariffCode19_2TextBox.Name = "tariffCode19_2TextBox";
             // 
             // metroTabPage3
@@ -1264,7 +1257,7 @@
             // noCopies33TextBox
             // 
             resources.ApplyResources(this.noCopies33TextBox, "noCopies33TextBox");
-            this.noCopies33TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "NoCopies33", true));
+            this.noCopies33TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "NoCopies33", true));
             this.noCopies33TextBox.Name = "noCopies33TextBox";
             // 
             // groupBox9
@@ -1282,86 +1275,86 @@
             // 
             resources.ApplyResources(this.goodsReceivedDate32DateTimePicker, "goodsReceivedDate32DateTimePicker");
             this.goodsReceivedDate32DateTimePicker.Checked = false;
-            this.goodsReceivedDate32DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.binSrcLading, "GoodsReceivedDate32", true));
+            this.goodsReceivedDate32DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ladingBindingSource, "GoodsReceivedDate32", true));
             this.goodsReceivedDate32DateTimePicker.Name = "goodsReceivedDate32DateTimePicker";
             this.goodsReceivedDate32DateTimePicker.ShowCheckBox = true;
             // 
             // goodsReceivedPlace32TextBox
             // 
             resources.ApplyResources(this.goodsReceivedPlace32TextBox, "goodsReceivedPlace32TextBox");
-            this.goodsReceivedPlace32TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "GoodsReceivedPlace32", true));
+            this.goodsReceivedPlace32TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GoodsReceivedPlace32", true));
             this.goodsReceivedPlace32TextBox.Name = "goodsReceivedPlace32TextBox";
             // 
             // otherChargesConsignee27TextBox
             // 
             resources.ApplyResources(this.otherChargesConsignee27TextBox, "otherChargesConsignee27TextBox");
-            this.otherChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesConsignee27", true));
+            this.otherChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "OtherChargesConsignee27", true));
             this.otherChargesConsignee27TextBox.Name = "otherChargesConsignee27TextBox";
             // 
             // otherChargesCurrency27TextBox
             // 
             resources.ApplyResources(this.otherChargesCurrency27TextBox, "otherChargesCurrency27TextBox");
-            this.otherChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesCurrency27", true));
+            this.otherChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "OtherChargesCurrency27", true));
             this.otherChargesCurrency27TextBox.Name = "otherChargesCurrency27TextBox";
             // 
             // otherChargesSender27TextBox
             // 
             resources.ApplyResources(this.otherChargesSender27TextBox, "otherChargesSender27TextBox");
-            this.otherChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "OtherChargesSender27", true));
+            this.otherChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "OtherChargesSender27", true));
             this.otherChargesSender27TextBox.Name = "otherChargesSender27TextBox";
             // 
             // supplChargesConsignee27TextBox
             // 
             resources.ApplyResources(this.supplChargesConsignee27TextBox, "supplChargesConsignee27TextBox");
-            this.supplChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesConsignee27", true));
+            this.supplChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SupplChargesConsignee27", true));
             this.supplChargesConsignee27TextBox.Name = "supplChargesConsignee27TextBox";
             // 
             // supplChargesCurrency27TextBox
             // 
             resources.ApplyResources(this.supplChargesCurrency27TextBox, "supplChargesCurrency27TextBox");
-            this.supplChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesCurrency27", true));
+            this.supplChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SupplChargesCurrency27", true));
             this.supplChargesCurrency27TextBox.Name = "supplChargesCurrency27TextBox";
             // 
             // supplChargesSender27TextBox
             // 
             resources.ApplyResources(this.supplChargesSender27TextBox, "supplChargesSender27TextBox");
-            this.supplChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "SupplChargesSender27", true));
+            this.supplChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SupplChargesSender27", true));
             this.supplChargesSender27TextBox.Name = "supplChargesSender27TextBox";
             // 
             // deductionsConsignee27TextBox
             // 
             resources.ApplyResources(this.deductionsConsignee27TextBox, "deductionsConsignee27TextBox");
-            this.deductionsConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsConsignee27", true));
+            this.deductionsConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DeductionsConsignee27", true));
             this.deductionsConsignee27TextBox.Name = "deductionsConsignee27TextBox";
             // 
             // deductionsCurrency27TextBox
             // 
             resources.ApplyResources(this.deductionsCurrency27TextBox, "deductionsCurrency27TextBox");
-            this.deductionsCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsCurrency27", true));
+            this.deductionsCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DeductionsCurrency27", true));
             this.deductionsCurrency27TextBox.Name = "deductionsCurrency27TextBox";
             // 
             // deductionsSender27TextBox
             // 
             resources.ApplyResources(this.deductionsSender27TextBox, "deductionsSender27TextBox");
-            this.deductionsSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "DeductionsSender27", true));
+            this.deductionsSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DeductionsSender27", true));
             this.deductionsSender27TextBox.Name = "deductionsSender27TextBox";
             // 
             // carriageChargesSender27TextBox
             // 
             resources.ApplyResources(this.carriageChargesSender27TextBox, "carriageChargesSender27TextBox");
-            this.carriageChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesSender27", true));
+            this.carriageChargesSender27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriageChargesSender27", true));
             this.carriageChargesSender27TextBox.Name = "carriageChargesSender27TextBox";
             // 
             // carriageChargesCurrency27TextBox
             // 
             resources.ApplyResources(this.carriageChargesCurrency27TextBox, "carriageChargesCurrency27TextBox");
-            this.carriageChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesCurrency27", true));
+            this.carriageChargesCurrency27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriageChargesCurrency27", true));
             this.carriageChargesCurrency27TextBox.Name = "carriageChargesCurrency27TextBox";
             // 
             // carriageChargesConsignee27TextBox
             // 
             resources.ApplyResources(this.carriageChargesConsignee27TextBox, "carriageChargesConsignee27TextBox");
-            this.carriageChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.binSrcLading, "CarriageChargesConsignee27", true));
+            this.carriageChargesConsignee27TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarriageChargesConsignee27", true));
             this.carriageChargesConsignee27TextBox.Name = "carriageChargesConsignee27TextBox";
             // 
             // bindingNavigator1
@@ -1547,6 +1540,7 @@
             // ladingBindingSource
             // 
             this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
+            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // Form1
             // 
@@ -1562,7 +1556,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.binSrcLading)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1605,7 +1598,7 @@
 
         #endregion
 
-        private System.Windows.Forms.BindingSource binSrcLading;
+        private System.Windows.Forms.BindingSource ladingBindingSource;
         private System.Windows.Forms.TextBox annexedDocments14TextBox;
         private System.Windows.Forms.TextBox carrier6TextBox;
         private System.Windows.Forms.TextBox carrierAddress6TextBox;
@@ -1714,7 +1707,6 @@
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox ladingTypeComboBox;
-        private System.Windows.Forms.BindingSource ladingBindingSource;
         private System.Windows.Forms.ToolStripButton bindingNavigatorTableSQ;
     }
 }
