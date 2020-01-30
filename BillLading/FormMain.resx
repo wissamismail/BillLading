@@ -135,8 +135,8 @@
   <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ladingCodeTextBox.Parent" xml:space="preserve">
+    <value>TabPage1</value>
   </data>
   <data name="&gt;&gt;specialAgreements28TextBox1.Name" xml:space="preserve">
     <value>specialAgreements28TextBox1</value>
@@ -233,9 +233,6 @@
   <data name="&gt;&gt;groupBox11.Name" xml:space="preserve">
     <value>groupBox11</value>
   </data>
-  <data name="otherChargesConsignee27TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 217</value>
-  </data>
   <data name="&gt;&gt;demurrageLoading24TextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -311,14 +308,17 @@
   <data name="&gt;&gt;volume21_4TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
+    <value>toolStripTextBox1</value>
+  </data>
   <data name="dangerousGoodsInstructions22Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="groupBox11.Location" type="System.Drawing.Point, System.Drawing">
     <value>387, 287</value>
   </data>
-  <data name="vehicleNumber10Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
+  <data name="&gt;&gt;volume21_2TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;vehicleClass10TextBox.Name" xml:space="preserve">
     <value>vehicleClass10TextBox</value>
@@ -342,7 +342,7 @@
     <value>252, 250</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -397,6 +397,9 @@
   </data>
   <data name="&gt;&gt;marksNos15TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
   </data>
   <data name="carriageInstructions26Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -461,6 +464,9 @@
   <data name="grossWeight20_3TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>283, 227</value>
   </data>
+  <data name="carrierPhone6Label.Text" xml:space="preserve">
+    <value>Carrier Phone6:</value>
+  </data>
   <data name="&gt;&gt;goodsReceivedPlace32Label.Parent" xml:space="preserve">
     <value>groupBox9</value>
   </data>
@@ -509,14 +515,11 @@
   <data name="&gt;&gt;bindingNavigatorTableSP.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;carrier6Label.Name" xml:space="preserve">
-    <value>carrier6Label</value>
+  <data name="&gt;&gt;receiverAddress5Label.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 131</value>
-  </data>
-  <data name="forwarderObservation11TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
   </data>
   <data name="ladingIDLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -533,17 +536,14 @@
   <data name="deductionsConsignee27TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>291, 143</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
   <data name="cachonDelivery29Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 42</value>
   </data>
-  <data name="&gt;&gt;cachonDelivery29Label.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="specialAgreements28TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
   </data>
   <data name="&gt;&gt;dangerousGoodsCode22TextBox.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -594,7 +594,7 @@
     <value>88, 13</value>
   </data>
   <data name="&gt;&gt;ladingTypeLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;deductionsSender27TextBox.Parent" xml:space="preserve">
     <value>metroTabPage3</value>
@@ -642,7 +642,7 @@
     <value>noCopies33TextBox</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -688,6 +688,9 @@
   </data>
   <data name="&gt;&gt;vehicleDriver10Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;receiverAddress5TextBox.Name" xml:space="preserve">
+    <value>receiverAddress5TextBox</value>
   </data>
   <data name="&gt;&gt;cachonDelivery29TextBox.Name" xml:space="preserve">
     <value>cachonDelivery29TextBox</value>
@@ -782,8 +785,8 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="bindingNavigatorTableSP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
+  <data name="forwarder7Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 458</value>
   </data>
   <data name="specialAgreements28Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -911,8 +914,8 @@
   <data name="senderPhone4Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 900</value>
   </data>
-  <data name="demurrageLoading24Label.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+  <data name="tariffCode19_1TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
   </data>
   <data name="&gt;&gt;methodOfPacking17TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -938,8 +941,14 @@
   <data name="takingOverGoodsDate8Label.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
   </data>
+  <data name="demurrageLoading24Label.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
   <data name="dangerousGoodsClass22Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>TabPage1</value>
   </data>
   <data name="&gt;&gt;noCopies33TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -962,14 +971,11 @@
   <data name="marksNos15Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 614</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>685, 187</value>
+  <data name="placeOfIssue2Label.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
   </data>
-  <data name="dateOfIssue3Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="placeOfIssue2TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
+  <data name="ladingTypeComboBox.Items" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;forwarderObservation11TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1051,9 +1057,6 @@
   </data>
   <data name="deliveryGoodsDate9Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 13</value>
-  </data>
-  <data name="&gt;&gt;demurrageDischarge25TextBox.Parent" xml:space="preserve">
-    <value>groupBox7</value>
   </data>
   <data name="resource.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1226,9 +1229,6 @@
   <data name="&gt;&gt;dateOfIssue3Label.Name" xml:space="preserve">
     <value>dateOfIssue3Label</value>
   </data>
-  <data name="&gt;&gt;natureOfGoods18TextBox.Parent" xml:space="preserve">
-    <value>metroTabPage2</value>
-  </data>
   <data name="&gt;&gt;grossWeight20_2TextBox.Name" xml:space="preserve">
     <value>grossWeight20_2TextBox</value>
   </data>
@@ -1262,8 +1262,8 @@
   <data name="&gt;&gt;bindingNavigatorFindIDItem.Name" xml:space="preserve">
     <value>bindingNavigatorFindIDItem</value>
   </data>
-  <data name="&gt;&gt;receiverAddress5TextBox.Name" xml:space="preserve">
-    <value>receiverAddress5TextBox</value>
+  <data name="vehicleClass10TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 1053</value>
   </data>
   <data name="TabPage1.Size" type="System.Drawing.Size, System.Drawing">
     <value>946, 641</value>
@@ -1271,8 +1271,8 @@
   <data name="routeFinalDestination12Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 54</value>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
   </data>
   <data name="grossWeight20_4TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1466,8 +1466,14 @@
   <data name="&gt;&gt;placeOfIssue2Label.Parent" xml:space="preserve">
     <value>TabPage1</value>
   </data>
+  <data name="dateOfIssue3Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="tariffCode19_2TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>499, 208</value>
+  </data>
+  <data name="vehicleType10Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
   </data>
   <data name="&gt;&gt;helpToolStripButton.Name" xml:space="preserve">
     <value>helpToolStripButton</value>
@@ -1484,6 +1490,9 @@
   <data name="forwarder7TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
+  <data name="bindingNavigatorTableSP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
   <data name="dateOfIssue3DateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
@@ -1494,7 +1503,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="demurrageLoading24Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 432</value>
@@ -1535,11 +1544,11 @@
   <data name="carriageChargesSender27Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>512, 97</value>
   </data>
-  <data name="&gt;&gt;ladingIDTextBox.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="noOfPackages16TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
   <data name="&gt;&gt;groupBox12.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;carrier6Label.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -1556,8 +1565,8 @@
   <data name="&gt;&gt;ladingTypeTextBox.Name" xml:space="preserve">
     <value>ladingTypeTextBox</value>
   </data>
-  <data name="ladingTypeComboBox.Items" xml:space="preserve">
-    <value>0</value>
+  <data name="forwarderObservation11TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
   </data>
   <data name="&gt;&gt;groupBox12.Parent" xml:space="preserve">
     <value>TabPage1</value>
@@ -1594,9 +1603,6 @@
   </data>
   <data name="&gt;&gt;carriageChargesSender27Label.ZOrder" xml:space="preserve">
     <value>21</value>
-  </data>
-  <data name="tariffCode19_1TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
   </data>
   <data name="&gt;&gt;marksNos15Label.Name" xml:space="preserve">
     <value>marksNos15Label</value>
@@ -1638,7 +1644,7 @@
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ladingTypeComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;carrier6Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1733,8 +1739,8 @@
   <data name="marksNos15Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 13</value>
   </data>
-  <data name="&gt;&gt;marksNos15TextBox.Name" xml:space="preserve">
-    <value>marksNos15TextBox</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="vehicleType10TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -1760,8 +1766,8 @@
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
-  <data name="metroTabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;bindingNavigatorSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;marksNos15Label.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
@@ -1841,8 +1847,8 @@
   <data name="senderAddress4Label.Text" xml:space="preserve">
     <value>Sender Address4:</value>
   </data>
-  <data name="receiver5Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="noOfPackages16TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 689</value>
   </data>
   <data name="&gt;&gt;natureOfGoods18Label.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
@@ -1910,12 +1916,6 @@
   <data name="&gt;&gt;goodsReceivedPlace32Label.Name" xml:space="preserve">
     <value>goodsReceivedPlace32Label</value>
   </data>
-  <data name="carrierAddress6TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 20</value>
-  </data>
-  <data name="&gt;&gt;grossWeight20_3TextBox.Name" xml:space="preserve">
-    <value>grossWeight20_3TextBox</value>
-  </data>
   <data name="&gt;&gt;volume21_3TextBox.Name" xml:space="preserve">
     <value>volume21_3TextBox</value>
   </data>
@@ -1924,6 +1924,9 @@
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 31</value>
+  </data>
+  <data name="btnUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 54</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>17</value>
@@ -2045,8 +2048,11 @@
   <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="carrierAddress6Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;dateOfIssue3DateTimePicker.Name" xml:space="preserve">
+    <value>dateOfIssue3DateTimePicker</value>
+  </data>
+  <data name="ladingCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 16</value>
   </data>
   <data name="grossWeight20_1Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2071,6 +2077,9 @@
   </data>
   <data name="deliveryGoodsPlace9Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="goodsReceivedPlace32TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
   </data>
   <data name="carrierAddress6Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 172</value>
@@ -2117,8 +2126,8 @@
   <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 106</value>
   </data>
-  <data name="&gt;&gt;carrierPhone6Label.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 187</value>
   </data>
   <data name="takingOverGoodsPlace8Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2219,8 +2228,8 @@
   <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
     <value>TabPage1</value>
   </data>
-  <data name="&gt;&gt;supplChargesCurrency27TextBox.Name" xml:space="preserve">
-    <value>supplChargesCurrency27TextBox</value>
+  <data name="btnNew.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="dangerousGoodsClass22Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 13</value>
@@ -2321,11 +2330,11 @@
   <data name="goodsReceivedDate32DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 79</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 708</value>
+  </data>
+  <data name="&gt;&gt;carriageChargesConsignee27TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="senderPhone4TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -2335,6 +2344,9 @@
   </data>
   <data name="&gt;&gt;natureOfGoods18Label.Name" xml:space="preserve">
     <value>natureOfGoods18Label</value>
+  </data>
+  <data name="&gt;&gt;ladingCodeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;noOfPackages16Label.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
@@ -2348,14 +2360,8 @@
   <data name="&gt;&gt;senderPhone4TextBox.Name" xml:space="preserve">
     <value>senderPhone4TextBox</value>
   </data>
-  <data name="bindingNavigatorPositionItem.AccessibleName" xml:space="preserve">
-    <value>Position</value>
-  </data>
   <data name="annexedDocments14Label.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="dangerousGoodsClass22TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
   </data>
   <data name="&gt;&gt;carrierAddress6Label.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2426,8 +2432,8 @@
   <data name="&gt;&gt;placeOfIssue2TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;carrierAddress6Label.Name" xml:space="preserve">
-    <value>carrierAddress6Label</value>
+  <data name="&gt;&gt;tariffCode19_3TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dangerousGoodsInstructions22Label.Text" xml:space="preserve">
     <value>Dangerous Goods Instructions22:</value>
@@ -2435,8 +2441,8 @@
   <data name="saveToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 28</value>
   </data>
-  <data name="carriageInstructions26Label.Text" xml:space="preserve">
-    <value>Carriage Instructions26:</value>
+  <data name="&gt;&gt;carrierAddress6Label.Name" xml:space="preserve">
+    <value>carrierAddress6Label</value>
   </data>
   <data name="vehicleDriver10TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -2449,6 +2455,9 @@
   </data>
   <data name="&gt;&gt;specialAgreements28TextBox.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;carrier6TextBox.Name" xml:space="preserve">
+    <value>carrier6TextBox</value>
   </data>
   <data name="&gt;&gt;cachonDelivery29TextBox1.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
@@ -2474,6 +2483,9 @@
   <data name="&gt;&gt;carriageChargesConsignee27TextBox.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
+  <data name="receiver5Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="ladingTypeTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
   </data>
@@ -2491,6 +2503,9 @@
   </data>
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
     <value>415, 269</value>
+  </data>
+  <data name="&gt;&gt;grossWeight20_1TextBox.Name" xml:space="preserve">
+    <value>grossWeight20_1TextBox</value>
   </data>
   <data name="&gt;&gt;vehicleDriver10Label.Name" xml:space="preserve">
     <value>vehicleDriver10Label</value>
@@ -2540,6 +2555,9 @@
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>588, 203</value>
   </data>
+  <data name="&gt;&gt;ladingCodeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;otherChargesCurrency27TextBox.Name" xml:space="preserve">
     <value>otherChargesCurrency27TextBox</value>
   </data>
@@ -2553,7 +2571,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="deliveryGoodsDate9Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2612,9 +2630,6 @@
   <data name="&gt;&gt;sendersInstructions23Label.Name" xml:space="preserve">
     <value>sendersInstructions23Label</value>
   </data>
-  <data name="&gt;&gt;cutToolStripButton.Name" xml:space="preserve">
-    <value>cutToolStripButton</value>
-  </data>
   <data name="senderPhone4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -2660,8 +2675,8 @@
   <data name="&gt;&gt;carriageChargesCurrency27Label.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
+  <data name="noOfPackages16Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;cachonDelivery29Label.Name" xml:space="preserve">
     <value>cachonDelivery29Label</value>
@@ -2680,9 +2695,6 @@
   </data>
   <data name="&gt;&gt;btnUpdate.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="noOfPackages16Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2707,6 +2719,9 @@
   </data>
   <data name="dangerousGoodsInstructions22TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 299</value>
+  </data>
+  <data name="ladingCodeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 18</value>
   </data>
   <data name="carrier6Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 13</value>
@@ -2759,9 +2774,6 @@
   <data name="&gt;&gt;receiver5TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tariffCode19_3TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;carrierAddress6Label.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
@@ -2780,11 +2792,20 @@
   <data name="grossWeight20_4TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>283, 246</value>
   </data>
+  <data name="ladingCodeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
   <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;carrier6TextBox.Name" xml:space="preserve">
-    <value>carrier6TextBox</value>
+  <data name="placeOfIssue2TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
+  </data>
+  <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 65</value>
+  </data>
+  <data name="metroTabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="dangerousGoodsClass22TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -2813,8 +2834,8 @@
   <data name="&gt;&gt;goodsReceivedPlace32Label.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;demurrageDischarge25Label.Name" xml:space="preserve">
-    <value>demurrageDischarge25Label</value>
+  <data name="&gt;&gt;demurrageDischarge25TextBox.Parent" xml:space="preserve">
+    <value>groupBox7</value>
   </data>
   <data name="tariffCode19_3TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>499, 227</value>
@@ -2855,6 +2876,9 @@
   <data name="resource.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;ladingCodeTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>metroTabPage3</value>
   </data>
@@ -2868,7 +2892,7 @@
     <value>Vehicle Number10:</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="sender4Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2888,11 +2912,14 @@
   <data name="&gt;&gt;carrier6TextBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;ladingCodeLabel.Parent" xml:space="preserve">
+    <value>TabPage1</value>
+  </data>
   <data name="&gt;&gt;sender4Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;placeOfIssue2Label.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="dangerousGoodsCode22Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2929,6 +2956,9 @@
   </data>
   <data name="&gt;&gt;customsDeclarationNo13TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="carrierAddress6Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="noOfPackages16Label.Text" xml:space="preserve">
     <value>No Of Packages16:</value>
@@ -2975,6 +3005,9 @@
   <data name="noCopies33TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>551, 414</value>
   </data>
+  <data name="noOfPackages16Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="carrier6TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 143</value>
   </data>
@@ -2993,9 +3026,6 @@
   <data name="&gt;&gt;tariffCode19_4TextBox.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
   </data>
-  <data name="noOfPackages16TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 689</value>
-  </data>
   <data name="grossWeight20_2TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
   </data>
@@ -3010,9 +3040,6 @@
   </data>
   <data name="goodsReceivedDate32DateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;carrierPhone6Label.Parent" xml:space="preserve">
-    <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;annexedDocments14TextBox.Parent" xml:space="preserve">
     <value>groupBox13</value>
@@ -3164,8 +3191,11 @@
   <data name="&gt;&gt;senderAddress4Label.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>TabPage1</value>
+  <data name="&gt;&gt;carrier6TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -3257,8 +3287,8 @@
   <data name="bindingNavigatorMovePreviousItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
   </data>
-  <data name="goodsReceivedPlace32TextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+  <data name="&gt;&gt;carrier6Label.Name" xml:space="preserve">
+    <value>carrier6Label</value>
   </data>
   <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>954, 25</value>
@@ -3266,11 +3296,11 @@
   <data name="otherChargesCurrency27TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>390, 217</value>
   </data>
-  <data name="&gt;&gt;specialAgreements28Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>panel1</value>
+  </data>
+  <data name="ladingCodeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
   </data>
   <data name="carrierAddress6TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 169</value>
@@ -3305,9 +3335,6 @@
   <data name="noOfPackages16Label.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
-  <data name="&gt;&gt;dateOfIssue3DateTimePicker.Name" xml:space="preserve">
-    <value>dateOfIssue3DateTimePicker</value>
-  </data>
   <data name="receiver5Label.Text" xml:space="preserve">
     <value>Receiver5:</value>
   </data>
@@ -3316,6 +3343,9 @@
   </data>
   <data name="&gt;&gt;bindingNavigatorAddNewItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grossWeight20_1TextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3326,8 +3356,8 @@
   <data name="&gt;&gt;carriageInstructions26Label.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;volume21_2TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;specialAgreements28Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="takingOverGoodsDate8DateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -3353,14 +3383,14 @@
   <data name="&gt;&gt;annexedDocments14TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="vehicleNumber10Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;cachonDelivery29Label.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="vehicleDriver10TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>بوليصة شحن</value>
+  <data name="&gt;&gt;carrierPhone6Label.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;groupBox13.ZOrder" xml:space="preserve">
     <value>17</value>
@@ -3376,6 +3406,9 @@
   </data>
   <data name="&gt;&gt;marksNos15TextBox.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="&gt;&gt;demurrageDischarge25Label.Name" xml:space="preserve">
+    <value>demurrageDischarge25Label</value>
   </data>
   <data name="&gt;&gt;customsDeclarationNo13Label.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -3409,6 +3442,9 @@
   </data>
   <data name="&gt;&gt;forwarderObservation11TextBox.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;ladingBindingSource1.Name" xml:space="preserve">
+    <value>ladingBindingSource1</value>
   </data>
   <data name="resource.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3451,6 +3487,9 @@
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;marksNos15TextBox.Name" xml:space="preserve">
+    <value>marksNos15TextBox</value>
   </data>
   <data name="&gt;&gt;btnUpdate.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3500,8 +3539,8 @@
   <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 31</value>
   </data>
-  <data name="noOfPackages16Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="vehicleNumber10Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3526,6 +3565,9 @@
   </data>
   <data name="&gt;&gt;volume21_3TextBox.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
+  </data>
+  <data name="&gt;&gt;ladingCodeLabel.Name" xml:space="preserve">
+    <value>ladingCodeLabel</value>
   </data>
   <data name="cachonDelivery29Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3560,6 +3602,12 @@
   <data name="marksNos15Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="vehicleNumber10Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;marksNos15Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;bindingNavigatorCountItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -3593,6 +3641,9 @@
   <data name="&gt;&gt;senderPhone4Label.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="&gt;&gt;supplChargesCurrency27TextBox.Name" xml:space="preserve">
+    <value>supplChargesCurrency27TextBox</value>
+  </data>
   <data name="methodOfPacking17Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 13</value>
   </data>
@@ -3607,6 +3658,9 @@
   </data>
   <data name="&gt;&gt;openToolStripButton.Name" xml:space="preserve">
     <value>openToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;ladingCodeTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>TabPage1</value>
@@ -3677,23 +3731,14 @@
   <data name="&gt;&gt;dangerousGoodsClass22TextBox.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="btnNew.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="bindingNavigatorTableItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 28</value>
   </data>
   <data name="carrierAddress6Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="forwarder7Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 458</value>
-  </data>
   <data name="&gt;&gt;carriageInstructions26TextBox.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="noOfPackages16TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
   </data>
   <data name="&gt;&gt;metroTabPage2.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTabPage, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
@@ -3712,6 +3757,9 @@
   </data>
   <data name="&gt;&gt;dangerousGoodsInstructions22Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="forwarderPhone7Label.Text" xml:space="preserve">
+    <value>Forwarder Phone7:</value>
   </data>
   <data name="&gt;&gt;goodsReceivedPlace32Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3747,7 +3795,7 @@
     <value>groupBox13</value>
   </data>
   <data name="&gt;&gt;placeOfIssue2TextBox.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;deductionsSender27TextBox.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -3803,8 +3851,8 @@
   <data name="resource.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Tile</value>
   </data>
-  <data name="&gt;&gt;receiverAddress5Label.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="volume21_1Label.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
   </data>
   <data name="sender4TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -3836,8 +3884,8 @@
   <data name="demurrageLoading24Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
-    <value>toolStripTextBox1</value>
+  <data name="&gt;&gt;natureOfGoods18TextBox.Parent" xml:space="preserve">
+    <value>metroTabPage2</value>
   </data>
   <data name="forwarderPhone7TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -3847,6 +3895,9 @@
   </data>
   <data name="methodOfPacking17Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ladingIDTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="deductionsSender27TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>489, 143</value>
@@ -3892,6 +3943,9 @@
   <data name="ladingIDTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
   </data>
+  <data name="&gt;&gt;ladingCodeTextBox.Name" xml:space="preserve">
+    <value>ladingCodeTextBox</value>
+  </data>
   <data name="&gt;&gt;marksNos15TextBox.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
   </data>
@@ -3913,8 +3967,8 @@
   <data name="&gt;&gt;btnReport.Name" xml:space="preserve">
     <value>btnReport</value>
   </data>
-  <data name="&gt;&gt;carriageChargesConsignee27TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;grossWeight20_3TextBox.Name" xml:space="preserve">
+    <value>grossWeight20_3TextBox</value>
   </data>
   <data name="carriageChargesCurrency27Label.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3933,9 +3987,6 @@
   </data>
   <data name="&gt;&gt;placeOfIssue2TextBox.Name" xml:space="preserve">
     <value>placeOfIssue2TextBox</value>
-  </data>
-  <data name="vehicleType10Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 1134</value>
   </data>
   <data name="carriagePaid26Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3970,9 +4021,6 @@
   <data name="metroTabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
   </data>
-  <data name="placeOfIssue2Label.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
   <data name="&gt;&gt;tariffCode19_2TextBox.Name" xml:space="preserve">
     <value>tariffCode19_2TextBox</value>
   </data>
@@ -3999,6 +4047,9 @@
   </data>
   <data name="carriageChargesCurrency27TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;ladingBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;receiver5TextBox.Name" xml:space="preserve">
     <value>receiver5TextBox</value>
@@ -4081,14 +4132,8 @@
   <data name="&gt;&gt;carriageChargesCurrency27TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="vehicleClass10TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 1053</value>
-  </data>
   <data name="&gt;&gt;ladingTypeComboBox.Parent" xml:space="preserve">
     <value>TabPage1</value>
-  </data>
-  <data name="specialAgreements28TextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
   </data>
   <data name="&gt;&gt;tariffCode19_4TextBox.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -4111,8 +4156,8 @@
   <data name="forwarderAddress7TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="&gt;&gt;bindingNavigatorSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="carrierAddress6TextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 20</value>
   </data>
   <data name="&gt;&gt;volume21_2TextBox.Name" xml:space="preserve">
     <value>volume21_2TextBox</value>
@@ -4142,7 +4187,7 @@
     <value>17, 211</value>
   </data>
   <data name="&gt;&gt;groupBox11.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="vehicleClass10Label.Text" xml:space="preserve">
     <value>Vehicle Class10:</value>
@@ -4161,9 +4206,6 @@
   </data>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>metroTabPage3</value>
   </data>
   <data name="&gt;&gt;carriageChargesConsignee27Label.Parent" xml:space="preserve">
     <value>metroTabPage3</value>
@@ -4188,6 +4230,9 @@
   </data>
   <data name="cachonDelivery29Label.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;carrierPhone6Label.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="bindingNavigatorCountItem.Text" xml:space="preserve">
     <value>of {0}</value>
@@ -4255,8 +4300,8 @@
   <data name="methodOfPacking17TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="&gt;&gt;grossWeight20_1TextBox.Name" xml:space="preserve">
-    <value>grossWeight20_1TextBox</value>
+  <data name="&gt;&gt;cutToolStripButton.Name" xml:space="preserve">
+    <value>cutToolStripButton</value>
   </data>
   <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
     <value>btnDelete</value>
@@ -4269,9 +4314,6 @@
   </data>
   <data name="methodOfPacking17TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
   </data>
   <data name="marksNos15Label.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -4294,8 +4336,8 @@
   <data name="&gt;&gt;btnReport.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="volume21_1Label.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>بوليصة شحن</value>
   </data>
   <data name="btnUpdate.Text" xml:space="preserve">
     <value>تعديل</value>
@@ -4321,8 +4363,8 @@
   <data name="&gt;&gt;receiverPhone5TextBox.Name" xml:space="preserve">
     <value>receiverPhone5TextBox</value>
   </data>
-  <data name="&gt;&gt;marksNos15Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="carriageInstructions26Label.Text" xml:space="preserve">
+    <value>Carriage Instructions26:</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>974, 60</value>
@@ -4330,8 +4372,8 @@
   <data name="&gt;&gt;noCopies33Label.Parent" xml:space="preserve">
     <value>metroTabPage3</value>
   </data>
-  <data name="&gt;&gt;carrier6TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dangerousGoodsClass22TextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="bindingNavigatorDeleteItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4354,17 +4396,17 @@
   <data name="&gt;&gt;vehicleDriver10TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="forwarderPhone7Label.Text" xml:space="preserve">
-    <value>Forwarder Phone7:</value>
+  <data name="otherChargesConsignee27TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 217</value>
   </data>
   <data name="&gt;&gt;dangerousGoodsCode22TextBox.Parent" xml:space="preserve">
     <value>groupBox6</value>
   </data>
-  <data name="carrierPhone6Label.Text" xml:space="preserve">
-    <value>Carrier Phone6:</value>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>metroTabPage3</value>
   </data>
-  <data name="vehicleType10Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+  <data name="vehicleType10Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 1134</value>
   </data>
   <data name="&gt;&gt;annexedDocments14Label.Name" xml:space="preserve">
     <value>annexedDocments14Label</value>
@@ -4393,11 +4435,11 @@
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;grossWeight20_1TextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 65</value>
+  <data name="bindingNavigatorPositionItem.AccessibleName" xml:space="preserve">
+    <value>Position</value>
   </data>
   <data name="&gt;&gt;vehicleDriver10TextBox.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -4430,9 +4472,6 @@
     <value>False</value>
   </metadata>
   <metadata name="label7.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="receiver5Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="label2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -4483,6 +4522,9 @@
   <metadata name="placeOfIssue2Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="methodOfPacking17Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <metadata name="noCopies33Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -4530,6 +4572,9 @@
   </metadata>
   <metadata name="binSrcLading.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>15, 10</value>
+  </metadata>
+  <metadata name="ladingBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>291, 10</value>
   </metadata>
   <metadata name="natureOfGoods18Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -4594,13 +4639,16 @@
   <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="methodOfPacking17Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="receiver5Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="label3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="takingOverGoodsDate8Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="ladingCodeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="demurrageDischarge25Label.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

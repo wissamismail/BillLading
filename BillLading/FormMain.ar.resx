@@ -239,15 +239,6 @@
   <data name="grossWeight20_1Label.Text" xml:space="preserve">
     <value>الوزن القائم (كلغ)</value>
   </data>
-  <data name="ladingIDLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>643, 18</value>
-  </data>
-  <data name="ladingIDLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
-  <data name="ladingIDLabel.Text" xml:space="preserve">
-    <value>وثيقة النقل رقم:</value>
-  </data>
   <data name="marksNos15Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>626, 17</value>
   </data>
@@ -807,6 +798,18 @@
   <data name="ladingTypeLabel.Text" xml:space="preserve">
     <value>نوع اللائحة</value>
   </data>
+  <data name="ladingCodeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ladingCodeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ladingCodeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="ladingCodeLabel.Text" xml:space="preserve">
+    <value>وثيقة النقل رقم:</value>
+  </data>
   <data name="grossWeight20_1TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>434, 149</value>
   </data>
@@ -1020,12 +1023,6 @@
   <data name="forwarderObservation11TextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 41</value>
   </data>
-  <data name="ladingIDTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 19</value>
-  </data>
-  <data name="ladingIDTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 20</value>
-  </data>
   <data name="placeOfIssue2TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 18</value>
   </data>
@@ -1080,11 +1077,17 @@
   <data name="TabPage1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="ladingCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 20</value>
+  </data>
   <data name="ladingTypeComboBox.Items" xml:space="preserve">
-    <value>شحن قوميسيون</value>
+    <value> </value>
   </data>
   <data name="ladingTypeComboBox.Items1" xml:space="preserve">
     <value>شحن خاص</value>
+  </data>
+  <data name="ladingTypeComboBox.Items2" xml:space="preserve">
+    <value>شحن قوميسيون</value>
   </data>
   <data name="ladingTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 21</value>

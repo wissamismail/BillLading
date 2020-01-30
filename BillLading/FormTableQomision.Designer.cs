@@ -33,9 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ladingDataGridView = new MetroFramework.Controls.MetroGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -56,17 +54,21 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LadingCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSQ_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ladingDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // ladingDataGridView
@@ -90,7 +92,8 @@
             this.ladingDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ladingDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.Column1,
+            this.LadingCode,
+            this.ColumnSQ_Code,
             this.dataGridViewTextBoxColumn23,
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn18,
@@ -128,25 +131,10 @@
             this.ladingDataGridView.Size = new System.Drawing.Size(848, 339);
             this.ladingDataGridView.TabIndex = 1;
             // 
-            // Column1
+            // ladingBindingSource
             // 
-            this.Column1.HeaderText = "رمز";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "SQ_Reference";
-            this.Column4.HeaderText = "مرجع المعاملة";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "SQ_Customer";
-            this.Column2.HeaderText = "العميل";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
+            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.ladingBindingSource_PositionChanged);
             // 
             // bindingNavigator1
             // 
@@ -198,7 +186,7 @@
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = global::BillLading.Properties.Resources.First_record;
+            this.bindingNavigatorMoveFirstItem.Image = global::BillLading.Properties.Resources.Firstrecord;
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
@@ -207,7 +195,7 @@
             // bindingNavigatorMovePreviousItem
             // 
             this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = global::BillLading.Properties.Resources.Go_back;
+            this.bindingNavigatorMovePreviousItem.Image = global::BillLading.Properties.Resources.Goback;
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
@@ -236,7 +224,7 @@
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = global::BillLading.Properties.Resources.Go_forward;
+            this.bindingNavigatorMoveNextItem.Image = global::BillLading.Properties.Resources.Goforward;
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
@@ -245,7 +233,7 @@
             // bindingNavigatorMoveLastItem
             // 
             this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = global::BillLading.Properties.Resources.Last_recor;
+            this.bindingNavigatorMoveLastItem.Image = global::BillLading.Properties.Resources.Lastrecord;
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
@@ -321,6 +309,7 @@
             this.bindingNavigatorPrintItem.Name = "bindingNavigatorPrintItem";
             this.bindingNavigatorPrintItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorPrintItem.Text = "Print";
+            this.bindingNavigatorPrintItem.Click += new System.EventHandler(this.bindingNavigatorPrintItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -338,6 +327,10 @@
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "LadingID";
@@ -345,6 +338,20 @@
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // LadingCode
+            // 
+            this.LadingCode.DataPropertyName = "LadingCode";
+            this.LadingCode.HeaderText = "رقم البوليصة";
+            this.LadingCode.Name = "LadingCode";
+            this.LadingCode.ReadOnly = true;
+            // 
+            // ColumnSQ_Code
+            // 
+            this.ColumnSQ_Code.DataPropertyName = "SQ_Code";
+            this.ColumnSQ_Code.HeaderText = "رمز";
+            this.ColumnSQ_Code.Name = "ColumnSQ_Code";
+            this.ColumnSQ_Code.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn23
             // 
@@ -367,6 +374,13 @@
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "SQ_Reference";
+            this.Column4.HeaderText = "مرجع المعاملة";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Sender4";
@@ -381,10 +395,12 @@
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // ladingBindingSource
+            // Column2
             // 
-            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
-            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.ladingBindingSource_PositionChanged);
+            this.Column2.DataPropertyName = "SQ_Customer";
+            this.Column2.HeaderText = "العميل";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // FormTableQomision
             // 
@@ -402,10 +418,10 @@
             this.Text = "لائحة شحن قوميسيون";
             this.Load += new System.EventHandler(this.FormTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ladingDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,15 +431,6 @@
 
         private System.Windows.Forms.BindingSource ladingBindingSource;
         private MetroFramework.Controls.MetroGrid ladingDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -444,5 +451,16 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorFindIDItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LadingCode;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSQ_Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

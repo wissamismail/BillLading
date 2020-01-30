@@ -63,16 +63,6 @@ namespace BillLading.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _24 {
-            get {
-                object obj = ResourceManager.GetObject("24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Abort {
             get {
                 object obj = ResourceManager.GetObject("Abort", resourceCulture);
@@ -113,9 +103,9 @@ namespace BillLading.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap First_record {
+        internal static System.Drawing.Bitmap Firstrecord {
             get {
-                object obj = ResourceManager.GetObject("First record", resourceCulture);
+                object obj = ResourceManager.GetObject("Firstrecord", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace BillLading.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Go_back {
+        internal static System.Drawing.Bitmap Goback {
             get {
-                object obj = ResourceManager.GetObject("Go back", resourceCulture);
+                object obj = ResourceManager.GetObject("Goback", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,9 @@ namespace BillLading.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Go_forward {
+        internal static System.Drawing.Bitmap Goforward {
             get {
-                object obj = ResourceManager.GetObject("Go forward", resourceCulture);
+                object obj = ResourceManager.GetObject("Goforward", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +143,9 @@ namespace BillLading.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Last_recor {
+        internal static System.Drawing.Bitmap Lastrecord {
             get {
-                object obj = ResourceManager.GetObject("Last recor", resourceCulture);
+                object obj = ResourceManager.GetObject("Lastrecord", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -24,7 +24,7 @@ namespace BillLading
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1);         
+            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.Main);     
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -32,10 +32,24 @@ namespace BillLading
             LockTabs(true);
         }
 
+        private void ladingTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (DBModelLadings db = new DBModelLadings())
+            {
+                Lading myLading = ladingBindingSource.Current as Lading;
+
+                if (myLading != null)
+                {
+                   db.Entry<Lading>(myLading).State = EntityState.Modified;
+                  
+                }
+            }
+        }
+
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
 
-            LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, true,"");
+            LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.Main);
             LockTabs(false);
             placeOfIssue2TextBox.Focus();          
         }
@@ -61,7 +75,7 @@ namespace BillLading
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
         {
             LockTabs(true);
-            LadingBussiness.bindingNavigatorCancelItem(ladingBindingSource, myQuery, bindingNavigator1);
+            LadingBussiness.bindingNavigatorCancelItem(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.Main);
  
         }
 
@@ -136,7 +150,7 @@ namespace BillLading
                     }
                 }
             }
-            ladingIDTextBox.ReadOnly = true;
+            ladingCodeTextBox.ReadOnly = true;
 
         }
 
@@ -151,5 +165,7 @@ namespace BillLading
             FormTableQomision myFormTable = new FormTableQomision();
             myFormTable.Show();
         }
+
+     
     }
 }

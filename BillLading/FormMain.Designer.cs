@@ -43,7 +43,6 @@
             System.Windows.Forms.Label forwarderObservation11Label;
             System.Windows.Forms.Label forwarderPhone7Label;
             System.Windows.Forms.Label grossWeight20_1Label;
-            System.Windows.Forms.Label ladingIDLabel;
             System.Windows.Forms.Label marksNos15Label;
             System.Windows.Forms.Label methodOfPacking17Label;
             System.Windows.Forms.Label natureOfGoods18Label;
@@ -91,7 +90,9 @@
             System.Windows.Forms.Label goodsReceivedPlace32Label;
             System.Windows.Forms.Label goodsReceivedDate32Label;
             System.Windows.Forms.Label ladingTypeLabel;
+            System.Windows.Forms.Label ladingCodeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
+            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
@@ -121,7 +122,6 @@
             this.deliveryGoodsDate9DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.deliveryGoodsPlace9TextBox = new System.Windows.Forms.TextBox();
             this.forwarderObservation11TextBox = new System.Windows.Forms.TextBox();
-            this.ladingIDTextBox = new System.Windows.Forms.TextBox();
             this.placeOfIssue2TextBox = new System.Windows.Forms.TextBox();
             this.routeFinalDestination12TextBox = new System.Windows.Forms.TextBox();
             this.takingOverGoodsDate8DateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -132,6 +132,7 @@
             this.vehicleType10TextBox = new System.Windows.Forms.TextBox();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.TabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.ladingCodeTextBox = new System.Windows.Forms.TextBox();
             this.ladingTypeComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -200,7 +201,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
@@ -214,7 +214,6 @@
             forwarderObservation11Label = new System.Windows.Forms.Label();
             forwarderPhone7Label = new System.Windows.Forms.Label();
             grossWeight20_1Label = new System.Windows.Forms.Label();
-            ladingIDLabel = new System.Windows.Forms.Label();
             marksNos15Label = new System.Windows.Forms.Label();
             methodOfPacking17Label = new System.Windows.Forms.Label();
             natureOfGoods18Label = new System.Windows.Forms.Label();
@@ -262,6 +261,8 @@
             goodsReceivedPlace32Label = new System.Windows.Forms.Label();
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
+            ladingCodeLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -280,7 +281,6 @@
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // annexedDocments14Label
@@ -354,12 +354,6 @@
             resources.ApplyResources(grossWeight20_1Label, "grossWeight20_1Label");
             grossWeight20_1Label.BackColor = System.Drawing.SystemColors.ControlLightLight;
             grossWeight20_1Label.Name = "grossWeight20_1Label";
-            // 
-            // ladingIDLabel
-            // 
-            resources.ApplyResources(ladingIDLabel, "ladingIDLabel");
-            ladingIDLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            ladingIDLabel.Name = "ladingIDLabel";
             // 
             // marksNos15Label
             // 
@@ -637,11 +631,22 @@
             ladingTypeLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             ladingTypeLabel.Name = "ladingTypeLabel";
             // 
+            // ladingCodeLabel
+            // 
+            resources.ApplyResources(ladingCodeLabel, "ladingCodeLabel");
+            ladingCodeLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            ladingCodeLabel.Name = "ladingCodeLabel";
+            // 
             // grossWeight20_1TextBox
             // 
             resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
             this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_1", true));
             this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
+            // 
+            // ladingBindingSource
+            // 
+            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
+            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // marksNos15TextBox
             // 
@@ -851,13 +856,6 @@
             this.forwarderObservation11TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderObservation11", true));
             this.forwarderObservation11TextBox.Name = "forwarderObservation11TextBox";
             // 
-            // ladingIDTextBox
-            // 
-            resources.ApplyResources(this.ladingIDTextBox, "ladingIDTextBox");
-            this.ladingIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingID", true));
-            this.ladingIDTextBox.Name = "ladingIDTextBox";
-            this.ladingIDTextBox.ReadOnly = true;
-            // 
             // placeOfIssue2TextBox
             // 
             resources.ApplyResources(this.placeOfIssue2TextBox, "placeOfIssue2TextBox");
@@ -923,6 +921,8 @@
             // TabPage1
             // 
             resources.ApplyResources(this.TabPage1, "TabPage1");
+            this.TabPage1.Controls.Add(ladingCodeLabel);
+            this.TabPage1.Controls.Add(this.ladingCodeTextBox);
             this.TabPage1.Controls.Add(this.ladingTypeComboBox);
             this.TabPage1.Controls.Add(ladingTypeLabel);
             this.TabPage1.Controls.Add(this.groupBox12);
@@ -934,8 +934,6 @@
             this.TabPage1.Controls.Add(this.groupBox3);
             this.TabPage1.Controls.Add(this.placeOfIssue2TextBox);
             this.TabPage1.Controls.Add(placeOfIssue2Label);
-            this.TabPage1.Controls.Add(this.ladingIDTextBox);
-            this.TabPage1.Controls.Add(ladingIDLabel);
             this.TabPage1.Controls.Add(this.dateOfIssue3DateTimePicker);
             this.TabPage1.Controls.Add(dateOfIssue3Label);
             this.TabPage1.Controls.Add(this.groupBox13);
@@ -949,16 +947,24 @@
             this.TabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.TabPage1.VerticalScrollbarSize = 10;
             // 
+            // ladingCodeTextBox
+            // 
+            resources.ApplyResources(this.ladingCodeTextBox, "ladingCodeTextBox");
+            this.ladingCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingCode", true));
+            this.ladingCodeTextBox.Name = "ladingCodeTextBox";
+            this.ladingCodeTextBox.ReadOnly = true;
+            // 
             // ladingTypeComboBox
             // 
             resources.ApplyResources(this.ladingTypeComboBox, "ladingTypeComboBox");
             this.ladingTypeComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingType", true));
-            this.ladingTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ladingTypeComboBox.FormattingEnabled = true;
             this.ladingTypeComboBox.Items.AddRange(new object[] {
             resources.GetString("ladingTypeComboBox.Items"),
-            resources.GetString("ladingTypeComboBox.Items1")});
+            resources.GetString("ladingTypeComboBox.Items1"),
+            resources.GetString("ladingTypeComboBox.Items2")});
             this.ladingTypeComboBox.Name = "ladingTypeComboBox";
+            this.ladingTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.ladingTypeComboBox_SelectedIndexChanged);
             // 
             // groupBox12
             // 
@@ -1405,14 +1411,14 @@
             // 
             resources.ApplyResources(this.bindingNavigatorMoveFirstItem, "bindingNavigatorMoveFirstItem");
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = global::BillLading.Properties.Resources.First_record;
+            this.bindingNavigatorMoveFirstItem.Image = global::BillLading.Properties.Resources.Firstrecord;
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             // 
             // bindingNavigatorMovePreviousItem
             // 
             resources.ApplyResources(this.bindingNavigatorMovePreviousItem, "bindingNavigatorMovePreviousItem");
             this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = global::BillLading.Properties.Resources.Go_back;
+            this.bindingNavigatorMovePreviousItem.Image = global::BillLading.Properties.Resources.Goback;
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             // 
             // bindingNavigatorSeparator
@@ -1434,14 +1440,14 @@
             // 
             resources.ApplyResources(this.bindingNavigatorMoveNextItem, "bindingNavigatorMoveNextItem");
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = global::BillLading.Properties.Resources.Go_forward;
+            this.bindingNavigatorMoveNextItem.Image = global::BillLading.Properties.Resources.Goforward;
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             // 
             // bindingNavigatorMoveLastItem
             // 
             resources.ApplyResources(this.bindingNavigatorMoveLastItem, "bindingNavigatorMoveLastItem");
             this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = global::BillLading.Properties.Resources.Last_recor;
+            this.bindingNavigatorMoveLastItem.Image = global::BillLading.Properties.Resources.Lastrecord;
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             // 
             // bindingNavigatorSeparator2
@@ -1537,11 +1543,6 @@
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
             // 
-            // ladingBindingSource
-            // 
-            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
-            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1556,6 +1557,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1590,7 +1592,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1612,7 +1613,6 @@
         private System.Windows.Forms.TextBox forwarderObservation11TextBox;
         private System.Windows.Forms.TextBox forwarderPhone7TextBox;
         private System.Windows.Forms.TextBox grossWeight20_1TextBox;
-        private System.Windows.Forms.TextBox ladingIDTextBox;
         private System.Windows.Forms.TextBox marksNos15TextBox;
         private System.Windows.Forms.TextBox methodOfPacking17TextBox;
         private System.Windows.Forms.TextBox natureOfGoods18TextBox;
@@ -1708,6 +1708,7 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox ladingTypeComboBox;
         private System.Windows.Forms.ToolStripButton bindingNavigatorTableSQ;
+        private System.Windows.Forms.TextBox ladingCodeTextBox;
     }
 }
 
