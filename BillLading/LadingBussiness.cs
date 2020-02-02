@@ -44,16 +44,18 @@ namespace BillLading
                     case  LadingType.Main:
                         {
                             maxMain = myList.Select(p => p.LadingCode).DefaultIfEmpty(0).Max();
+                            maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
+                            maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
                             break;
                         }
                     case LadingType.SP:
                         {
-                            maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
+                            maxSP = db.Ladings.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
                             break;
                         }
                     case LadingType.SQ:
                         {
-                            maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
+                            maxSQ = db.Ladings.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
                             break;
                         }
                     default: break;
@@ -121,7 +123,7 @@ namespace BillLading
                 MetroFramework.MetroMessageBox.Show(myForm, ex.StackTrace + '\n' + ex.InnerException.InnerException.Message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        static public void bindingNavigatorSaveItem(System.Windows.Forms.BindingSource binSrc, MetroFramework.Forms.MetroForm myForm)
+        static public void bindingNavigatorSaveItem(System.Windows.Forms.BindingSource binSrc, MetroFramework.Forms.MetroForm myForm, LadingType myLadingType)
         {
             try
             {
@@ -133,7 +135,10 @@ namespace BillLading
                         if (db.Entry<Lading>(myLading).State == EntityState.Deleted)
                             db.Set<Lading>().Attach(myLading);
                         if (myLading.LadingID == 0)
+                        {
                             db.Entry<Lading>(myLading).State = EntityState.Added;
+                            incrimentSaveItem(myLading, myLadingType);
+                        }
                         // myLading.DateOfIssue3
                         else
                             db.Entry<Lading>(myLading).State = EntityState.Modified;
@@ -148,7 +153,24 @@ namespace BillLading
             }
         }
 
-        static public void bindingNavigatorCancelItem(System.Windows.Forms.BindingSource binSrc,
+        static  void incrimentSaveItem(Lading myLading, LadingType myLadingType)
+        {
+            if (myLadingType == LadingType.Main)
+            {
+                if (myLading.LadingType == LadingTypeSP)
+                {
+                    maxSP = maxSP + 1;
+                    myLading.SP_Code = maxSP;
+                }
+                else if (myLading.LadingType == LadingTypeSQ)
+                {
+                    maxSQ = maxSQ + 1;
+                    myLading.SQ_Code = maxSQ;
+                }
+            }
+            
+        }
+            static public void bindingNavigatorCancelItem(System.Windows.Forms.BindingSource binSrc,
                                                 System.Linq.Expressions.Expression<System.Func<BillLading.Lading, bool>> query,
                                                 System.Windows.Forms.BindingNavigator binNavigator, LadingType LadingType)
         {  

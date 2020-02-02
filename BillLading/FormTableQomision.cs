@@ -53,7 +53,7 @@ namespace BillLading
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this, LadingBussiness.LadingType.SQ);
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)

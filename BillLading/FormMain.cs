@@ -40,8 +40,12 @@ namespace BillLading
 
                 if (myLading != null)
                 {
-                   db.Entry<Lading>(myLading).State = EntityState.Modified;
-                  
+                    if (ladingTypeComboBox.SelectedIndex == 1)
+                         myLading.LadingType = LadingBussiness.LadingTypeSP;
+                    else if (ladingTypeComboBox.SelectedIndex == 2)
+                        myLading.LadingType = LadingBussiness.LadingTypeSQ;
+                    db.Entry<Lading>(myLading).State = EntityState.Modified;
+                   // MetroFramework.MetroMessageBox.Show(this, ladingTypeComboBox.SelectedItem.ToString(), myLading.LadingType.ToString(), MessageBoxButtons.OK, MessageBoxIcon.None);
                 }
             }
         }
@@ -69,7 +73,7 @@ namespace BillLading
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this, LadingBussiness.LadingType.Main);
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
