@@ -65,16 +65,34 @@ namespace BillLading
             ladingDataGridView.ReadOnly = true;
         }
 
+        Bitmap bitmap;
         private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
         {
-            printDocument1.Print();
+            //printDocument1.Print();
+            //Resize DataGridView to full height.
+            int height = ladingDataGridView.Height;
+            ladingDataGridView.Height = ladingDataGridView.RowCount * ladingDataGridView.RowTemplate.Height;
+
+            //Create a Bitmap and draw the DataGridView on it.
+            bitmap = new Bitmap(this.ladingDataGridView.Width, this.ladingDataGridView.Height);
+            ladingDataGridView.DrawToBitmap(bitmap, new Rectangle(0, 0, this.ladingDataGridView.Width, this.ladingDataGridView.Height));
+
+            //Resize DataGridView back to original height.
+            ladingDataGridView.Height = height;
+
+            //Show the Print Preview Dialog.
+            printDocument1.DefaultPageSettings.Landscape = true;
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            Bitmap bm = new Bitmap(this.ladingDataGridView.Width, this.ladingDataGridView.Height);
-            ladingDataGridView.DrawToBitmap(bm, new Rectangle(0, 0, this.ladingDataGridView.Width, this.ladingDataGridView.Height));
-            e.Graphics.DrawImage(bm, 0, 0);
+            //Print the contents.
+            //printDocument1.DefaultPageSettings.PaperSize= printDocument1.DefaultPageSettings.PaperSize.Kind.
+            printDocument1.DefaultPageSettings.Landscape = true;
+            e.Graphics.DrawImage(bitmap, 0, 0);
         }
     }
 }

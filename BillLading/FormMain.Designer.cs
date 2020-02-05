@@ -92,7 +92,6 @@
             System.Windows.Forms.Label ladingTypeLabel;
             System.Windows.Forms.Label ladingCodeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
-            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
@@ -104,7 +103,6 @@
             this.senderAddress4TextBox = new System.Windows.Forms.TextBox();
             this.sender4TextBox = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.receiverPhone5TextBox = new System.Windows.Forms.TextBox();
             this.receiverAddress5TextBox = new System.Windows.Forms.TextBox();
             this.receiver5TextBox = new System.Windows.Forms.TextBox();
@@ -201,6 +199,8 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
@@ -262,7 +262,6 @@
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
             ladingCodeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -281,6 +280,7 @@
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // annexedDocments14Label
@@ -643,11 +643,6 @@
             this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_1", true));
             this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
             // 
-            // ladingBindingSource
-            // 
-            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
-            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
-            // 
             // marksNos15TextBox
             // 
             resources.ApplyResources(this.marksNos15TextBox, "marksNos15TextBox");
@@ -657,6 +652,13 @@
             // methodOfPacking17TextBox
             // 
             resources.ApplyResources(this.methodOfPacking17TextBox, "methodOfPacking17TextBox");
+            this.methodOfPacking17TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("methodOfPacking17TextBox.AutoCompleteCustomSource"),
+            resources.GetString("methodOfPacking17TextBox.AutoCompleteCustomSource1"),
+            resources.GetString("methodOfPacking17TextBox.AutoCompleteCustomSource2"),
+            resources.GetString("methodOfPacking17TextBox.AutoCompleteCustomSource3")});
+            this.methodOfPacking17TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.methodOfPacking17TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.methodOfPacking17TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "MethodOfPacking17", true));
             this.methodOfPacking17TextBox.Name = "methodOfPacking17TextBox";
             // 
@@ -706,12 +708,20 @@
             // senderAddress4TextBox
             // 
             resources.ApplyResources(this.senderAddress4TextBox, "senderAddress4TextBox");
+            this.senderAddress4TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("senderAddress4TextBox.AutoCompleteCustomSource")});
+            this.senderAddress4TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.senderAddress4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.senderAddress4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "SenderAddress4", true));
             this.senderAddress4TextBox.Name = "senderAddress4TextBox";
             // 
             // sender4TextBox
             // 
             resources.ApplyResources(this.sender4TextBox, "sender4TextBox");
+            this.sender4TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("sender4TextBox.AutoCompleteCustomSource")});
+            this.sender4TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sender4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.sender4TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Sender4", true));
             this.sender4TextBox.Name = "sender4TextBox";
             // 
@@ -719,7 +729,6 @@
             // 
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox4.Controls.Add(this.groupBox10);
             this.groupBox4.Controls.Add(this.receiverPhone5TextBox);
             this.groupBox4.Controls.Add(receiverPhone5Label);
             this.groupBox4.Controls.Add(this.receiverAddress5TextBox);
@@ -728,13 +737,6 @@
             this.groupBox4.Controls.Add(receiver5Label);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
-            // 
-            // groupBox10
-            // 
-            resources.ApplyResources(this.groupBox10, "groupBox10");
-            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.TabStop = false;
             // 
             // receiverPhone5TextBox
             // 
@@ -745,6 +747,11 @@
             // receiverAddress5TextBox
             // 
             resources.ApplyResources(this.receiverAddress5TextBox, "receiverAddress5TextBox");
+            this.receiverAddress5TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("receiverAddress5TextBox.AutoCompleteCustomSource"),
+            resources.GetString("receiverAddress5TextBox.AutoCompleteCustomSource1")});
+            this.receiverAddress5TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.receiverAddress5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.receiverAddress5TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ReceiverAddress5", true));
             this.receiverAddress5TextBox.Name = "receiverAddress5TextBox";
             // 
@@ -770,18 +777,30 @@
             // carrierPhone6TextBox
             // 
             resources.ApplyResources(this.carrierPhone6TextBox, "carrierPhone6TextBox");
+            this.carrierPhone6TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("carrierPhone6TextBox.AutoCompleteCustomSource")});
+            this.carrierPhone6TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.carrierPhone6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.carrierPhone6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarrierPhone6", true));
             this.carrierPhone6TextBox.Name = "carrierPhone6TextBox";
             // 
             // carrierAddress6TextBox
             // 
             resources.ApplyResources(this.carrierAddress6TextBox, "carrierAddress6TextBox");
+            this.carrierAddress6TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("carrierAddress6TextBox.AutoCompleteCustomSource")});
+            this.carrierAddress6TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.carrierAddress6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.carrierAddress6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "CarrierAddress6", true));
             this.carrierAddress6TextBox.Name = "carrierAddress6TextBox";
             // 
             // carrier6TextBox
             // 
             resources.ApplyResources(this.carrier6TextBox, "carrier6TextBox");
+            this.carrier6TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("carrier6TextBox.AutoCompleteCustomSource")});
+            this.carrier6TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.carrier6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.carrier6TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Carrier6", true));
             this.carrier6TextBox.Name = "carrier6TextBox";
             // 
@@ -801,18 +820,30 @@
             // forwarder7TextBox
             // 
             resources.ApplyResources(this.forwarder7TextBox, "forwarder7TextBox");
+            this.forwarder7TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("forwarder7TextBox.AutoCompleteCustomSource")});
+            this.forwarder7TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.forwarder7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.forwarder7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "Forwarder7", true));
             this.forwarder7TextBox.Name = "forwarder7TextBox";
             // 
             // forwarderPhone7TextBox
             // 
             resources.ApplyResources(this.forwarderPhone7TextBox, "forwarderPhone7TextBox");
+            this.forwarderPhone7TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("forwarderPhone7TextBox.AutoCompleteCustomSource")});
+            this.forwarderPhone7TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.forwarderPhone7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.forwarderPhone7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderPhone7", true));
             this.forwarderPhone7TextBox.Name = "forwarderPhone7TextBox";
             // 
             // forwarderAddress7TextBox
             // 
             resources.ApplyResources(this.forwarderAddress7TextBox, "forwarderAddress7TextBox");
+            this.forwarderAddress7TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("forwarderAddress7TextBox.AutoCompleteCustomSource")});
+            this.forwarderAddress7TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.forwarderAddress7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.forwarderAddress7TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "ForwarderAddress7", true));
             this.forwarderAddress7TextBox.Name = "forwarderAddress7TextBox";
             // 
@@ -847,6 +878,11 @@
             // deliveryGoodsPlace9TextBox
             // 
             resources.ApplyResources(this.deliveryGoodsPlace9TextBox, "deliveryGoodsPlace9TextBox");
+            this.deliveryGoodsPlace9TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("deliveryGoodsPlace9TextBox.AutoCompleteCustomSource"),
+            resources.GetString("deliveryGoodsPlace9TextBox.AutoCompleteCustomSource1")});
+            this.deliveryGoodsPlace9TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.deliveryGoodsPlace9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.deliveryGoodsPlace9TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "DeliveryGoodsPlace9", true));
             this.deliveryGoodsPlace9TextBox.Name = "deliveryGoodsPlace9TextBox";
             // 
@@ -859,6 +895,10 @@
             // placeOfIssue2TextBox
             // 
             resources.ApplyResources(this.placeOfIssue2TextBox, "placeOfIssue2TextBox");
+            this.placeOfIssue2TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("placeOfIssue2TextBox.AutoCompleteCustomSource")});
+            this.placeOfIssue2TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.placeOfIssue2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.placeOfIssue2TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "PlaceOfIssue2", true));
             this.placeOfIssue2TextBox.Name = "placeOfIssue2TextBox";
             // 
@@ -879,6 +919,11 @@
             // takingOverGoodsPlace8TextBox
             // 
             resources.ApplyResources(this.takingOverGoodsPlace8TextBox, "takingOverGoodsPlace8TextBox");
+            this.takingOverGoodsPlace8TextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("takingOverGoodsPlace8TextBox.AutoCompleteCustomSource"),
+            resources.GetString("takingOverGoodsPlace8TextBox.AutoCompleteCustomSource1")});
+            this.takingOverGoodsPlace8TextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.takingOverGoodsPlace8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.takingOverGoodsPlace8TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "TakingOverGoodsPlace8", true));
             this.takingOverGoodsPlace8TextBox.Name = "takingOverGoodsPlace8TextBox";
             // 
@@ -1392,6 +1437,7 @@
             this.bindingNavigatorTableSQ,
             this.bindingNavigatorTableSP,
             this.toolStripSeparator2,
+            this.toolStripLabel1,
             this.bindingNavigatorFindIDItem,
             this.toolStripSeparator});
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -1537,11 +1583,22 @@
             resources.ApplyResources(this.bindingNavigatorFindIDItem, "bindingNavigatorFindIDItem");
             this.bindingNavigatorFindIDItem.Name = "bindingNavigatorFindIDItem";
             this.bindingNavigatorFindIDItem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bindingNavigatorFindIDItem_KeyDown);
+            this.bindingNavigatorFindIDItem.Click += new System.EventHandler(this.bindingNavigatorFindIDItem_Click);
             // 
             // toolStripSeparator
             // 
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
+            // 
+            // ladingBindingSource
+            // 
+            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
+            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
+            // 
+            // toolStripLabel1
+            // 
+            resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
             // 
             // Form1
             // 
@@ -1557,7 +1614,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1592,6 +1648,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1702,13 +1759,13 @@
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.DateTimePicker goodsReceivedDate32DateTimePicker;
         private System.Windows.Forms.TextBox goodsReceivedPlace32TextBox;
-        private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.ComboBox ladingTypeComboBox;
         private System.Windows.Forms.ToolStripButton bindingNavigatorTableSQ;
         private System.Windows.Forms.TextBox ladingCodeTextBox;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }
 

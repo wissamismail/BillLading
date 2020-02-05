@@ -96,15 +96,23 @@ namespace BillLading
         {
         try
             {
-                int postition = ladingBindingSource.Find("LadingID", bindingNavigatorFindIDItem.Text);
-                if (postition != -1)
+
+                if (ladingBindingSource.SupportsSearching != true)
                 {
-                    ladingBindingSource.Position = postition;
+                    MessageBox.Show("Cannot search the list.");
+                }
+                else
+                {
+                    int postition = ladingBindingSource.Find("LadingCode", int.Parse(bindingNavigatorFindIDItem.Text));
+                    if (postition > -1)
+                        ladingBindingSource.Position = postition;
+                    else
+                        MessageBox.Show("Font was not found.");
                 }
             }
             catch (Exception ex)
             {
-                MetroFramework.MetroMessageBox.Show(this, ex.Message, ex.StackTrace, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this, ex.StackTrace + '\n' + ex.InnerException.InnerException.Message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -170,6 +178,9 @@ namespace BillLading
             myFormTable.Show();
         }
 
-     
+        private void bindingNavigatorFindIDItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
