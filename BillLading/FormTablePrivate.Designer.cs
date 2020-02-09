@@ -32,8 +32,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTablePrivate));
             this.ladingDataGridView = new MetroFramework.Controls.MetroGrid();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LadingCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSP_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleNumber10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleDriver10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SP_AdvanceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -55,22 +68,6 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LadingCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSP_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VehicleNumber10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VehicleDriver10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SP_AdvanceType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ladingDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -141,6 +138,105 @@
             this.ladingDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ladingDataGridView.Size = new System.Drawing.Size(1227, 339);
             this.ladingDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "LadingID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "LadingID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // LadingCode
+            // 
+            this.LadingCode.DataPropertyName = "LadingCode";
+            this.LadingCode.HeaderText = "رقم البوليصة";
+            this.LadingCode.Name = "LadingCode";
+            this.LadingCode.ReadOnly = true;
+            // 
+            // ColumnSP_Code
+            // 
+            this.ColumnSP_Code.DataPropertyName = "SP_Code";
+            this.ColumnSP_Code.HeaderText = "رمز الرحلة";
+            this.ColumnSP_Code.Name = "ColumnSP_Code";
+            this.ColumnSP_Code.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TakingOverGoodsDate8";
+            this.Column2.HeaderText = "تاريخ الانطلاق";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // VehicleNumber10
+            // 
+            this.VehicleNumber10.DataPropertyName = "VehicleNumber10";
+            this.VehicleNumber10.HeaderText = "رقم الشاحنة";
+            this.VehicleNumber10.Name = "VehicleNumber10";
+            this.VehicleNumber10.ReadOnly = true;
+            // 
+            // VehicleDriver10
+            // 
+            this.VehicleDriver10.DataPropertyName = "VehicleDriver10";
+            this.VehicleDriver10.HeaderText = "اسم السائق";
+            this.VehicleDriver10.Name = "VehicleDriver10";
+            this.VehicleDriver10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "TakingOverGoodsPlace8";
+            this.dataGridViewTextBoxColumn16.HeaderText = "مكان التحميل";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "DeliveryGoodsPlace9";
+            this.dataGridViewTextBoxColumn18.HeaderText = "مكان التفريغ";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "SP_Reference";
+            this.Column4.HeaderText = "مرجع المعاملة";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Sender4";
+            this.dataGridViewTextBoxColumn4.HeaderText = "المرسل";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Receiver5";
+            this.dataGridViewTextBoxColumn7.HeaderText = "المرسل إليه";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SP_AdvanceDate";
+            this.Column5.HeaderText = "تاريخ سلفة";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "SP_AdvanceValue";
+            this.Column6.HeaderText = "قيمة السلفة";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // SP_AdvanceType
+            // 
+            this.SP_AdvanceType.DataPropertyName = "SP_AdvanceType";
+            this.SP_AdvanceType.HeaderText = "نوع السلفة";
+            this.SP_AdvanceType.Name = "SP_AdvanceType";
+            this.SP_AdvanceType.ReadOnly = true;
             // 
             // ladingBindingSource
             // 
@@ -338,121 +434,6 @@
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
             // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Document = this.printDocument1;
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.DocumentName = "لائحة شحن خاص";
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "LadingID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "LadingID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // LadingCode
-            // 
-            this.LadingCode.DataPropertyName = "LadingCode";
-            this.LadingCode.HeaderText = "رقم البوليصة";
-            this.LadingCode.Name = "LadingCode";
-            this.LadingCode.ReadOnly = true;
-            // 
-            // ColumnSP_Code
-            // 
-            this.ColumnSP_Code.DataPropertyName = "SP_Code";
-            this.ColumnSP_Code.HeaderText = "رمز الرحلة";
-            this.ColumnSP_Code.Name = "ColumnSP_Code";
-            this.ColumnSP_Code.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TakingOverGoodsDate8";
-            this.Column2.HeaderText = "تاريخ الانطلاق";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // VehicleNumber10
-            // 
-            this.VehicleNumber10.DataPropertyName = "VehicleNumber10";
-            this.VehicleNumber10.HeaderText = "رقم الشاحنة";
-            this.VehicleNumber10.Name = "VehicleNumber10";
-            this.VehicleNumber10.ReadOnly = true;
-            // 
-            // VehicleDriver10
-            // 
-            this.VehicleDriver10.DataPropertyName = "VehicleDriver10";
-            this.VehicleDriver10.HeaderText = "اسم السائق";
-            this.VehicleDriver10.Name = "VehicleDriver10";
-            this.VehicleDriver10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "TakingOverGoodsPlace8";
-            this.dataGridViewTextBoxColumn16.HeaderText = "مكان التحميل";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "DeliveryGoodsPlace9";
-            this.dataGridViewTextBoxColumn18.HeaderText = "مكان التفريغ";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "SP_Reference";
-            this.Column4.HeaderText = "مرجع المعاملة";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Sender4";
-            this.dataGridViewTextBoxColumn4.HeaderText = "المرسل";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Receiver5";
-            this.dataGridViewTextBoxColumn7.HeaderText = "المرسل إليه";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "SP_AdvanceDate";
-            this.Column5.HeaderText = "تاريخ سلفة";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "SP_AdvanceValue";
-            this.Column6.HeaderText = "قيمة السلفة";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // SP_AdvanceType
-            // 
-            this.SP_AdvanceType.DataPropertyName = "SP_AdvanceType";
-            this.SP_AdvanceType.HeaderText = "نوع السلفة";
-            this.SP_AdvanceType.Name = "SP_AdvanceType";
-            this.SP_AdvanceType.ReadOnly = true;
-            // 
             // FormTablePrivate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,8 +483,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorFindIDItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
-        private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn LadingCode;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSP_Code;

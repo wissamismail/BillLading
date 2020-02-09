@@ -1,6 +1,6 @@
 ﻿namespace BillLading
 {
-    partial class FormReport
+    partial class ReportTablePrivate
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.LadingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.reportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.LadingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,27 +39,28 @@
             // 
             this.LadingBindingSource.DataSource = typeof(BillLading.Lading);
             // 
-            // reportViewer1
+            // reportViewer
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.LadingBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "BillLading.LadingReport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.reportViewer1.TabIndex = 0;
+            this.reportViewer.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer.LocalReport.ReportEmbeddedResource = "BillLading.ReportPrivateTable.rdlc";
+            this.reportViewer.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer.Name = "reportViewer";
+            this.reportViewer.ServerReport.BearerToken = null;
+            this.reportViewer.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer.TabIndex = 0;
             // 
-            // FormReport
+            // ReportTablePrivate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reportViewer1);
-            this.Name = "FormReport";
-            this.Text = "طباعة بوليصة شحن برية";
+            this.Controls.Add(this.reportViewer);
+            this.Name = "ReportTablePrivate";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "طباعة جدول شحن خاص";
             this.Load += new System.EventHandler(this.FormReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LadingBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -68,6 +69,6 @@
 
         #endregion
         private System.Windows.Forms.BindingSource LadingBindingSource;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer;
     }
 }

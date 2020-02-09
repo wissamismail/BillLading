@@ -66,46 +66,14 @@ namespace BillLading
             ladingDataGridView.ReadOnly = true;
         }
 
-        Bitmap bitmap;
+ 
         private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
         {
-            FormReportTablePrivate myReportForm = new FormReportTablePrivate();
+            ReportTablePrivate myReportForm = new ReportTablePrivate();
             myReportForm.Show();
-
-            return;
-
-            //printDocument1.Print();
-            //Resize DataGridView to full height.
-            int height = ladingDataGridView.Height;
-            ladingDataGridView.Height = ladingDataGridView.RowCount * ladingDataGridView.RowTemplate.Height;
-
-            //Create a Bitmap and draw the DataGridView on it.
-            bitmap = new Bitmap(this.ladingDataGridView.Width, this.ladingDataGridView.Height);
-            ladingDataGridView.DrawToBitmap(bitmap, new Rectangle(0, 0, this.ladingDataGridView.Width, this.ladingDataGridView.Height));
-
-            //Resize DataGridView back to original height.
-            ladingDataGridView.Height = height;
-
-            PrinterSettings ps = new PrinterSettings();
-            printDocument1.PrinterSettings = ps;
-
-            IEnumerable<PaperSize> paperSizes = ps.PaperSizes.Cast<PaperSize>();
-            PaperSize sizeA4 = paperSizes.First<PaperSize>(size => size.Kind == PaperKind.A4); // setting paper size to A4 size
-            printDocument1.DefaultPageSettings.PaperSize = sizeA4;
-            printDocument1.DefaultPageSettings.Landscape = true;
-
-            //Show the Print Preview Dialog.
-            printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
-            printPreviewDialog1.ShowDialog();
+          
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            //Print the contents.
-            //printDocument1.DefaultPageSettings.PaperSize= printDocument1.DefaultPageSettings.PaperSize.Kind.
-            //printDocument1.DefaultPageSettings.Landscape = true;
-            e.Graphics.DrawImage(bitmap, 0, 0);
-        }
+   
     }
 }

@@ -4,15 +4,16 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BillLading
 {
-    public partial class FormReport : Form
+    public partial class ReportTablePrivate : Form
     {
-        public FormReport()
+        public ReportTablePrivate()
         {
             InitializeComponent();
         }
@@ -25,11 +26,12 @@ namespace BillLading
             using (DBModelLadings db = new DBModelLadings())
             {
                 // TODO: This line of code loads data into the 'TirDS.Carnet' table. You can move, or remove it, as needed.
-                this.LadingBindingSource.DataSource = db.Ladings.Where(s => s.LadingID == this.LadingID).ToList();
+                this.LadingBindingSource.DataSource = db.Ladings.Where(s => s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false).ToList();
+          
             }
 
 
-            this.reportViewer1.RefreshReport();
+            this.reportViewer.RefreshReport();
         }
     }
 }

@@ -86,7 +86,7 @@ namespace BillLading
 
         private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
         {
-            FormReport myReportForm = new FormReport();
+            ReportMain myReportForm = new ReportMain();
             Lading myLading = ladingBindingSource.Current as Lading;
             
             myReportForm.LadingID = myLading.LadingID;

@@ -69,15 +69,11 @@ namespace BillLading
 
         private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
         {
-            printDocument1.Print();
+            ReportTableQomision myReportForm = new ReportTableQomision();
+            myReportForm.Show();
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            Bitmap bm = new Bitmap(this.ladingDataGridView.Width, this.ladingDataGridView.Height);
-            ladingDataGridView.DrawToBitmap(bm, new Rectangle(0, 0, this.ladingDataGridView.Width, this.ladingDataGridView.Height));
-            e.Graphics.DrawImage(bm, 0, 0);
-        }
+  
      
     }
 }

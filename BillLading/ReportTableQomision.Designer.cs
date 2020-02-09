@@ -1,6 +1,6 @@
 ﻿namespace BillLading
 {
-    partial class FormReportTablePrivate
+    partial class ReportTableQomision
     {
         /// <summary>
         /// Required designer variable.
@@ -45,20 +45,20 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.LadingBindingSource;
             this.reportViewer.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer.LocalReport.ReportEmbeddedResource = "BillLading.PrivateTableReport.rdlc";
+            this.reportViewer.LocalReport.ReportEmbeddedResource = "BillLading.ReportPrivateQomision.rdlc";
             this.reportViewer.Location = new System.Drawing.Point(0, 0);
             this.reportViewer.Name = "reportViewer";
             this.reportViewer.ServerReport.BearerToken = null;
             this.reportViewer.Size = new System.Drawing.Size(800, 450);
             this.reportViewer.TabIndex = 0;
             // 
-            // FormReportTablePrivate
+            // FormReportTableQomision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer);
-            this.Name = "FormReportTablePrivate";
+            this.Name = "FormReportTableQomision";
             this.Text = "طباعة جدول شحن خاص";
             this.Load += new System.EventHandler(this.FormReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LadingBindingSource)).EndInit();

@@ -140,17 +140,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormReportTablePrivate.cs">
+    <Compile Include="ReportTableQomision.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReportTablePrivate.Designer.cs">
-      <DependentUpon>FormReportTablePrivate.cs</DependentUpon>
+    <Compile Include="ReportTableQomision.Designer.cs">
+      <DependentUpon>ReportTableQomision.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReport.cs">
+    <Compile Include="ReportTablePrivate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormReport.Designer.cs">
-      <DependentUpon>FormReport.cs</DependentUpon>
+    <Compile Include="ReportTablePrivate.Designer.cs">
+      <DependentUpon>ReportTablePrivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMain.Designer.cs">
+      <DependentUpon>ReportMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTableQomision.cs">
       <SubType>Form</SubType>
@@ -191,11 +197,14 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReportTablePrivate.resx">
-      <DependentUpon>FormReportTablePrivate.cs</DependentUpon>
+    <EmbeddedResource Include="ReportTableQomision.resx">
+      <DependentUpon>ReportTableQomision.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReport.resx">
-      <DependentUpon>FormReport.cs</DependentUpon>
+    <EmbeddedResource Include="ReportTablePrivate.resx">
+      <DependentUpon>ReportTablePrivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMain.resx">
+      <DependentUpon>ReportMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTableQomision.resx">
       <DependentUpon>FormTableQomision.cs</DependentUpon>
@@ -203,8 +212,9 @@
     <EmbeddedResource Include="FormTablePrivate.resx">
       <DependentUpon>FormTablePrivate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrivateTableReport.rdlc" />
-    <EmbeddedResource Include="LadingReport.rdlc" />
+    <EmbeddedResource Include="ReportPrivateQomision.rdlc" />
+    <EmbeddedResource Include="ReportPrivateTable.rdlc" />
+    <EmbeddedResource Include="ReportLading.rdlc" />
     <EmbeddedResource Include="Migrations\202002072146443_LadingUpdate1.resx">
       <DependentUpon>202002072146443_LadingUpdate1.cs</DependentUpon>
     </EmbeddedResource>
