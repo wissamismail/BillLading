@@ -73,7 +73,8 @@ namespace BillLading
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this, LadingBussiness.LadingType.Main);
+            placeOfIssue2TextBox.Focus();
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
@@ -87,7 +88,7 @@ namespace BillLading
         {
             FormReport myReportForm = new FormReport();
             Lading myLading = ladingBindingSource.Current as Lading;
-
+            
             myReportForm.LadingID = myLading.LadingID;
             myReportForm.Show();
         }
@@ -162,7 +163,7 @@ namespace BillLading
                     }
                 }
             }
-            ladingCodeTextBox.ReadOnly = true;
+            //ladingCodeTextBox.ReadOnly = true;
 
         }
 
@@ -181,6 +182,13 @@ namespace BillLading
         private void bindingNavigatorFindIDItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bindingNavigatorAddNewChild_Click(object sender, EventArgs e)
+        {
+            LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.Child);
+            LockTabs(false);
+            placeOfIssue2TextBox.Focus();
         }
     }
 }

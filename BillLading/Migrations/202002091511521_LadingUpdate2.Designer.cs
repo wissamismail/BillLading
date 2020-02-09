@@ -7,13 +7,13 @@ namespace BillLading.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.3.0")]
-    public sealed partial class CreateLading2 : IMigrationMetadata
+    public sealed partial class LadingUpdate2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateLading2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(LadingUpdate2));
         
         string IMigrationMetadata.Id
         {
-            get { return "202001302049020_CreateLading2"; }
+            get { return "202002091511521_LadingUpdate2"; }
         }
         
         string IMigrationMetadata.Source

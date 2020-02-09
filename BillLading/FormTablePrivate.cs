@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -16,7 +17,7 @@ namespace BillLading
 {
     public partial class FormTablePrivate : MetroFramework.Forms.MetroForm
     {
-        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => s.LadingType == LadingBussiness.LadingTypeSP;
+        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false);
 
         public FormTablePrivate()
         {
@@ -32,7 +33,7 @@ namespace BillLading
         {
             LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.SP);
             ladingDataGridView.ReadOnly = false;
-            ColumnSP_Code.ReadOnly = true;
+            //ColumnSP_Code.ReadOnly = true;
             LadingCode.ReadOnly = true;
         }
 
@@ -40,7 +41,7 @@ namespace BillLading
         {
             LadingBussiness.bindingNavigatorDeleteItem(ladingBindingSource, this);
             ladingDataGridView.ReadOnly = true;
-            ColumnSP_Code.ReadOnly = true;
+            //ColumnSP_Code.ReadOnly = true;
             LadingCode.ReadOnly = true;
         }
 
@@ -51,7 +52,7 @@ namespace BillLading
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this, LadingBussiness.LadingType.SP);
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
@@ -68,6 +69,11 @@ namespace BillLading
         Bitmap bitmap;
         private void bindingNavigatorPrintItem_Click(object sender, EventArgs e)
         {
+            FormReportTablePrivate myReportForm = new FormReportTablePrivate();
+            myReportForm.Show();
+
+            return;
+
             //printDocument1.Print();
             //Resize DataGridView to full height.
             int height = ladingDataGridView.Height;
@@ -80,8 +86,15 @@ namespace BillLading
             //Resize DataGridView back to original height.
             ladingDataGridView.Height = height;
 
-            //Show the Print Preview Dialog.
+            PrinterSettings ps = new PrinterSettings();
+            printDocument1.PrinterSettings = ps;
+
+            IEnumerable<PaperSize> paperSizes = ps.PaperSizes.Cast<PaperSize>();
+            PaperSize sizeA4 = paperSizes.First<PaperSize>(size => size.Kind == PaperKind.A4); // setting paper size to A4 size
+            printDocument1.DefaultPageSettings.PaperSize = sizeA4;
             printDocument1.DefaultPageSettings.Landscape = true;
+
+            //Show the Print Preview Dialog.
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.PrintPreviewControl.Zoom = 1;
             printPreviewDialog1.ShowDialog();
@@ -91,7 +104,7 @@ namespace BillLading
         {
             //Print the contents.
             //printDocument1.DefaultPageSettings.PaperSize= printDocument1.DefaultPageSettings.PaperSize.Kind.
-            printDocument1.DefaultPageSettings.Landscape = true;
+            //printDocument1.DefaultPageSettings.Landscape = true;
             e.Graphics.DrawImage(bitmap, 0, 0);
         }
     }

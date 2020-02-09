@@ -44,13 +44,15 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -138,6 +140,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormReportTablePrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportTablePrivate.Designer.cs">
+      <DependentUpon>FormReportTablePrivate.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,21 +172,13 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="LadingBussiness.cs" />
-    <Compile Include="Migrations\202001252136140_CreateLadingV8.cs" />
-    <Compile Include="Migrations\202001252136140_CreateLadingV8.designer.cs">
-      <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
+    <Compile Include="Migrations\202002072146443_LadingUpdate1.cs" />
+    <Compile Include="Migrations\202002072146443_LadingUpdate1.designer.cs">
+      <DependentUpon>202002072146443_LadingUpdate1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001282038305_CreateLading1.cs" />
-    <Compile Include="Migrations\202001282038305_CreateLading1.designer.cs">
-      <DependentUpon>202001282038305_CreateLading1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001302049020_CreateLading2.cs" />
-    <Compile Include="Migrations\202001302049020_CreateLading2.designer.cs">
-      <DependentUpon>202001302049020_CreateLading2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001302138225_CreateLading9.cs" />
-    <Compile Include="Migrations\202001302138225_CreateLading9.designer.cs">
-      <DependentUpon>202001302138225_CreateLading9.cs</DependentUpon>
+    <Compile Include="Migrations\202002091511521_LadingUpdate2.cs" />
+    <Compile Include="Migrations\202002091511521_LadingUpdate2.designer.cs">
+      <DependentUpon>202002091511521_LadingUpdate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
@@ -191,6 +191,9 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReportTablePrivate.resx">
+      <DependentUpon>FormReportTablePrivate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,18 +203,13 @@
     <EmbeddedResource Include="FormTablePrivate.resx">
       <DependentUpon>FormTablePrivate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrivateTableReport.rdlc" />
     <EmbeddedResource Include="LadingReport.rdlc" />
-    <EmbeddedResource Include="Migrations\202001252136140_CreateLadingV8.resx">
-      <DependentUpon>202001252136140_CreateLadingV8.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002072146443_LadingUpdate1.resx">
+      <DependentUpon>202002072146443_LadingUpdate1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001282038305_CreateLading1.resx">
-      <DependentUpon>202001282038305_CreateLading1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001302049020_CreateLading2.resx">
-      <DependentUpon>202001302049020_CreateLading2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001302138225_CreateLading9.resx">
-      <DependentUpon>202001302138225_CreateLading9.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202002091511521_LadingUpdate2.resx">
+      <DependentUpon>202002091511521_LadingUpdate2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -264,6 +262,7 @@
     <None Include="Resources\24.png" />
     <None Include="Resources\logistics_48.png" />
     <None Include="Resources\logistics_32.png" />
+    <None Include="Resources\iconfinder_tab_new_raised_18931.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

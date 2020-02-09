@@ -18,6 +18,8 @@ namespace BillLading
 
         public Boolean isLading { get; set; }
 
+        public Boolean isLadingChild { get; set; }
+
         [StringLength(255)]
         public string PlaceOfIssue2 { get; set; }
 
@@ -173,7 +175,8 @@ namespace BillLading
         [StringLength(50)]
         public string SP_Reference { get; set; }
         public Nullable<DateTime> SP_AdvanceDate { get; set; }
-        public int SP_AdvanceValue { get; set; }
+        [StringLength(150)]
+        public string SP_AdvanceValue { get; set; }
         [StringLength(10)]
         public string SP_AdvanceType { get; set; }
 

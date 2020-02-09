@@ -16,7 +16,7 @@ namespace BillLading
 {
     public partial class FormTableQomision : MetroFramework.Forms.MetroForm
     {
-        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => s.LadingType == LadingBussiness.LadingTypeSQ;
+        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSQ & s.isLadingChild == false);
 
         public FormTableQomision()
         {
@@ -33,7 +33,7 @@ namespace BillLading
            
             LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.SQ);
             ladingDataGridView.ReadOnly = false;
-            ColumnSQ_Code.ReadOnly = true;
+            //ColumnSQ_Code.ReadOnly = true;
             LadingCode.ReadOnly = true;
         }
 
@@ -47,13 +47,13 @@ namespace BillLading
         private void bindingNavigatorEditItem_Click(object sender, EventArgs e)
         {
             ladingDataGridView.ReadOnly = false;
-            ColumnSQ_Code.ReadOnly = true;
+            //ColumnSQ_Code.ReadOnly = true;
             LadingCode.ReadOnly = true;
         }
 
         private void bindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this, LadingBussiness.LadingType.SQ);
+            LadingBussiness.bindingNavigatorSaveItem(ladingBindingSource, this);
         }
 
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)

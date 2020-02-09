@@ -221,14 +221,14 @@
               <PaddingRight>1pt</PaddingRight>
             </Style>
           </Textbox>
-          <Textbox Name="LadingID">
+          <Textbox Name="LadingCode">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Sum(Fields!LadingID.Value, "DataSet1")</Value>
+                    <Value>=First(Fields!LadingCode.Value, "DataSet1")</Value>
                     <Style>
                       <FontFamily>Arial Rounded MT Bold</FontFamily>
                       <FontSize>9pt</FontSize>
@@ -240,7 +240,6 @@
                 </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>LadingID</rd:DefaultName>
             <Top>0.28831cm</Top>
             <Left>14.04938cm</Left>
             <Height>0.38833cm</Height>
@@ -2416,13 +2415,25 @@
           <DataField>GrossWeight20_4</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="isLading">
+          <DataField>isLading</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="isLadingChild">
+          <DataField>isLadingChild</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="LadingCode">
+          <DataField>LadingCode</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="LadingID">
           <DataField>LadingID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="LadingType">
           <DataField>LadingType</DataField>
-          <rd:TypeName>System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MarksNos15">
           <DataField>MarksNos15</DataField>
@@ -2492,8 +2503,40 @@
           <DataField>SendersInstructions23</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SP_AdvanceDate">
+          <DataField>SP_AdvanceDate</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="SP_AdvanceType">
+          <DataField>SP_AdvanceType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SP_AdvanceValue">
+          <DataField>SP_AdvanceValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SP_Code">
+          <DataField>SP_Code</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SP_Reference">
+          <DataField>SP_Reference</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="SpecialAgreements28">
           <DataField>SpecialAgreements28</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SQ_Code">
+          <DataField>SQ_Code</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SQ_Customer">
+          <DataField>SQ_Customer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SQ_Reference">
+          <DataField>SQ_Reference</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SupplChargesConsignee27">

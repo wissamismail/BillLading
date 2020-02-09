@@ -27,7 +27,8 @@ namespace BillLading
         {
             Main,
             SP,
-            SQ
+            SQ,
+            Child
         }
 
         static public void bindingNavigatorLoad(System.Windows.Forms.BindingSource binSrc, 
@@ -66,36 +67,54 @@ namespace BillLading
 
         static public void bindingNavigatorAddNewItem(System.Windows.Forms.BindingSource binSrc, LadingType myLadingType)
         {
-            Lading db = new Lading();
+            Lading dbLading = new Lading();
 
-           switch (myLadingType)
+            switch (myLadingType)
             {
+                case LadingType.Child:
+                    {
+                        using (DBModelLadings db1 = new DBModelLadings())
+                        {
+                            Lading myCurrLading = binSrc.Current as Lading;
+                            //dbLading = myCurrLading;
+                          
+                            dbLading = db1.Ladings.AsNoTracking().FirstOrDefault(e => e.LadingID == myCurrLading.LadingID);
+                            //db1.Entry<Lading>(dbLading).State = EntityState.Added;
+                            dbLading.LadingID = 0 ;
+                            dbLading.isLadingChild = true;
+                        }
+
+                        dbLading.isLading = true;
+                        break;
+                    }
                 case LadingType.Main:
                     {
-                        db.LadingType = "";
+                        dbLading.LadingType = "";
                         maxMain = maxMain + 1;
-                        db.LadingCode = maxMain + 1;
-                        db.isLading = true;
+                        dbLading.LadingCode = maxMain + 1;
+                        dbLading.isLading = true;
                         break;
                     }
                 case LadingType.SP:
                     {
-                        db.LadingType = LadingTypeSP;
+                        dbLading.LadingType = LadingTypeSP;
                         maxSP = maxSP + 1;
-                        db.SP_Code = maxSP;
+                        dbLading.SP_Code = maxSP;
                         break;
                     }
                 case LadingType.SQ:
                     {
-                        db.LadingType = LadingTypeSQ;
+                        dbLading.LadingType = LadingTypeSQ;
                         maxSQ = maxSQ + 1;
-                        db.SQ_Code = maxSQ;
+                        dbLading.SQ_Code = maxSQ;
                         break;
                     }
                 default: break;
             }
-            binSrc.Add(db);
+
+            binSrc.Add(dbLading);
             binSrc.MoveLast();
+            
         }
 
         static public void bindingNavigatorDeleteItem(System.Windows.Forms.BindingSource binSrc, MetroFramework.Forms.MetroForm myForm)
@@ -123,7 +142,7 @@ namespace BillLading
                 MetroFramework.MetroMessageBox.Show(myForm, ex.StackTrace + '\n' + ex.InnerException.InnerException.Message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        static public void bindingNavigatorSaveItem(System.Windows.Forms.BindingSource binSrc, MetroFramework.Forms.MetroForm myForm, LadingType myLadingType)
+        static public void bindingNavigatorSaveItem(System.Windows.Forms.BindingSource binSrc, MetroFramework.Forms.MetroForm myForm)
         {
             try
             {
@@ -132,18 +151,24 @@ namespace BillLading
                     Lading myLading = binSrc.Current as Lading;
                     if (myLading != null)
                     {
+                        String message;
                         if (db.Entry<Lading>(myLading).State == EntityState.Deleted)
                             db.Set<Lading>().Attach(myLading);
                         if (myLading.LadingID == 0)
                         {
                             db.Entry<Lading>(myLading).State = EntityState.Added;
-                            incrimentSaveItem(myLading, myLadingType);
+                            incrimentSaveItem(myLading);
+                            message = " البوليصة الجديدة ";
                         }
                         // myLading.DateOfIssue3
                         else
+                        {
                             db.Entry<Lading>(myLading).State = EntityState.Modified;
+                            message = " التعديلات على البوليصة ";
+                        }
+
                         db.SaveChanges();
-                        MetroFramework.MetroMessageBox.Show(myForm, "OK", "Item Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MetroFramework.MetroMessageBox.Show(myForm, "تم حفظ" + message, "حفظ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
@@ -153,9 +178,9 @@ namespace BillLading
             }
         }
 
-        static  void incrimentSaveItem(Lading myLading, LadingType myLadingType)
+        static  void incrimentSaveItem(Lading myLading)
         {
-            if (myLadingType == LadingType.Main)
+            if (myLading.isLading==true & myLading.isLadingChild==false)
             {
                 if (myLading.LadingType == LadingTypeSP)
                 {

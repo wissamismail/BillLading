@@ -189,6 +189,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorEditItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorAddNewChild = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCancelItem = new System.Windows.Forms.ToolStripButton();
@@ -197,10 +198,10 @@
             this.bindingNavigatorTableSQ = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorTableSP = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
@@ -997,7 +998,6 @@
             resources.ApplyResources(this.ladingCodeTextBox, "ladingCodeTextBox");
             this.ladingCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "LadingCode", true));
             this.ladingCodeTextBox.Name = "ladingCodeTextBox";
-            this.ladingCodeTextBox.ReadOnly = true;
             // 
             // ladingTypeComboBox
             // 
@@ -1429,6 +1429,7 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorEditItem,
             this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorAddNewChild,
             this.bindingNavigatorDeleteItem,
             this.bindingNavigatorSaveItem,
             this.bindingNavigatorCancelItem,
@@ -1518,6 +1519,14 @@
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
+            // bindingNavigatorAddNewChild
+            // 
+            resources.ApplyResources(this.bindingNavigatorAddNewChild, "bindingNavigatorAddNewChild");
+            this.bindingNavigatorAddNewChild.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewChild.Image = global::BillLading.Properties.Resources.iconfinder_tab_new_raised_18931;
+            this.bindingNavigatorAddNewChild.Name = "bindingNavigatorAddNewChild";
+            this.bindingNavigatorAddNewChild.Click += new System.EventHandler(this.bindingNavigatorAddNewChild_Click);
+            // 
             // bindingNavigatorDeleteItem
             // 
             resources.ApplyResources(this.bindingNavigatorDeleteItem, "bindingNavigatorDeleteItem");
@@ -1578,6 +1587,11 @@
             this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
+            // toolStripLabel1
+            // 
+            resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            // 
             // bindingNavigatorFindIDItem
             // 
             resources.ApplyResources(this.bindingNavigatorFindIDItem, "bindingNavigatorFindIDItem");
@@ -1594,11 +1608,6 @@
             // 
             this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
             this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
-            // 
-            // toolStripLabel1
-            // 
-            resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
-            this.toolStripLabel1.Name = "toolStripLabel1";
             // 
             // Form1
             // 
@@ -1766,6 +1775,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorTableSQ;
         private System.Windows.Forms.TextBox ladingCodeTextBox;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewChild;
     }
 }
 
