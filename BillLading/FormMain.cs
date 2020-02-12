@@ -16,7 +16,7 @@ namespace BillLading
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
-        Expression<System.Func<BillLading.Lading, bool>> myQuery = s => s.isLading == true;
+        Expression<System.Func<BillLading.Lading, bool>> myMainQuery = s => s.isLading == true;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace BillLading
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.Main);     
+            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myMainQuery, bindingNavigator1, LadingBussiness.LadingType.Main);     
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -52,9 +52,10 @@ namespace BillLading
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
-
+            ladingChildNameTextBox.Visible = false;
             LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.Main);
             LockTabs(false);
+            ladingBindingSource.ResetBindings(false);
             placeOfIssue2TextBox.Focus();          
         }
 
@@ -80,7 +81,7 @@ namespace BillLading
         private void bindingNavigatorCancelItem_Click(object sender, EventArgs e)
         {
             LockTabs(true);
-            LadingBussiness.bindingNavigatorCancelItem(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.Main);
+            LadingBussiness.bindingNavigatorCancelItem(ladingBindingSource, myMainQuery, bindingNavigator1, LadingBussiness.LadingType.Main);
  
         }
 
@@ -97,19 +98,25 @@ namespace BillLading
         {
         try
             {
-
-                if (ladingBindingSource.SupportsSearching != true)
+                if (e.KeyCode != Keys.Enter)
+                    return;
+                Expression<System.Func<BillLading.Lading, bool>> myQuery;
+                if (String.IsNullOrEmpty(bindingNavigatorFindIDItem.Text))
                 {
-                    MessageBox.Show("Cannot search the list.");
+                    myQuery = myMainQuery;
                 }
                 else
                 {
-                    int postition = ladingBindingSource.Find("LadingCode", int.Parse(bindingNavigatorFindIDItem.Text));
-                    if (postition > -1)
-                        ladingBindingSource.Position = postition;
-                    else
-                        MessageBox.Show("Font was not found.");
+                    int value = int.Parse(bindingNavigatorFindIDItem.Text);
+                   
+                    Expression<System.Func<BillLading.Lading, bool>> myQueryFilter = s => s.LadingCode == value;
+                    myQuery = myQueryFilter;
                 }
+                DBModelLadings db = new DBModelLadings();
+                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(myQuery).ToList());
+                ladingBindingSource.DataSource = myList;
+                ladingBindingSource.ResetBindings(false);
+              
             }
             catch (Exception ex)
             {
@@ -119,6 +126,10 @@ namespace BillLading
 
         private void binSrcLading_PositionChanged(object sender, EventArgs e)
         {
+            Lading myLading = ladingBindingSource.Current as Lading;
+            ladingCodeTextBox.ReadOnly = myLading.isLadingChild;
+            ladingChildNameTextBox.Visible = myLading.isLadingChild;
+
             LockTabs(true);
         }
 
@@ -179,16 +190,16 @@ namespace BillLading
             myFormTable.Show();
         }
 
-        private void bindingNavigatorFindIDItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void bindingNavigatorAddNewChild_Click(object sender, EventArgs e)
         {
+            ladingChildNameTextBox.Visible = true;
             LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.Child);
             LockTabs(false);
+            ladingCodeTextBox.ReadOnly = true;
             placeOfIssue2TextBox.Focus();
         }
+
+  
     }
 }

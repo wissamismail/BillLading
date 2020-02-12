@@ -52,14 +52,14 @@
             this.reportViewer.Size = new System.Drawing.Size(800, 450);
             this.reportViewer.TabIndex = 0;
             // 
-            // FormReportTableQomision
+            // ReportTableQomision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer);
-            this.Name = "FormReportTableQomision";
-            this.Text = "طباعة جدول شحن خاص";
+            this.Name = "ReportTableQomision";
+            this.Text = "طباعة جدول شحن قوميسيون";
             this.Load += new System.EventHandler(this.FormReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LadingBindingSource)).EndInit();
             this.ResumeLayout(false);

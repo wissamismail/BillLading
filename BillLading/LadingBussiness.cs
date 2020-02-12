@@ -37,7 +37,8 @@ namespace BillLading
         {
             using (DBModelLadings db = new DBModelLadings())
             {
-                List<Lading> myList = db.Ladings.Where(query).ToList();
+                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(query).ToList());
+               
                 binSrc.DataSource = myList;
                 binNavigator.BindingSource = binSrc;
                 switch (myLadingType)
@@ -121,21 +122,22 @@ namespace BillLading
         {
             if (MetroFramework.MetroMessageBox.Show(myForm, "Delete Current Item,Are You Sure?", "Delete Item", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
             { return; }
-            try { 
-            using (DBModelLadings db = new DBModelLadings())
-            {
-                Lading obj = binSrc.Current as Lading;
-                if (obj != null)
-                {
-                    if (db.Entry<Lading>(obj).State == EntityState.Deleted)
-                        db.Set<Lading>().Attach(obj);
-                    db.Entry<Lading>(obj).State = EntityState.Deleted;
-                    db.SaveChanges();
-                    MetroFramework.MetroMessageBox.Show(myForm, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    binSrc.RemoveCurrent();
 
+            try { 
+                using (DBModelLadings db = new DBModelLadings())
+                {
+                    Lading obj = binSrc.Current as Lading;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Lading>(obj).State == EntityState.Deleted)
+                            db.Set<Lading>().Attach(obj);
+                        db.Entry<Lading>(obj).State = EntityState.Deleted;
+                        db.SaveChanges();
+                        MetroFramework.MetroMessageBox.Show(myForm, "OK", "Item Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        binSrc.RemoveCurrent();
+
+                    }
                 }
-            }
             }
             catch (Exception ex)
             {

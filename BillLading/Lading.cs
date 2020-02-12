@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,12 +14,15 @@ namespace BillLading
         public int LadingID { get; set; }
         [StringLength(15)]
         public string LadingType { get; set; }
-
+        [Index]
         public int LadingCode { get; set; }
-
+        [Index]
         public Boolean isLading { get; set; }
-
+        [Index]
         public Boolean isLadingChild { get; set; }
+
+        [StringLength(5)]
+        public string LadingChildName { get; set; }
 
         [StringLength(255)]
         public string PlaceOfIssue2 { get; set; }

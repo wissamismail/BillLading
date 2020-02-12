@@ -140,6 +140,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202002121842505_LadingUpdate3.cs" />
+    <Compile Include="Migrations\202002121842505_LadingUpdate3.designer.cs">
+      <DependentUpon>202002121842505_LadingUpdate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002122105371_LadingUpdate31.cs" />
+    <Compile Include="Migrations\202002122105371_LadingUpdate31.designer.cs">
+      <DependentUpon>202002122105371_LadingUpdate31.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportTableQomision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,12 +198,19 @@
     <Compile Include="ModelContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FormMain.ar.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002121842505_LadingUpdate3.resx">
+      <DependentUpon>202002121842505_LadingUpdate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002122105371_LadingUpdate31.resx">
+      <DependentUpon>202002122105371_LadingUpdate31.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportTableQomision.resx">
       <DependentUpon>ReportTableQomision.cs</DependentUpon>

@@ -1182,8 +1182,14 @@
   <data name="TabPage1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="ladingChildNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="ladingCodeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 16</value>
+  </data>
   <data name="ladingCodeTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 20</value>
+    <value>142, 20</value>
   </data>
   <data name="ladingTypeComboBox.Items" xml:space="preserve">
     <value> </value>
