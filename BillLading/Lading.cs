@@ -183,6 +183,7 @@ namespace BillLading
         public string SP_AdvanceValue { get; set; }
         [StringLength(10)]
         public string SP_AdvanceType { get; set; }
+        public Boolean SP_AdvanceDelivered { get; set; }
 
         [StringLength(100)]
         public string SQ_Reference { get; set; }

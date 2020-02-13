@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,8 +23,44 @@ namespace BillLading
         public FormTablePrivate()
         {
             InitializeComponent();
+            combobox_doldur();
+
         }
 
+
+        public class ComboDeger
+        {
+            private string yazi;
+            private bool deger;
+            public ComboDeger(string stryazi, bool strdeger)
+            {
+                this.yazi = stryazi;
+                this.deger = strdeger;
+            }
+            public string yazisi
+            {
+                get
+                {
+                    return yazi;
+                }
+            }
+            public bool degeri
+            {
+                get
+                {
+                    return deger;
+                }
+            }
+        }
+        private void combobox_doldur()
+        {
+            ArrayList ComboDegerleri = new ArrayList();
+            ComboDegerleri.Add(new ComboDeger("نعم", true));
+            ComboDegerleri.Add(new ComboDeger("كلا", false));
+            SP_AdvanceDelivered.DataSource = ComboDegerleri;
+            SP_AdvanceDelivered.DisplayMember = "yazisi";
+            SP_AdvanceDelivered.ValueMember = "degeri";
+        }
         private void FormTable_Load(object sender, EventArgs e)
         {
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SP);

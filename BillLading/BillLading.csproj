@@ -148,6 +148,10 @@
     <Compile Include="Migrations\202002122105371_LadingUpdate31.designer.cs">
       <DependentUpon>202002122105371_LadingUpdate31.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002132130231_LadingUpdate32.cs" />
+    <Compile Include="Migrations\202002132130231_LadingUpdate32.designer.cs">
+      <DependentUpon>202002132130231_LadingUpdate32.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportTableQomision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002122105371_LadingUpdate31.resx">
       <DependentUpon>202002122105371_LadingUpdate31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002132130231_LadingUpdate32.resx">
+      <DependentUpon>202002132130231_LadingUpdate32.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportTableQomision.resx">
       <DependentUpon>ReportTableQomision.cs</DependentUpon>
