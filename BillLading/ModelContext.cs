@@ -10,5 +10,12 @@ namespace BillLading
 {
     public class DBModelLadings : DbContext
     {
-        public DbSet<Lading> Ladings {get; set;}    }
+        public DbSet<Lading> Ladings {get; set;}
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<DbContext>(null);
+            base.OnModelCreating(modelBuilder);
+        }
+
+    }
 }

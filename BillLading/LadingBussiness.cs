@@ -39,12 +39,13 @@ namespace BillLading
             {
                 BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(query).ToList());
                
-                binSrc.DataSource = myList;
-                binNavigator.BindingSource = binSrc;
+               
+
                 switch (myLadingType)
                 {
                     case  LadingType.Main:
                         {
+                            binSrc.DataSource = myList.OrderBy(c => c.LadingCode);
                             maxMain = myList.Select(p => p.LadingCode).DefaultIfEmpty(0).Max();
                             maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
                             maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
@@ -52,17 +53,20 @@ namespace BillLading
                         }
                     case LadingType.SP:
                         {
+                            binSrc.DataSource = myList.OrderBy(c => c.SP_Code);
                             maxSP = db.Ladings.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
                             break;
                         }
                     case LadingType.SQ:
                         {
+                            binSrc.DataSource = myList.OrderBy(c => c.SQ_Code);
                             maxSQ = db.Ladings.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
                             break;
                         }
                     default: break;
                 }
-                
+                binNavigator.BindingSource = binSrc;
+
             }
         }
 
@@ -92,7 +96,7 @@ namespace BillLading
                     {
                         dbLading.LadingType = "";
                         maxMain = maxMain + 1;
-                        dbLading.LadingCode = maxMain + 1;
+                        dbLading.LadingCode = maxMain ;
                         dbLading.isLading = true;
                         break;
                     }

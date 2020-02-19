@@ -114,7 +114,7 @@ namespace BillLading
                 }
                 DBModelLadings db = new DBModelLadings();
                 BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(myQuery).ToList());
-                ladingBindingSource.DataSource = myList;
+                ladingBindingSource.DataSource = myList.OrderBy(c => c.LadingCode);
                 ladingBindingSource.ResetBindings(false);
               
             }
