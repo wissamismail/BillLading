@@ -26,6 +26,9 @@ namespace BillLading
         private void FormTable_Load(object sender, EventArgs e)
         {
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SQ);
+            advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);
+            foreach (DataGridViewColumn col in ladingDataGridView.Columns)
+                ladingDataGridView.DisableFilterAndSort(col);
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
@@ -73,7 +76,44 @@ namespace BillLading
             myReportForm.Show();
         }
 
-  
-     
+        private void advancedDataGridViewSearchToolBar_main_Search(object sender, Zuby.ADGV.AdvancedDataGridViewSearchToolBarSearchEventArgs e)
+        {
+            bool restartsearch = true;
+            int startColumn = 0;
+            int startRow = 0;
+            if (!e.FromBegin)
+            {
+                bool endcol = ladingDataGridView.CurrentCell.ColumnIndex + 1 >= ladingDataGridView.ColumnCount;
+                bool endrow = ladingDataGridView.CurrentCell.RowIndex + 1 >= ladingDataGridView.RowCount;
+
+                if (endcol && endrow)
+                {
+                    startColumn = ladingDataGridView.CurrentCell.ColumnIndex;
+                    startRow = ladingDataGridView.CurrentCell.RowIndex;
+                }
+                else
+                {
+                    startColumn = endcol ? 0 : ladingDataGridView.CurrentCell.ColumnIndex + 1;
+                    startRow = ladingDataGridView.CurrentCell.RowIndex + (endcol ? 1 : 0);
+                }
+            }
+            DataGridViewCell c = ladingDataGridView.FindCell(
+                e.ValueToSearch,
+                e.ColumnToSearch != null ? e.ColumnToSearch.Name : null,
+                startRow,
+                startColumn,
+                e.WholeWord,
+                e.CaseSensitive);
+            if (c == null && restartsearch)
+                c = ladingDataGridView.FindCell(
+                    e.ValueToSearch,
+                    e.ColumnToSearch != null ? e.ColumnToSearch.Name : null,
+                    0,
+                    0,
+                    e.WholeWord,
+                    e.CaseSensitive);
+            if (c != null)
+                ladingDataGridView.CurrentCell = c;
+        }
     }
 }

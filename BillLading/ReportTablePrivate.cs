@@ -13,6 +13,7 @@ namespace BillLading
 {
     public partial class ReportTablePrivate : Form
     {
+
         public ReportTablePrivate()
         {
             InitializeComponent();
@@ -26,8 +27,9 @@ namespace BillLading
             using (DBModelLadings db = new DBModelLadings())
             {
                 // TODO: This line of code loads data into the 'TirDS.Carnet' table. You can move, or remove it, as needed.
-                this.LadingBindingSource.DataSource = db.Ladings.Where(s => s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false).ToList();
-          
+                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(s => s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false).ToList());
+                this.LadingBindingSource.DataSource = myList.OrderBy(c => c.SP_Code);
+
             }
 
 

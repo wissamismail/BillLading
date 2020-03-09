@@ -92,7 +92,6 @@
             System.Windows.Forms.Label ladingTypeLabel;
             System.Windows.Forms.Label ladingCodeLabel;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
-            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
             this.methodOfPacking17TextBox = new System.Windows.Forms.TextBox();
             this.natureOfGoods18TextBox = new System.Windows.Forms.TextBox();
@@ -203,6 +202,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
             carrierAddress6Label = new System.Windows.Forms.Label();
@@ -264,7 +264,6 @@
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
             ladingCodeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -283,6 +282,7 @@
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // annexedDocments14Label
@@ -644,13 +644,6 @@
             resources.ApplyResources(this.grossWeight20_1TextBox, "grossWeight20_1TextBox");
             this.grossWeight20_1TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ladingBindingSource, "GrossWeight20_1", true));
             this.grossWeight20_1TextBox.Name = "grossWeight20_1TextBox";
-            // 
-            // ladingBindingSource
-            // 
-            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
-            this.ladingBindingSource.Filter = "";
-            this.ladingBindingSource.Sort = "";
-            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
             // 
             // marksNos15TextBox
             // 
@@ -1618,6 +1611,13 @@
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
             // 
+            // ladingBindingSource
+            // 
+            this.ladingBindingSource.DataSource = typeof(BillLading.Lading);
+            this.ladingBindingSource.Filter = "";
+            this.ladingBindingSource.Sort = "";
+            this.ladingBindingSource.PositionChanged += new System.EventHandler(this.binSrcLading_PositionChanged);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1632,7 +1632,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1667,6 +1666,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

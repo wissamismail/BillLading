@@ -53,6 +53,7 @@ namespace BillLading
                         }
                     case LadingType.SP:
                         {
+                           
                             binSrc.DataSource = myList.OrderBy(c => c.SP_Code);
                             maxSP = db.Ladings.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
                             break;

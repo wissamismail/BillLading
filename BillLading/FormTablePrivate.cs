@@ -13,18 +13,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework;
 using MetroFramework.Forms;
+using Zuby.ADGV;
 
 namespace BillLading
 {
     public partial class FormTablePrivate : MetroFramework.Forms.MetroForm
     {
         Expression<System.Func<BillLading.Lading, bool>> myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false);
-
+   
         public FormTablePrivate()
         {
             InitializeComponent();
             combobox_doldur();
-
         }
 
 
@@ -64,8 +64,27 @@ namespace BillLading
         private void FormTable_Load(object sender, EventArgs e)
         {
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SP);
-        }
 
+            advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);
+            foreach (DataGridViewColumn  col in ladingDataGridView.Columns)
+                   ladingDataGridView.DisableFilterAndSort(col);
+       
+        }
+        
+        private void ladingDataGridView_FilterStringChanged(object sender, AdvancedDataGridView.FilterEventArgs e)
+        {
+            try
+            {
+               
+                ladingBindingSource.Filter = ladingDataGridView.FilterString;
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this , ex.StackTrace + '\n' + ex.InnerException.InnerException.Message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+     
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
             LadingBussiness.bindingNavigatorAddNewItem(ladingBindingSource, LadingBussiness.LadingType.SP);
@@ -111,6 +130,46 @@ namespace BillLading
           
         }
 
-   
+        private void advancedDataGridViewSearchToolBar_main_Search(object sender, Zuby.ADGV.AdvancedDataGridViewSearchToolBarSearchEventArgs e)
+        {
+            bool restartsearch = true;
+            int startColumn = 0;
+            int startRow = 0;
+            if (!e.FromBegin)
+            {
+                bool endcol = ladingDataGridView.CurrentCell.ColumnIndex + 1 >= ladingDataGridView.ColumnCount;
+                bool endrow = ladingDataGridView.CurrentCell.RowIndex + 1 >= ladingDataGridView.RowCount;
+
+                if (endcol && endrow)
+                {
+                    startColumn = ladingDataGridView.CurrentCell.ColumnIndex;
+                    startRow = ladingDataGridView.CurrentCell.RowIndex;
+                }
+                else
+                {
+                    startColumn = endcol ? 0 : ladingDataGridView.CurrentCell.ColumnIndex + 1;
+                    startRow = ladingDataGridView.CurrentCell.RowIndex + (endcol ? 1 : 0);
+                }
+            }
+            DataGridViewCell c = ladingDataGridView.FindCell(
+                e.ValueToSearch,
+                e.ColumnToSearch != null ? e.ColumnToSearch.Name : null,
+                startRow,
+                startColumn,
+                e.WholeWord,
+                e.CaseSensitive);
+            if (c == null && restartsearch)
+                c = ladingDataGridView.FindCell(
+                    e.ValueToSearch,
+                    e.ColumnToSearch != null ? e.ColumnToSearch.Name : null,
+                    0,
+                    0,
+                    e.WholeWord,
+                    e.CaseSensitive);
+            if (c != null)
+                ladingDataGridView.CurrentCell = c;
+        }
+
+     
     }
 }

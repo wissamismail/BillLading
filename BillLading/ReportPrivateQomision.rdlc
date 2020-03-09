@@ -540,14 +540,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SP_Reference">
+                    <Textbox Name="SQ_Reference1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SP_Reference.Value</Value>
+                              <Value>=Fields!SQ_Reference.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -556,7 +556,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SP_Reference</rd:DefaultName>
+                      <rd:DefaultName>SQ_Reference1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -740,15 +740,17 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SP_Code">
+                    <Textbox Name="SQ_Code">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!SP_Code.Value</Value>
-                              <Style />
+                              <Value>=Fields!SQ_Code.Value</Value>
+                              <Style>
+                                <Format>d</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -756,7 +758,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SP_Code</rd:DefaultName>
+                      <rd:DefaultName>SQ_Code</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -769,6 +771,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -805,7 +808,7 @@
         <Top>3.70099cm</Top>
         <Left>1.11654cm</Left>
         <Height>1.88792cm</Height>
-        <Width>26.63151cm</Width>
+        <Width>26.63152cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -836,7 +839,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>28.87979cm</Width>
+  <Width>30.24806cm</Width>
   <Page>
     <PageHeight>21cm</PageHeight>
     <PageWidth>29.7cm</PageWidth>

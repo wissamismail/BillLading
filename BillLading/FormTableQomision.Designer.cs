@@ -32,7 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.ladingDataGridView = new MetroFramework.Controls.MetroGrid();
+            this.ladingDataGridView = new Zuby.ADGV.AdvancedDataGridView();
+            this.LadingCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSQ_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TakingOverGoodsDate8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleNumber10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -51,15 +57,9 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPrintItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.LadingCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSQ_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TakingOverGoodsDate8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VehicleNumber10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advancedDataGridViewSearchToolBar_main = new Zuby.ADGV.AdvancedDataGridViewSearchToolBar();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ladingDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.advancedDataGridViewSearchToolBar_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,12 +81,11 @@
             this.ladingDataGridView.AllowUserToResizeRows = false;
             this.ladingDataGridView.AutoGenerateColumns = false;
             this.ladingDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ladingDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ladingDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.ladingDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.ladingDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.ladingDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
@@ -116,9 +116,10 @@
             this.ladingDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.ladingDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ladingDataGridView.EnableHeadersVisualStyles = false;
+            this.ladingDataGridView.FilterAndSortEnabled = false;
             this.ladingDataGridView.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ladingDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ladingDataGridView.Location = new System.Drawing.Point(20, 91);
+            this.ladingDataGridView.Location = new System.Drawing.Point(20, 118);
             this.ladingDataGridView.Name = "ladingDataGridView";
             this.ladingDataGridView.ReadOnly = true;
             this.ladingDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -132,8 +133,62 @@
             this.ladingDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.ladingDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.ladingDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ladingDataGridView.Size = new System.Drawing.Size(1146, 339);
+            this.ladingDataGridView.Size = new System.Drawing.Size(1146, 312);
             this.ladingDataGridView.TabIndex = 1;
+            // 
+            // LadingCode
+            // 
+            this.LadingCode.DataPropertyName = "LadingCode";
+            this.LadingCode.HeaderText = "رقم البوليصة";
+            this.LadingCode.MinimumWidth = 22;
+            this.LadingCode.Name = "LadingCode";
+            this.LadingCode.ReadOnly = true;
+            this.LadingCode.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // ColumnSQ_Code
+            // 
+            this.ColumnSQ_Code.DataPropertyName = "SQ_Code";
+            this.ColumnSQ_Code.HeaderText = "رمز الرحلة";
+            this.ColumnSQ_Code.MinimumWidth = 22;
+            this.ColumnSQ_Code.Name = "ColumnSQ_Code";
+            this.ColumnSQ_Code.ReadOnly = true;
+            this.ColumnSQ_Code.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // TakingOverGoodsDate8
+            // 
+            this.TakingOverGoodsDate8.DataPropertyName = "TakingOverGoodsDate8";
+            this.TakingOverGoodsDate8.HeaderText = "تاريخ الانطلاق";
+            this.TakingOverGoodsDate8.MinimumWidth = 22;
+            this.TakingOverGoodsDate8.Name = "TakingOverGoodsDate8";
+            this.TakingOverGoodsDate8.ReadOnly = true;
+            this.TakingOverGoodsDate8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // VehicleNumber10
+            // 
+            this.VehicleNumber10.DataPropertyName = "VehicleNumber10";
+            this.VehicleNumber10.HeaderText = "رقم الشاحنة";
+            this.VehicleNumber10.MinimumWidth = 22;
+            this.VehicleNumber10.Name = "VehicleNumber10";
+            this.VehicleNumber10.ReadOnly = true;
+            this.VehicleNumber10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "SQ_Reference";
+            this.Column4.HeaderText = "مرجع المعاملة";
+            this.Column4.MinimumWidth = 22;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "SQ_Customer";
+            this.Column2.HeaderText = "العميل";
+            this.Column2.MinimumWidth = 22;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // bindingNavigator1
             // 
@@ -160,9 +215,7 @@
             this.bindingNavigatorCancelItem,
             this.toolStripSeparator1,
             this.bindingNavigatorPrintItem,
-            this.toolStripSeparator2,
-            this.bindingNavigatorFindIDItem,
-            this.toolStripSeparator});
+            this.toolStripSeparator2});
             this.bindingNavigator1.Location = new System.Drawing.Point(20, 60);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -316,101 +369,84 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
-            // bindingNavigatorFindIDItem
+            // advancedDataGridViewSearchToolBar_main
             // 
-            this.bindingNavigatorFindIDItem.Name = "bindingNavigatorFindIDItem";
-            this.bindingNavigatorFindIDItem.Size = new System.Drawing.Size(100, 31);
+            this.advancedDataGridViewSearchToolBar_main.AllowMerge = false;
+            this.advancedDataGridViewSearchToolBar_main.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.advancedDataGridViewSearchToolBar_main.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel1});
+            this.advancedDataGridViewSearchToolBar_main.Location = new System.Drawing.Point(20, 91);
+            this.advancedDataGridViewSearchToolBar_main.MaximumSize = new System.Drawing.Size(0, 27);
+            this.advancedDataGridViewSearchToolBar_main.MinimumSize = new System.Drawing.Size(0, 27);
+            this.advancedDataGridViewSearchToolBar_main.Name = "advancedDataGridViewSearchToolBar_main";
+            this.advancedDataGridViewSearchToolBar_main.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.advancedDataGridViewSearchToolBar_main.Size = new System.Drawing.Size(1146, 27);
+            this.advancedDataGridViewSearchToolBar_main.TabIndex = 63;
+            this.advancedDataGridViewSearchToolBar_main.Text = "advancedDataGridViewSearchToolBar_main";
+            this.advancedDataGridViewSearchToolBar_main.Search += new Zuby.ADGV.AdvancedDataGridViewSearchToolBarSearchEventHandler(this.advancedDataGridViewSearchToolBar_main_Search);
             // 
-            // toolStripSeparator
+            // toolStripLabel1
             // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 31);
-            // 
-            // 
-            // LadingCode
-            // 
-            this.LadingCode.DataPropertyName = "LadingCode";
-            this.LadingCode.HeaderText = "رقم البوليصة";
-            this.LadingCode.Name = "LadingCode";
-            this.LadingCode.ReadOnly = true;
-            // 
-            // ColumnSQ_Code
-            // 
-            this.ColumnSQ_Code.DataPropertyName = "SQ_Code";
-            this.ColumnSQ_Code.HeaderText = "رمز الرحلة";
-            this.ColumnSQ_Code.Name = "ColumnSQ_Code";
-            this.ColumnSQ_Code.ReadOnly = true;
-            // 
-            // TakingOverGoodsDate8
-            // 
-            this.TakingOverGoodsDate8.DataPropertyName = "TakingOverGoodsDate8";
-            this.TakingOverGoodsDate8.HeaderText = "تاريخ الانطلاق";
-            this.TakingOverGoodsDate8.Name = "TakingOverGoodsDate8";
-            this.TakingOverGoodsDate8.ReadOnly = true;
-            // 
-            // VehicleNumber10
-            // 
-            this.VehicleNumber10.DataPropertyName = "VehicleNumber10";
-            this.VehicleNumber10.HeaderText = "رقم الشاحنة";
-            this.VehicleNumber10.Name = "VehicleNumber10";
-            this.VehicleNumber10.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "SQ_Reference";
-            this.Column4.HeaderText = "مرجع المعاملة";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "SQ_Customer";
-            this.Column2.HeaderText = "العميل";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
+            this.toolStripLabel1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripLabel1.Text = "بحث";
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "LadingID";
             this.dataGridViewTextBoxColumn1.HeaderText = "LadingID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             this.dataGridViewTextBoxColumn1.Visible = false;
             // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.DataPropertyName = "VehicleDriver10";
             this.dataGridViewTextBoxColumn23.HeaderText = "اسم السائق";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.ReadOnly = true;
+            this.dataGridViewTextBoxColumn23.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.DataPropertyName = "TakingOverGoodsPlace8";
             this.dataGridViewTextBoxColumn16.HeaderText = "مكان التحميل";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.DataPropertyName = "DeliveryGoodsPlace9";
             this.dataGridViewTextBoxColumn18.HeaderText = "مكان التفريغ";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Sender4";
             this.dataGridViewTextBoxColumn4.HeaderText = "المرسل";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "Receiver5";
             this.dataGridViewTextBoxColumn7.HeaderText = "المرسل إليه";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 22;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // ladingBindingSource
             // 
@@ -426,6 +462,7 @@
             this.BackMaxSize = 24;
             this.ClientSize = new System.Drawing.Size(1186, 450);
             this.Controls.Add(this.ladingDataGridView);
+            this.Controls.Add(this.advancedDataGridViewSearchToolBar_main);
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "FormTableQomision";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -436,6 +473,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.advancedDataGridViewSearchToolBar_main.ResumeLayout(false);
+            this.advancedDataGridViewSearchToolBar_main.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -445,7 +484,7 @@
         #endregion
 
         private System.Windows.Forms.BindingSource ladingBindingSource;
-        private MetroFramework.Controls.MetroGrid ladingDataGridView;
+        private Zuby.ADGV.AdvancedDataGridView ladingDataGridView;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -464,8 +503,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorPrintItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorFindIDItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn LadingCode;
@@ -479,5 +516,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private Zuby.ADGV.AdvancedDataGridViewSearchToolBar advancedDataGridViewSearchToolBar_main;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }
