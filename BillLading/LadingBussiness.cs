@@ -19,6 +19,8 @@ namespace BillLading
     {
         public const string LadingTypeSP = "شحن خاص";
         public const string LadingTypeSQ = "شحن قوميسيون";
+        public static Nullable<DateTime> currDate;
+        public static DateTime currYear;
         public static int maxMain =0;
         public static int maxSP = 0;
         public static int maxSQ = 0;
@@ -38,8 +40,6 @@ namespace BillLading
             using (DBModelLadings db = new DBModelLadings())
             {
                 BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(query).ToList());
-               
-               
 
                 switch (myLadingType)
                 {
@@ -52,8 +52,7 @@ namespace BillLading
                             break;
                         }
                     case LadingType.SP:
-                        {
-                           
+                        {                           
                             binSrc.DataSource = myList.OrderBy(c => c.SP_Code);
                             maxSP = db.Ladings.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
                             break;
@@ -74,7 +73,8 @@ namespace BillLading
         static public void bindingNavigatorAddNewItem(System.Windows.Forms.BindingSource binSrc, LadingType myLadingType)
         {
             Lading dbLading = new Lading();
-
+            if (! dbLading.DateOfIssue3.HasValue)
+                { dbLading.DateOfIssue3 = DateTime.Now; }
             switch (myLadingType)
             {
                 case LadingType.Child:
@@ -156,6 +156,8 @@ namespace BillLading
                 using (DBModelLadings db = new DBModelLadings())
                 {
                     Lading myLading = binSrc.Current as Lading;
+                    if (!myLading.DateOfIssue3.HasValue)
+                      { myLading.DateOfIssue3 = DateTime.Now; }
                     if (myLading != null)
                     {
                         String message;

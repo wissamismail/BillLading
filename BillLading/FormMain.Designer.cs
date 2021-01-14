@@ -202,6 +202,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorFindIDItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorFilterDate = new System.Windows.Forms.ToolStripComboBox();
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             annexedDocments14Label = new System.Windows.Forms.Label();
             carrier6Label = new System.Windows.Forms.Label();
@@ -864,10 +865,8 @@
             // dateOfIssue3DateTimePicker
             // 
             resources.ApplyResources(this.dateOfIssue3DateTimePicker, "dateOfIssue3DateTimePicker");
-            this.dateOfIssue3DateTimePicker.Checked = false;
             this.dateOfIssue3DateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ladingBindingSource, "DateOfIssue3", true));
             this.dateOfIssue3DateTimePicker.Name = "dateOfIssue3DateTimePicker";
-            this.dateOfIssue3DateTimePicker.ShowCheckBox = true;
             // 
             // deliveryGoodsDate9DateTimePicker
             // 
@@ -1448,7 +1447,8 @@
             this.toolStripSeparator2,
             this.toolStripLabel1,
             this.bindingNavigatorFindIDItem,
-            this.toolStripSeparator});
+            this.toolStripSeparator,
+            this.bindingNavigatorFilterDate});
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
@@ -1508,7 +1508,7 @@
             // bindingNavigatorSeparator2
             // 
             resources.ApplyResources(this.bindingNavigatorSeparator2, "bindingNavigatorSeparator2");
-            this.bindingNavigatorSeparator2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.bindingNavigatorSeparator2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             // 
             // bindingNavigatorEditItem
@@ -1562,7 +1562,7 @@
             // toolStripSeparator1
             // 
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // bindingNavigatorPrintItem
@@ -1592,7 +1592,7 @@
             // toolStripSeparator2
             // 
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // toolStripLabel1
@@ -1610,6 +1610,17 @@
             // 
             resources.ApplyResources(this.toolStripSeparator, "toolStripSeparator");
             this.toolStripSeparator.Name = "toolStripSeparator";
+            // 
+            // bindingNavigatorFilterDate
+            // 
+            resources.ApplyResources(this.bindingNavigatorFilterDate, "bindingNavigatorFilterDate");
+            this.bindingNavigatorFilterDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bindingNavigatorFilterDate.Items.AddRange(new object[] {
+            resources.GetString("bindingNavigatorFilterDate.Items"),
+            resources.GetString("bindingNavigatorFilterDate.Items1")});
+            this.bindingNavigatorFilterDate.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.bindingNavigatorFilterDate.Name = "bindingNavigatorFilterDate";
+            this.bindingNavigatorFilterDate.SelectedIndexChanged += new System.EventHandler(this.bindingNavigatorFilterDate_SelectedIndexChanged);
             // 
             // ladingBindingSource
             // 
@@ -1785,6 +1796,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewChild;
         private System.Windows.Forms.TextBox ladingChildNameTextBox;
         public System.Windows.Forms.BindingSource ladingBindingSource;
+        private System.Windows.Forms.ToolStripComboBox bindingNavigatorFilterDate;
     }
 }
 

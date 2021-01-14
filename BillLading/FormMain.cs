@@ -17,14 +17,16 @@ namespace BillLading
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
         Expression<System.Func<BillLading.Lading, bool>> myMainQuery = s => s.isLading == true;
+        int currYear = DateTime.Today.Year;
+
         public Form1()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myMainQuery, bindingNavigator1, LadingBussiness.LadingType.Main);     
+        {   
+            bindingNavigatorFilterDate.SelectedIndex = 0;
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -108,8 +110,17 @@ namespace BillLading
                 else
                 {
                     int value = int.Parse(bindingNavigatorFindIDItem.Text);
-                   
-                    Expression<System.Func<BillLading.Lading, bool>> myQueryFilter = s => s.LadingCode == value;
+                    Expression<System.Func<BillLading.Lading, bool>> myQueryFilter;
+
+                    if (LadingBussiness.currDate != null)
+                    {
+                        myQueryFilter = s => s.LadingCode == value & s.isLading == true & s.DateOfIssue3 >= LadingBussiness.currDate;
+                    }
+                    else 
+                    {
+                        myQueryFilter = s => s.LadingCode == value & s.isLading == true;
+                    }
+                     
                     myQuery = myQueryFilter;
                 }
                 DBModelLadings db = new DBModelLadings();
@@ -189,8 +200,7 @@ namespace BillLading
             FormTableQomision myFormTable = new FormTableQomision();
             myFormTable.Show();
         }
-
-
+        
         private void bindingNavigatorAddNewChild_Click(object sender, EventArgs e)
         {
             ladingChildNameTextBox.Visible = true;
@@ -200,6 +210,30 @@ namespace BillLading
             placeOfIssue2TextBox.Focus();
         }
 
-  
+        private void bindingNavigatorFilterDate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {      
+                string valueSelected = bindingNavigatorFilterDate.SelectedItem.ToString();
+                bindingNavigatorFindIDItem.Text = "";
+                if (string.Compare(valueSelected , "الجميع")==0)
+                {                    
+                    LadingBussiness.currDate = null;
+                    myMainQuery = s => s.isLading == true;
+                }
+                else
+                {
+                    LadingBussiness.currDate = new DateTime(currYear, 1, 1);
+                    myMainQuery = s => s.isLading == true & s.DateOfIssue3 >= LadingBussiness.currDate;
+                }
+                LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myMainQuery, bindingNavigator1, LadingBussiness.LadingType.Main);
+              
+
+            }
+            catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, ex.StackTrace + '\n' + ex.InnerException.InnerException.StackTrace, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

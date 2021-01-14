@@ -26,8 +26,7 @@ namespace BillLading
             InitializeComponent();
             combobox_doldur();
         }
-
-
+        
         public class ComboDeger
         {
             private string yazi;
@@ -63,6 +62,10 @@ namespace BillLading
         }
         private void FormTable_Load(object sender, EventArgs e)
         {
+            if (LadingBussiness.currDate != null)
+            {
+                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false & s.DateOfIssue3 >= LadingBussiness.currDate);
+            }
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SP);
 
             advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);

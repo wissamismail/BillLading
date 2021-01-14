@@ -1665,6 +1665,9 @@
   <data name="bindingNavigatorSeparator.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 31</value>
   </data>
+  <data name="bindingNavigatorPositionItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 23</value>
+  </data>
   <data name="bindingNavigatorPositionItem.TextBoxTextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -1693,7 +1696,7 @@
     <value>Magenta</value>
   </data>
   <data name="bindingNavigatorAddNewChild.Text" xml:space="preserve">
-    <value>toolStripButton1</value>
+    <value>Add new child</value>
   </data>
   <data name="bindingNavigatorDeleteItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 28</value>
@@ -1734,8 +1737,17 @@
   <data name="bindingNavigatorTableSP.Text" xml:space="preserve">
     <value>شحن خاص</value>
   </data>
+  <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 28</value>
+  </data>
   <data name="toolStripLabel1.Text" xml:space="preserve">
-    <value>وثيقة النقل رقم:</value>
+    <value>رقم الوثيقة:</value>
+  </data>
+  <data name="bindingNavigatorFindIDItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 31</value>
+  </data>
+  <data name="bindingNavigatorFilterDate.ToolTipText" xml:space="preserve">
+    <value>تصفية بحسب السنة</value>
   </data>
   <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>762, 31</value>

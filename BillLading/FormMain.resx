@@ -278,6 +278,9 @@
   <data name="forwarderAddress7Label.Text" xml:space="preserve">
     <value>Forwarder Address7:</value>
   </data>
+  <data name="toolStripComboBox1.Items" xml:space="preserve">
+    <value>السنة الحالية</value>
+  </data>
   <data name="resource.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowOnly</value>
   </data>
@@ -322,6 +325,9 @@
   </data>
   <data name="&gt;&gt;volume21_4TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorFilterDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dangerousGoodsInstructions22Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -397,6 +403,9 @@
   </data>
   <data name="groupBox12.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
+  </data>
+  <data name="toolStripComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
   </data>
   <data name="annexedDocments14Label.Text" xml:space="preserve">
     <value>Annexed Docments14:</value>
@@ -908,9 +917,6 @@
   <data name="placeOfIssue2Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;bindingNavigatorCancelItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tariffCode19_1Label.Parent" xml:space="preserve">
     <value>metroTabPage2</value>
   </data>
@@ -1024,6 +1030,9 @@
   </data>
   <data name="&gt;&gt;noOfPackages16Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorFilterDate.Name" xml:space="preserve">
+    <value>bindingNavigatorFilterDate</value>
   </data>
   <data name="&gt;&gt;TabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2348,6 +2357,9 @@
   <data name="dateOfIssue3Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="&gt;&gt;toolStripComboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="btnCancel.Text" xml:space="preserve">
     <value>إلغاء الأمر</value>
   </data>
@@ -2825,6 +2837,9 @@
   <data name="&gt;&gt;demurrageLoading24Label.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;toolStripComboBox1.Name" xml:space="preserve">
+    <value>toolStripComboBox1</value>
+  </data>
   <data name="&gt;&gt;receiver5TextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2881,6 +2896,9 @@
   </data>
   <data name="&gt;&gt;goodsReceivedPlace32Label.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="toolStripComboBox1.Items1" xml:space="preserve">
+    <value>الجميع</value>
   </data>
   <data name="&gt;&gt;demurrageDischarge25Label.Name" xml:space="preserve">
     <value>demurrageDischarge25Label</value>
@@ -3092,6 +3110,9 @@
   <data name="goodsReceivedDate32DateTimePicker.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="carrierPhone6Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
   <data name="&gt;&gt;annexedDocments14TextBox.Parent" xml:space="preserve">
     <value>groupBox13</value>
   </data>
@@ -3221,8 +3242,8 @@
   <data name="volume21_3TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
-  <data name="carrierPhone6Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
+  <data name="bindingNavigatorFilterDate.Items" xml:space="preserve">
+    <value>السنة الحالية</value>
   </data>
   <data name="&gt;&gt;dangerousGoodsInstructions22Label.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -3760,6 +3781,9 @@
   </data>
   <data name="forwarder7Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="bindingNavigatorFilterDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 27</value>
   </data>
   <data name="&gt;&gt;deliveryGoodsPlace9Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4306,8 +4330,8 @@
   <data name="&gt;&gt;receiver5TextBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 923</value>
+  <data name="&gt;&gt;bindingNavigatorCancelItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="receiverAddress5Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>252, 770</value>
@@ -4480,6 +4504,9 @@
         bO+G80MFwKUTxgfgcO/b8D9IpXoFiiMDHIQm0skAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bindingNavigatorFilterDate.Items1" xml:space="preserve">
+    <value>الجميع</value>
+  </data>
   <data name="&gt;&gt;deliveryGoodsPlace9Label.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -4530,6 +4557,9 @@
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 69</value>
+  </data>
+  <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 923</value>
   </data>
   <data name="carriageForward26TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 65</value>

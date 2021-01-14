@@ -25,6 +25,10 @@ namespace BillLading
 
         private void FormTable_Load(object sender, EventArgs e)
         {
+            if (LadingBussiness.currDate != null)
+            {
+                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSQ & s.isLadingChild == false & s.DateOfIssue3 >= LadingBussiness.currDate);
+            }
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SQ);
             advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);
             foreach (DataGridViewColumn col in ladingDataGridView.Columns)
