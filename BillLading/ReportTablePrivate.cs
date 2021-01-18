@@ -26,8 +26,14 @@ namespace BillLading
 
             using (DBModelLadings db = new DBModelLadings())
             {
+                Expression<System.Func<BillLading.Lading, bool>> myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false);
+                if (LadingBussiness.selectedYear != 0)
+                {
+                    myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false & s.DateOfIssue3.Value.Year == LadingBussiness.selectedYear);
+                }
+
                 // TODO: This line of code loads data into the 'TirDS.Carnet' table. You can move, or remove it, as needed.
-                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(s => s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false).ToList());
+                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(myQuery).ToList());
                 this.LadingBindingSource.DataSource = myList.OrderBy(c => c.SP_Code);
 
             }

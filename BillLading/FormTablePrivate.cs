@@ -62,18 +62,22 @@ namespace BillLading
         }
         private void FormTable_Load(object sender, EventArgs e)
         {
-            if (LadingBussiness.currDate != null)
+       
+        }
+
+        private void FormTablePrivate_Shown(object sender, EventArgs e)
+        {
+
+            if (LadingBussiness.selectedYear != 0)
             {
-                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false & s.DateOfIssue3 >= LadingBussiness.currDate);
+                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSP & s.isLadingChild == false & s.DateOfIssue3.Value.Year == LadingBussiness.selectedYear);
             }
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SP);
 
             advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);
             foreach (DataGridViewColumn  col in ladingDataGridView.Columns)
                    ladingDataGridView.DisableFilterAndSort(col);
-       
         }
-        
         private void ladingDataGridView_FilterStringChanged(object sender, AdvancedDataGridView.FilterEventArgs e)
         {
             try
@@ -173,6 +177,5 @@ namespace BillLading
                 ladingDataGridView.CurrentCell = c;
         }
 
-     
     }
 }

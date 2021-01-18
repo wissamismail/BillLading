@@ -19,8 +19,7 @@ namespace BillLading
     {
         public const string LadingTypeSP = "شحن خاص";
         public const string LadingTypeSQ = "شحن قوميسيون";
-        public static Nullable<DateTime> currDate;
-        public static DateTime currYear;
+        public static int selectedYear;
         public static int maxMain =0;
         public static int maxSP = 0;
         public static int maxSQ = 0;
@@ -38,34 +37,50 @@ namespace BillLading
                                                 System.Windows.Forms.BindingNavigator binNavigator, LadingType myLadingType)
         {
             using (DBModelLadings db = new DBModelLadings())
+         
             {
-                BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(query).ToList());
-
-                switch (myLadingType)
+                try
                 {
-                    case  LadingType.Main:
-                        {
-                            binSrc.DataSource = myList.OrderBy(c => c.LadingCode);
-                            maxMain = myList.Select(p => p.LadingCode).DefaultIfEmpty(0).Max();
-                            maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
-                            maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
-                            break;
-                        }
-                    case LadingType.SP:
-                        {                           
-                            binSrc.DataSource = myList.OrderBy(c => c.SP_Code);
-                            maxSP = db.Ladings.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
-                            break;
-                        }
-                    case LadingType.SQ:
-                        {
-                            binSrc.DataSource = myList.OrderBy(c => c.SQ_Code);
-                            maxSQ = db.Ladings.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
-                            break;
-                        }
-                    default: break;
+                    
+                    BindingList<Lading> myList = new BindingList<Lading>(db.Ladings.Where(query).ToList());
+                    if (myList.Count == 0)
+                    {
+                        binSrc.DataSource = myList;
+                        binNavigator.BindingSource = binSrc;
+                        return;
+                    }
+                    switch (myLadingType)
+                    {
+                        case LadingType.Main:
+                            {
+                                binSrc.DataSource = myList.OrderBy(c => c.LadingCode);
+                                maxMain = myList.Select(p => p.LadingCode).DefaultIfEmpty(0).Max();
+                                maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
+                                maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
+                                break;
+                            }
+                        case LadingType.SP:
+                            {
+                                binSrc.DataSource = myList.OrderBy(c => c.SP_Code);
+                                maxSP = myList.Select(p => p.SP_Code).DefaultIfEmpty(0).Max();
+                                break;
+                            }
+                        case LadingType.SQ:
+                            {
+                                binSrc.DataSource = myList.OrderBy(c => c.SQ_Code);
+                                maxSQ = myList.Select(p => p.SQ_Code).DefaultIfEmpty(0).Max();
+                                //MetroFramework.MetroMessageBox.Show(binNavigator, maxSQ.ToString());
+                                break;
+                            }
+                        default: break;
+                    }
+                    binNavigator.BindingSource = binSrc;
                 }
-                binNavigator.BindingSource = binSrc;
+                catch (Exception ex)
+                {
+                    MetroFramework.MetroMessageBox.Show(binNavigator, ex.StackTrace + '\n' + ex.InnerException.InnerException.StackTrace, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
 
             }
         }

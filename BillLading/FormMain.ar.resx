@@ -885,6 +885,18 @@
   <data name="volume21_1TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 72</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>348, 102</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>المرسل  </value>
+  </data>
   <data name="senderPhone4TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 72</value>
   </data>
@@ -912,17 +924,17 @@
   <data name="sender4TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 72</value>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 72</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>348, 102</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>المرسل  </value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>المرسل اليه</value>
   </data>
   <data name="receiverPhone5TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 69</value>
@@ -951,17 +963,17 @@
   <data name="receiver5TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 72</value>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 179</value>
   </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>348, 102</value>
   </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>المرسل اليه</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>الناقل</value>
   </data>
   <data name="carrierPhone6TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 71</value>
@@ -990,17 +1002,17 @@
   <data name="carrier6TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 179</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 179</value>
   </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>348, 102</value>
   </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>الناقل</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>الوسيط</value>
   </data>
   <data name="forwarder7TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 17</value>
@@ -1028,18 +1040,6 @@
   </data>
   <data name="forwarderAddress7TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 179</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 102</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>الوسيط</value>
   </data>
   <data name="annexedDocments14TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 105</value>
@@ -1179,8 +1179,26 @@
   <data name="vehicleType10TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 91</value>
+  </data>
+  <data name="metroTabControl1.RightToLeftLayout" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 564</value>
+  </data>
+  <data name="metroTabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="TabPage1.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="TabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 522</value>
+  </data>
+  <data name="TabPage1.Text" xml:space="preserve">
+    <value>صفحة 1</value>
   </data>
   <data name="ladingChildNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -1242,14 +1260,14 @@
   <data name="groupBox13.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="TabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 522</value>
-  </data>
-  <data name="TabPage1.Text" xml:space="preserve">
-    <value>صفحة 1</value>
-  </data>
   <data name="metroTabPage2.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="metroTabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 522</value>
+  </data>
+  <data name="metroTabPage2.Text" xml:space="preserve">
+    <value>صفحة 2</value>
   </data>
   <data name="cachonDelivery29TextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 437</value>
@@ -1272,6 +1290,18 @@
   <data name="specialAgreements28TextBox1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 349</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 108</value>
+  </data>
+  <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>تعليمات دفع أجور النقل</value>
+  </data>
   <data name="carriageInstructions26TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 21</value>
   </data>
@@ -1290,17 +1320,17 @@
   <data name="carriageForward26TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 349</value>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 241</value>
   </data>
-  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 108</value>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 102</value>
   </data>
-  <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>تعليمات دفع أجور النقل</value>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>مدة السماح</value>
   </data>
   <data name="demurrageLoading24TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 19</value>
@@ -1314,23 +1344,23 @@
   <data name="demurrageDischarge25TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 241</value>
-  </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 102</value>
-  </data>
-  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>مدة السماح</value>
-  </data>
   <data name="sendersInstructions23TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 357</value>
   </data>
   <data name="sendersInstructions23TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 241</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 102</value>
+  </data>
+  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>تعليمات مواد خطرة</value>
   </data>
   <data name="dangerousGoodsClass22TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 22</value>
@@ -1349,18 +1379,6 @@
   </data>
   <data name="dangerousGoodsInstructions22TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 241</value>
-  </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 102</value>
-  </data>
-  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>تعليمات مواد خطرة</value>
   </data>
   <data name="volume21_4TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>284, 206</value>
@@ -1443,14 +1461,14 @@
   <data name="tariffCode19_2TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="metroTabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 522</value>
-  </data>
-  <data name="metroTabPage2.Text" xml:space="preserve">
-    <value>صفحة 2</value>
-  </data>
   <data name="metroTabPage3.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="metroTabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>754, 522</value>
+  </data>
+  <data name="metroTabPage3.Text" xml:space="preserve">
+    <value>صفحة 3</value>
   </data>
   <data name="noCopies33TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>467, 357</value>
@@ -1460,6 +1478,18 @@
   </data>
   <data name="noCopies33TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 227</value>
+  </data>
+  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 104</value>
+  </data>
+  <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>استلمت البضاعة</value>
   </data>
   <data name="goodsReceivedDate32DateTimePicker.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 65</value>
@@ -1478,18 +1508,6 @@
   </data>
   <data name="goodsReceivedPlace32TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="groupBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 227</value>
-  </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 104</value>
-  </data>
-  <data name="groupBox9.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>استلمت البضاعة</value>
   </data>
   <data name="otherChargesConsignee27TextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>334, 149</value>
@@ -1635,24 +1653,6 @@
   <data name="carriageChargesConsignee27TextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="metroTabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 522</value>
-  </data>
-  <data name="metroTabPage3.Text" xml:space="preserve">
-    <value>صفحة 3</value>
-  </data>
-  <data name="metroTabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 91</value>
-  </data>
-  <data name="metroTabControl1.RightToLeftLayout" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="metroTabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 564</value>
-  </data>
-  <data name="metroTabControl1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 28</value>
   </data>
@@ -1744,7 +1744,13 @@
     <value>رقم الوثيقة:</value>
   </data>
   <data name="bindingNavigatorFindIDItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 31</value>
+    <value>30, 31</value>
+  </data>
+  <data name="bindingNavigatorFilterDate.Items" xml:space="preserve">
+    <value>2025</value>
+  </data>
+  <data name="bindingNavigatorFilterDate.Items1" xml:space="preserve">
+    <value>2024</value>
   </data>
   <data name="bindingNavigatorFilterDate.ToolTipText" xml:space="preserve">
     <value>تصفية بحسب السنة</value>

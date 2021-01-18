@@ -25,8 +25,9 @@ namespace BillLading
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {   
-            bindingNavigatorFilterDate.SelectedIndex = 0;
+        {
+           // MetroFramework.MetroMessageBox.Show(this, currYear.ToString());
+            bindingNavigatorFilterDate.SelectedItem = currYear.ToString();
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -112,9 +113,9 @@ namespace BillLading
                     int value = int.Parse(bindingNavigatorFindIDItem.Text);
                     Expression<System.Func<BillLading.Lading, bool>> myQueryFilter;
 
-                    if (LadingBussiness.currDate != null)
+                    if (LadingBussiness.selectedYear != 0)
                     {
-                        myQueryFilter = s => s.LadingCode == value & s.isLading == true & s.DateOfIssue3 >= LadingBussiness.currDate;
+                        myQueryFilter = s => s.LadingCode == value & s.isLading == true & s.DateOfIssue3.Value.Year == LadingBussiness.selectedYear;
                     }
                     else 
                     {
@@ -136,12 +137,22 @@ namespace BillLading
         }
 
         private void binSrcLading_PositionChanged(object sender, EventArgs e)
-        {
+        {         
+            try { 
             Lading myLading = ladingBindingSource.Current as Lading;
-            ladingCodeTextBox.ReadOnly = myLading.isLadingChild;
+            if (myLading != null)
+            {
+                           ladingCodeTextBox.ReadOnly = myLading.isLadingChild;
             ladingChildNameTextBox.Visible = myLading.isLadingChild;
+            }
+
 
             LockTabs(true);
+            }
+              catch (Exception ex)
+            {
+                MetroFramework.MetroMessageBox.Show(this, ex.StackTrace + '\n' + ex.InnerException.InnerException.Message, ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void LockTabs(bool Enable)
@@ -218,13 +229,13 @@ namespace BillLading
                 bindingNavigatorFindIDItem.Text = "";
                 if (string.Compare(valueSelected , "الجميع")==0)
                 {                    
-                    LadingBussiness.currDate = null;
+                    LadingBussiness.selectedYear = 0;
                     myMainQuery = s => s.isLading == true;
                 }
                 else
                 {
-                    LadingBussiness.currDate = new DateTime(currYear, 1, 1);
-                    myMainQuery = s => s.isLading == true & s.DateOfIssue3 >= LadingBussiness.currDate;
+                    LadingBussiness.selectedYear = int.Parse(bindingNavigatorFilterDate.SelectedItem.ToString());
+                    myMainQuery = s => s.isLading == true & s.DateOfIssue3.Value.Year == LadingBussiness.selectedYear;
                 }
                 LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myMainQuery, bindingNavigator1, LadingBussiness.LadingType.Main);
               

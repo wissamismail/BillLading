@@ -25,9 +25,9 @@ namespace BillLading
 
         private void FormTable_Load(object sender, EventArgs e)
         {
-            if (LadingBussiness.currDate != null)
+            if (LadingBussiness.selectedYear != 0)
             {
-                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSQ & s.isLadingChild == false & s.DateOfIssue3 >= LadingBussiness.currDate);
+                myQuery = s => (s.LadingType == LadingBussiness.LadingTypeSQ & s.isLadingChild == false & s.DateOfIssue3.Value.Year == LadingBussiness.selectedYear);
             }
             LadingBussiness.bindingNavigatorLoad(ladingBindingSource, myQuery, bindingNavigator1, LadingBussiness.LadingType.SQ);
             advancedDataGridViewSearchToolBar_main.SetColumns(ladingDataGridView.Columns);

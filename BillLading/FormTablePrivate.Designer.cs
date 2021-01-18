@@ -511,6 +511,7 @@
             this.RightToLeftLayout = true;
             this.Text = "لائحة شحن خاص";
             this.Load += new System.EventHandler(this.FormTable_Load);
+            this.Shown += new System.EventHandler(this.FormTablePrivate_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.ladingDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
