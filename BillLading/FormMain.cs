@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework;
-using MetroFramework.Forms;
 using System.Linq.Expressions;
 
 namespace BillLading
@@ -25,7 +19,7 @@ namespace BillLading
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {         
            // MetroFramework.MetroMessageBox.Show(this, currYear.ToString());
             bindingNavigatorFilterDate.SelectedItem = currYear.ToString();
         }
@@ -200,16 +194,28 @@ namespace BillLading
 
         }
 
+
+        FormTablePrivate myFormTablePrivate ;
         private void bindingNavigatorTableItem_Click(object sender, EventArgs e)
         {
-            FormTablePrivate myFormTable = new FormTablePrivate();
-            myFormTable.Show();
+        
+            if (myFormTablePrivate == null || myFormTablePrivate.Created == false)
+            {
+                myFormTablePrivate = new FormTablePrivate();                
+            }        
+            myFormTablePrivate.Show();
+            myFormTablePrivate.WindowState = FormWindowState.Normal;
         }
 
+        FormTableQomision myFormTableQomision ;
         private void bindingNavigatorTableSQ_Click(object sender, EventArgs e)
         {
-            FormTableQomision myFormTable = new FormTableQomision();
-            myFormTable.Show();
+            if (myFormTableQomision == null || myFormTableQomision.Created == false)
+            {
+                myFormTableQomision = new FormTableQomision();
+            }
+             myFormTableQomision.Show();
+            myFormTableQomision.WindowState = FormWindowState.Normal;
         }
         
         private void bindingNavigatorAddNewChild_Click(object sender, EventArgs e)

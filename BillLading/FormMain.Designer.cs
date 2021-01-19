@@ -91,6 +91,7 @@
             System.Windows.Forms.Label goodsReceivedDate32Label;
             System.Windows.Forms.Label ladingTypeLabel;
             System.Windows.Forms.Label ladingCodeLabel;
+            System.Windows.Forms.Label label10;
             this.grossWeight20_1TextBox = new System.Windows.Forms.TextBox();
             this.ladingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.marksNos15TextBox = new System.Windows.Forms.TextBox();
@@ -265,6 +266,7 @@
             goodsReceivedDate32Label = new System.Windows.Forms.Label();
             ladingTypeLabel = new System.Windows.Forms.Label();
             ladingCodeLabel = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ladingBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -1634,6 +1636,13 @@
             this.bindingNavigatorFilterDate.Name = "bindingNavigatorFilterDate";
             this.bindingNavigatorFilterDate.SelectedIndexChanged += new System.EventHandler(this.bindingNavigatorFilterDate_SelectedIndexChanged);
             // 
+            // label10
+            // 
+            resources.ApplyResources(label10, "label10");
+            label10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            label10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            label10.Name = "label10";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -1641,6 +1650,7 @@
             this.BackImage = global::BillLading.Properties.Resources.logistics_32;
             this.BackImagePadding = new System.Windows.Forms.Padding(150, 25, 0, 0);
             this.BackMaxSize = 32;
+            this.Controls.Add(label10);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.bindingNavigator1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
