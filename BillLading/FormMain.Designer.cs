@@ -1625,6 +1625,11 @@
             resources.ApplyResources(this.bindingNavigatorFilterDate, "bindingNavigatorFilterDate");
             this.bindingNavigatorFilterDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bindingNavigatorFilterDate.Items.AddRange(new object[] {
+            resources.GetString("bindingNavigatorFilterDate.Items11"),
+            resources.GetString("bindingNavigatorFilterDate.Items10"),
+            resources.GetString("bindingNavigatorFilterDate.Items9"),
+            resources.GetString("bindingNavigatorFilterDate.Items8"),
+            resources.GetString("bindingNavigatorFilterDate.Items7"),
             resources.GetString("bindingNavigatorFilterDate.Items"),
             resources.GetString("bindingNavigatorFilterDate.Items1"),
             resources.GetString("bindingNavigatorFilterDate.Items2"),
