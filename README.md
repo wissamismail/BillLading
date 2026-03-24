@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This repository contains the source code for a system dedicated to handling shipping documentation. Based on the project structure, it is built using **C#** and utilizes **Entity Framework (EF)** for data management, as indicated by the inclusion of Entity Framework command references within the repository.
+This repository contains the source code for a system dedicated to handling shipping documentation. It is built using **C#** and utilizes **Entity Framework (EF)** for data management, as indicated by the inclusion of Entity Framework command references within the repository.
 
 ## Technical Stack
 
